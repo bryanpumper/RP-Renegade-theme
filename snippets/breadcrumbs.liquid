@@ -1,0 +1,163 @@
+{% comment %}
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+<nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+  <a href="/" title="Home">Home</a>
+  {% if template contains 'page' %}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ page.title }}</span>
+  {% elsif template contains 'product' %}
+    {% if collection.url %}
+      <span aria-hidden="true">&rsaquo;</span>
+      {{ collection.title | link_to: collection.url }}
+    {% endif %}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ product.title }}</span>
+  {% elsif template contains 'collection' and collection.handle %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {% if current_tags %}
+      {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+      {{ collection.title | link_to: url }}
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>{{ current_tags | join: " + " }}</span>
+    {% else %}
+      <span>{{ collection.title }}</span>
+    {% endif %}
+  {% elsif template == 'blog' %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {% if current_tags %}
+      {{ blog.title | link_to: blog.url }}
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>{{ current_tags | join: " + " }}</span>
+    {% else %}
+    <span>{{ blog.title }}</span>
+    {% endif %}
+  {% elsif template == 'article' %}
+    <span aria-hidden="true">&rsaquo;</span>
+    {{ blog.title | link_to: blog.url }}
+    <span aria-hidden="true">&rsaquo;</span>
+    <span>{{ article.title }}</span>
+  {% else %}
+   <span aria-hidden="true">&rsaquo;</span>
+   <span>{{ page_title }}</span>
+  {% endif %}
+</nav>
+{% endunless %}
+{% endcomment %}
+
+{% for tag in blog.all_tags %}
+{% assign blogTag = tag | handleize %}
+{% endfor %}
+
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+<nav class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope
+        itemtype="http://schema.org/ListItem">
+      <a itemprop="item" href="{{ shop.url }}">
+      <span itemprop="name">Home</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    {% if template contains 'page' %}
+      <li itemprop="itemListElement" itemscope
+          itemtype="http://schema.org/ListItem">
+        <span aria-hidden="true">&rsaquo;</span>
+        <!-- <span itemprop="name">{{ collection.title }}</span> -->
+        <a itemprop="item" href="{{ shop.url }}{{ collection.url }}">
+        <span itemprop="name">{{ collection.title }}</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+    {% elsif template contains 'product' %}
+      {% if collection.url %}
+        <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+          <span aria-hidden="true">&rsaquo;</span>
+          <a itemprop="item" href="{{ shop.url }}{{ collection.url }}">
+          <span itemprop="name">{{ collection.title }}</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+      {% endif %}
+        <li itemprop="itemListElement" itemscope
+        itemtype="http://schema.org/ListItem">
+        <span aria-hidden="true">&rsaquo;</span>
+        <!-- <span itemprop="name">{{ product.title }}</span> -->
+        <a itemprop="item" href="{{ shop.url }}{{ product.url }}">
+          <span itemprop="name">{{ product.title }}</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+    {% elsif template contains 'collection' and collection.handle %}
+      {% if current_tags %}
+        {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+        <li itemprop="itemListElement" itemscope
+        itemtype="http://schema.org/ListItem">
+          <span aria-hidden="true">&rsaquo;</span>
+          <a itemprop="item" href="{{ shop.url }}{{ collection.url }}">
+          <span itemprop="name">{{ collection.title }}</span></a>
+          <span>{{ current_tags | join: " + " }}</span>
+          <meta itemprop="position" content="2" />
+        </li>
+        {% else %}
+          <li itemprop="itemListElement" itemscope
+          itemtype="http://schema.org/ListItem">
+            <span aria-hidden="true">&rsaquo;</span>
+            <!-- <span itemprop="name">{{ collection.title }}</span> -->
+            <a itemprop="item" href="{{ shop.url }}{{ collection.url }}">
+            <span itemprop="name">{{ collection.title }}</span></a>
+            <meta itemprop="position" content="2" />
+          </li>
+        {% endif %}
+        {% elsif template == 'blog' %}
+    {% if current_tags %}
+      <li itemprop="itemListElement" itemscope
+          itemtype="http://schema.org/ListItem">
+          <span aria-hidden="true">&rsaquo;</span>
+          <a itemprop="item" href="{{ shop.url }}{{ blog.url }}">
+          <span itemprop="name">{{ blog.title }}</span></a>
+          <meta itemprop="position" content="2" />
+      </li>
+      <li itemprop="itemListElement" itemscope
+        itemtype="http://schema.org/ListItem">
+        <span aria-hidden="true">&rsaquo;</span>
+        <a itemprop="item" href="{{ shop.url}}/blogs/{{ blog.handle }}/tagged/{{ current_tags | join: ' + ' | handleize }}">
+        <span itemprop="name">{{ current_tags | join: " + " }}</span></a>
+        <!-- <span>{{ current_tags | join: " + " }}</span> -->
+        <meta itemprop="position" content="3" />
+      </li>
+    {% else %}
+      <li itemprop="itemListElement" itemscope
+        itemtype="http://schema.org/ListItem">
+        <span aria-hidden="true">&rsaquo;</span>
+        <!-- <span itemprop="name">{{ blog.title }}</span> -->
+        <a itemprop="item" href="{{ shop.url }}{{ blog.url }}">
+        <span itemprop="name">{{ blog.title }}</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+    {% endif %}
+    {% elsif template == 'article' %}
+    <li itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+      <span aria-hidden="true">&rsaquo;</span>
+      <a itemprop="item" href="{{ shop.url }}{{ blog.url }}">
+      <span itemprop="name">{{ blog.title }}</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+      <span aria-hidden="true">&rsaquo;</span>
+      <!-- <span itemprop="name">{{ article.title }}</span> -->
+      <a itemprop="item" href="{{ shop.url }}{{ article.url }}">
+      <span itemprop="name">{{ article.title }}</span></a>
+      <meta itemprop="position" content="3" />
+    </li>
+    {% else %}
+    <li itemprop="itemListElement" itemscope
+      itemtype="http://schema.org/ListItem">
+      <span aria-hidden="true">&rsaquo;</span>
+      <!-- <span itemprop="name">{{ page_title }}</span> -->
+      <a itemprop="item" href="{{ shop.url }}{{ page.url }}">
+      <span itemprop="name">{{ page_title }}</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+  {% endif %} 
+  </ol>
+</nav>
+{% endunless %}

@@ -1,0 +1,121 @@
+{% comment %}
+<section class="section section-{{ section.id }} promotion" {% if section.settings.image %}style="background-image: url({{ section.settings.image | img_url: '1200x', format: 'pjpg' }})" {% endif %}>
+  {%- if section.settings.image -%}
+    {%- assign overlay_color = section.settings.overlay_color | hex_to_rgba: 0.6 -%}
+  {%- else -%}
+    {%- assign overlay_color = section.settings.overlay_color -%}
+  {%- endif -%}
+
+  <div class="promotion__overlay" style="background-color: {{ overlay_color }}"></div>
+
+  <div class="container">
+    <p class="promotion__text h3 text--respect-break" style="color: {{ section.settings.text_color }}">{{ section.settings.title | escape }}</p>
+  </div>
+</section>
+{% endcomment %}
+
+<div class="slider slider-testimonial " style="display:none;">
+{% for block in section.blocks %}
+  <div>
+    <div class="section section-{{ section.id }} promotion" {% if block.settings.image %}style="background-image: url({{ block.settings.image | img_url: '1200x', format: 'pjpg' }})" {% endif %}>
+      {%- if section.settings.image -%}
+        {%- assign overlay_color = block.settings.overlay_color | hex_to_rgba: 0.6 -%}
+      {%- else -%}
+        {%- assign overlay_color = block.settings.overlay_color -%}
+      {%- endif -%}
+
+      <div class="promotion__overlay" style="background-color: {{ overlay_color }}"></div>
+      <div class="container">
+        <p class="promotion__text h3" style="color: {{ block.settings.text_color }}">{{ block.settings.title }}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>
+
+<script type="text/javascript">
+  $(window).bind('load', function() {
+    $('.slider-testimonial').css('display','block');
+     $('.slider-testimonial').slick({
+	    autoplay:true,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+  }); 
+
+</script>
+
+{% schema %}
+{
+  "name": "Promotion",
+  "class": "shopify-section__promotion",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background image",
+      "info": "1200 x 400px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Text",
+      "default": "Use a short, catchy sentence to showcase your store."
+    }
+  ],
+  "blocks": [
+        {
+          "type": "testimonial",
+          "name": "Testimonial Detail",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Background image",
+              "info": "1200 x 400px .jpg recommended"
+            },
+            {
+              "type": "color",
+              "id": "overlay_color",
+              "label": "Overlay color",
+              "default": "#000000"
+            },
+            {
+              "type": "color",
+              "id": "text_color",
+              "label": "Text color",
+              "default": "#ffffff"
+            },
+            {
+              "type": "textarea",
+              "id": "title",
+              "label": "Text",
+              "default": "Use a short, catchy sentence to showcase your store."
+            }
+          ]
+        }
+	 ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Image with text overlay"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,187 @@
+{%- if section.settings.page_bgimg  -%}
+  {% capture bannerbg %}
+  background:url({{ section.settings.page_bgimg | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="{{ bannerbg }}">
+  <div class="container">
+    <div class="page__header">
+      {%- if section.settings.page_bgicon -%}<div class="banner_icon"><img src="{{ section.settings.page_bgicon | img_url: '160x160' }}" alt="Events icon"></div>{%- endif -%}
+      <h1 class="page__title h1">{{ page.title }}</h1>
+      {{ page.content }}
+    </div>
+  </div>
+</div>
+
+{% if section.blocks.size > 0 %}
+	<div class="team-box-section meet-the-team">
+    	<div class ="container">
+      		<div class="row">
+        		<div class="team-box-wrapper">
+  					{% for block in section.blocks %}
+            			{% if block.type == 'section_title' %}
+            				<h3 class="heading">{{ block.settings.section_name }}</h3>
+            			{% elsif block.type == 'team_member_detail' %}
+                  			<div class="col-sm-2 team-box">
+                    			<div class="inner">
+                      				<div class="team_featured_image">
+                        				<a href="javascript:;" class="open-modal">
+                                          {% if block.settings.team_member_image == blank %}
+                                          	<img src="https://cdn.shopify.com/s/files/1/2337/4427/t/12/assets/team-placeholder.jpg" alt="" />
+                                          {% else %}
+                                          	<img src="{{ block.settings.team_member_image | img_url:'large' }}" alt="" />
+                                          {% endif %}
+                                        </a>
+                      				</div>
+                      				<div class="team_title">{{ block.settings.team_member_name }}</div>
+                      				<div class="team_designation">{{ block.settings.team_member_role }}</div>
+                      				<div class="team_content" style="display:none;">{{ block.settings.team_member_bio }}</div>
+                    			</div>
+                  			</div>
+	            		{% endif %}
+	  				{% endfor %}
+          		</div>
+        	</div>
+      	</div>
+	</div>
+{% endif %}
+
+<div class="slide team-slide-box" style="position:fixed; left:100%;">
+  <div class="inner">
+    <div class="team-img"><img src="https://cdn.shopify.com/s/files/1/2337/4427/files/USA-matt.jpg" alt="" /></div>
+    <div class="team-content">
+      <h3 class="team_title">Matt</h3>
+      <div class="team_designation">CEO, Founder, Vegepod Inventor</div>
+      <div class="team_desc">
+        <p>After failing to grow my own veggies, I realised there must be a lot of people out there like me so I worked to solve the problems associated with urban farming and invented the Vegepod!</p>
+        <p>After successfully growing Vegepod in Australia, I moved to California in 2017 to start up Vegepod USA.</p>
+        <p>Day to day, I focus on building relationships with customers and distributors and growing our footprint across the United States.  I love working in this industry. It’s very satisfying to see so many people embracing gardening and growing their own healthy, organic vegetables at home. We make and sell a product that makes people happy and makes them feel good about themselves -  how many companies can say that?!</p>
+      </div>
+    </div>
+    <a class="close" href="javascript:;"></a>
+  </div>
+</div>
+
+<div style="display:none;  width:100%;">
+	<a href="javascript:;" class="show-div">SHOW</a>
+	<a href="javascript:;" class="hide-div">HIDE</a>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Meet The Team",
+    "class": "team-section team-section--flush",
+    "settings": [
+      {
+        "id": "page_bgimg",
+        "type": "image_picker",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "page_bgicon",
+        "label": "Banner Icon"
+      }
+	],
+    "blocks": [
+	  {
+        "type": "section_title",
+        "name": "Section Title",
+        "settings": [
+          {
+			  "type": "text",
+			  "id": "section_name",
+			  "label": "Title"
+          }
+        ]
+      },{
+        "type": "team_member_detail",
+        "name": "Team Member Detail",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "team_member_image",
+            "label": "Team Member Image"
+          },
+          {
+			  "type": "text",
+			  "id": "team_member_name",
+			  "label": "Team Member Name"
+          },
+          {
+			  "type": "text",
+			  "id": "team_member_role",
+			  "label": "Team Member Role"
+          },
+
+          {
+			 "type": "richtext",
+			 "id": "team_member_bio",
+			 "label": "Team Member Bio"
+          }
+          
+        ]
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script type="text/javascript">
+  /*jQuery('.show-div').click(function() {
+    jQuery(".slide").animate({"left":"30%"}, "slow");
+  });
+
+  jQuery('.hide-div').click(function() {
+    jQuery(".slide").animate({"left":"100%"}, "slow");
+  });*/
+  
+  jQuery('.slide.team-slide-box .close').click(function() {
+    jQuery(".slide").animate({"left":"100%"}, "slow");
+  });
+  
+  jQuery("html").click(function() {
+      jQuery(".slide").animate({"left":"100%"}, "slow");
+
+  });
+  
+  jQuery('.slide').click(function(e) {
+    e.stopPropagation(); 
+  });
+	
+  
+  jQuery('.team_featured_image').click(function(e) {
+    e.stopPropagation(); 
+    var team_member_name 	= jQuery(this).parent().find('.team_title').html();
+    var team_member_role 	= jQuery(this).parent().find('.team_designation').html();
+    var team_member_image 	= jQuery(this).find('img').attr('src');
+    var team_member_content = jQuery(this).parent().find('.team_content').html();
+    
+    jQuery('.slide.team-slide-box .team_title').html(team_member_name);
+    jQuery('.slide.team-slide-box .team_designation').html(team_member_role);
+    jQuery('.slide.team-slide-box .team-img img').attr('src',team_member_image);
+    jQuery('.slide.team-slide-box .team_desc').html(team_member_content);
+    
+    var viewportWidth = jQuery(window).width();
+    if(viewportWidth > 767) {
+      jQuery(".slide").animate({"left":"30%"}, "slow");
+      jQuery(".slide.team-slide-box").css("width","70%");
+    } else {
+      jQuery(".slide").animate({"left":"0%"}, "slow");
+      jQuery(".slide.team-slide-box").css("width","100%");
+    }
+    
+  });
+
+</script>

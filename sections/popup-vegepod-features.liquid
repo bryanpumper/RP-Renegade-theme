@@ -1,0 +1,80 @@
+<div class="main-features" style="display:none;">
+  <div class="features-popup">
+    <div class="features-popup-inner">        
+      <div class="close">
+        <img src="//cdn.shopify.com/s/files/1/2337/4427/t/2/assets/close.png">
+      </div>
+        <div class="popup-content">
+           {% for block in  section.blocks %}
+              <div class="tab-detail">
+                <div class="tab-content">
+                  <h4>{{ block.settings.popup_features_title }}</h4>
+                  <p>{{ block.settings.popup_features_desc }}</p>
+                </div>
+              </div>
+           {% endfor %}
+        </div>    
+    </div>    
+  </div>
+  <div class="features-popup-overlay"></div>
+</div>
+
+<script>
+  $(".popmake-vegepod-features").click(function() {
+  	$('.main-features').show();
+  });
+  
+  $(".close img").click(function() {
+  	$('.main-features').hide();
+  });
+  
+  /*$(".popup-content .tab-detail h4").click(function() {
+    $('.popup-content .tab-detail h4').removeClass('tab-active');
+  	$('.popup-content .tab-detail .tab-content').slideUp();
+    var status = $('.popup-content .tab-detail .tab-content').css('display');
+    console.log(status);
+    if(status == "none") {
+      $(this).addClass('tab-active');
+      $(this).next().slideDown();
+    }
+  });*/
+</script>
+
+{% schema %}
+  {
+    "name": "Popup Vegepod Features",
+  	"class": "vegepod-features-popup--flush",
+    "settings": [],
+	"blocks": [
+    {
+      "type": "vegepod_features",
+      "name": "Vegepod Features",
+      "settings": [
+          {
+            "type": "text",
+            "id": "popup_features_title",
+            "label": "Featured Title"
+          },
+          {
+            "type": "textarea",
+            "id": "popup_features_desc",
+            "label": "Description"
+          }
+       ]
+     }
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+.features-popup { background:#fff; padding:50px 50px; max-width:750px; width:calc(100% - 30px); width:-webkit-calc(100% - 30px); max-height:calc(100% - 30px); max-height:-webkit-calc(100% - 30px); position:fixed; top:50%; left:50%; z-index:999; transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%); box-sizing:border-box; -webkit-box-sizing:border-box; overflow-y:auto; }
+.features-popup .close { line-height:normal; position:absolute; top:15px; right:15px; z-index:1; transform:rotate(45deg); -webkit-transform:rotate(45deg); cursor:pointer; }
+.features-popup .close img { width:auto; max-width:100%; height:auto; max-height:100%; }
+.features-popup-overlay { background:rgba(0,0,0,0.8); position:fixed; bottom:0; left:0; right:0; top:0; z-index:9; width:100%; height:100%; }
+.main-features .features-popup .popup-content { text-align:center; }
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

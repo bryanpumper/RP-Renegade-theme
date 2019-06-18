@@ -1,0 +1,183 @@
+{%- if section.settings.page_bgimg  -%} 
+  {% capture bannerbg %}
+  background:url({{ section.settings.page_bgimg | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="{{ bannerbg }}">
+  <div class="container">
+    <div class="page__header">
+      {%- if section.settings.page_bgicon -%}<div class="banner_icon"><img src="{{ section.settings.page_bgicon | img_url: '160x160' }}" alt="Events icon"></div>{%- endif -%}
+      <h1 class="page__title h1">{{ page.title }}</h1> 
+    </div>
+    {% comment %}
+      <div class="box box--shrinked">
+        <div class="box__content box__content--large-padding rte">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endcomment %}
+  </div>
+</div>
+
+<div class="faq-content-wrapper">
+  <div class="container">
+    <div class="grid grid--large">
+      <div class="grid__cell 1--handheld-and-up">
+      <div class="question-category-block">
+        {%- assign expand_questions = section.settings.expand_questions -%}
+        {% assign c = 1 %}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'separator' -%}
+              <h3 {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h3>
+
+            {%- when 'question' -%}
+          
+              <div class="faq__item faq-detail {% unless expand_questions %}faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+                <h5 class="faq__question {% unless expand_questions %}link{% endunless %}"><img src="https://cdn.shopify.com/s/files/1/2337/4427/t/2/assets/icon-tab.png">{{ block.settings.title }}</h5>
+                {% if c == 1 %}
+                <div class="faq__answer rte" >
+                  {{ block.settings.answer }}
+                    <div class="faq__images">
+                        {% if block.settings.q_img1 %}
+                            <div class="image-container"><img src="{{ block.settings.q_img1 | img_url:'large' }}"></div>
+                        {% endif %}
+                        {% if block.settings.q_img2 %}
+                            <div class="image-container"><img src="{{ block.settings.q_img2 | img_url:'large' }}"></div>
+                        {% endif %}
+                        {% if block.settings.q_img3 %}
+                            <div class="image-container"><img src="{{ block.settings.q_img3 | img_url:'large' }}"></div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% else %}
+                 <div class="faq__answer rte">
+                  {{ block.settings.answer }}
+                     <div class="faq__images">
+                         {% if block.settings.q_img1 %}
+                             <div class="image-container"><img src="{{ block.settings.q_img1 | img_url:'large' }}"></div>
+                         {% endif %}
+                         {% if block.settings.q_img2 %}
+                             <div class="image-container"><img src="{{ block.settings.q_img2 | img_url:'large' }}"></div>
+                         {% endif %}
+                         <!--{% if block.settings.q_img3 %}
+                             <div class="image-container"><img src="{{ block.settings.q_img3 | img_url:'large' }}"></div>
+                         {% endif %}-->
+                     </div>
+                </div>
+                {% endif %}
+                {% assign c = c | plus: 1 %}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  /* jQuery('.faq-title').click(function() {
+ 	if(jQuery(this).parent().parent().find('.faq-content').css('display') == 'none') {
+ 		jQuery('.faq-detail .faq-title').removeClass('arrow');
+ 		jQuery(this).addClass('arrow');
+
+ 		jQuery('.faq-content').slideUp();
+ 		jQuery(this).parent().parent().find('.faq-content').removeClass('hidden');
+ 		jQuery(this).parent().parent().find('.faq-content').slideDown();
+ 	}
+ }); */
+
+</script>
+
+
+<script>
+  $('.faq-detail .faq__question').click(function() {
+    var current_status = $(this).parent().find(".faq__answer").css('display');
+    $('.faq-detail .faq__answer').removeClass('active');
+    $('.faq-detail .faq__answer').slideUp();
+    if(current_status == 'none') {
+      $(this).next().addClass('active');
+      $(this).parent().find(".faq__answer").slideDown();
+    }
+  });
+</script>
+
+<!-- REMOVED IMAGE OPTION NUMBER 3 IN SCHEMA  -->
+{% schema %}
+{
+  "name": "Events",
+  "class": "shopify-section__whats-on",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "expand_questions",
+      "label": "Expand all questions by default",
+      "default": false
+    },
+	{
+      "type": "image_picker",
+      "id": "page_bgimg",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "page_bgicon",
+      "label": "Banner Icon"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Question"
+        },
+        {
+            "type": "richtext",
+            "id": "answer",
+            "label": "Answer"
+        },
+        {
+            "type": "image_picker",
+            "id": "q_img1",
+            "label": "Question Image 1"
+        },
+        {
+            "type": "image_picker",
+            "id": "q_img2",
+            "label": "Question Image 2"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "separator",
+        "settings": {
+          "title": "General"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

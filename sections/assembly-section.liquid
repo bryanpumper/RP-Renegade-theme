@@ -1,0 +1,56 @@
+<div class="assembly hide-data ">
+  <div class="feature-tabs-desc">
+    <div class="container">
+      <div class="grid grid--large">
+        <div class="grid__cell">
+          <h3>{{ section.settings.vagepod_assembly_title }}</h3>
+        </div>
+      </div>
+      <div class="grid grid--large section-gap">
+        <div class="grid__cell 6/10--handheld-and-up">
+          <div class="assembly-content">
+            {{ section.settings.vagepod_assembly_desc }}
+          </div>
+        </div>
+        {% if section.settings.assembly_video_link != blank %}
+        <div class="grid__cell 4/10--handheld-and-up">
+          {{ section.settings.assembly_video_link }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Assembly Section",
+    "class": "vagepod--features",
+    "settings": [
+     {
+        "type": "header",
+        "content": "Assembly section"
+     },
+     {
+         "type": "text",
+         "id": "vagepod_assembly_title",
+         "label": "Title"
+     }, 
+     {
+         "type": "richtext",
+         "id": "vagepod_assembly_desc",
+         "label": "Description"
+     },
+     {
+         "type": "text",
+         "id": "assembly_video_link",
+         "label": "Link"
+     }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

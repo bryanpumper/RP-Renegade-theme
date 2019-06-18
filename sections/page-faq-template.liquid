@@ -1,0 +1,177 @@
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="background:#054f29;">
+  <div class="container">
+    <div class="page__header">
+      <div class="banner_icon"><img src="{{ section.settings.page_bgimg | img_url: '160x160' }}" alt="FAQ icon"></div>
+      <h1 class="page__title h1">{{ page.title }}</h1>
+      <p class="faq-cta-text">{{ section.settings.text_banner_cta }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="faq-content-wrapper">
+  <div class="container">
+    <div class="grid grid--large">
+      <div class="grid__cell 3/10--handheld-and-up">
+        <div class="faq-page-nav">
+          <ul class="anchor-nav">
+            <li><a href="#popular" class="active">Popular Questions</a></li>
+            <li><a href="#technical">Techinical Questions</a></li>
+            <li><a href="#growing">Growing Tips</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid__cell 7/10--handheld-and-up">
+        {%- assign expand_questions = section.settings.expand_questions -%}
+        <div class="question-category-block popular-question" id="popular">
+        <h2 class="block-title">Popular Questions</h2>
+        {%- for block in section.blocks -%}
+            {%- if block.settings.faq_category == 'popular' -%}
+                <div class="faq__item faq-detail {% unless expand_questions %}faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+                    <h5 class="faq__question {% unless expand_questions %}link{% endunless %}"><span class="expand-icon plus">&plus;</span><span class="expand-icon minus">&minus;</span> <span class="faq-qtext">{{ block.settings.title }}</span></h5>
+                    <div class="faq__answer rte faq-content" style="">
+                        {{ block.settings.answer }}
+                        <div class="faq__images">
+                            {% if block.settings.q_img1 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img1 | img_url:'large' }}"></div>
+                            {% endif %}
+                            {% if block.settings.q_img2 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img2 | img_url:'large' }}"></div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+        </div>
+        <div class="question-category-block technical-question" id="technical">
+        <h2 class="block-title">Techinical Questions</h2>
+        {%- for block in section.blocks -%}
+            {%- if block.settings.faq_category == 'technical' -%}
+                <div class="faq__item faq-detail {% unless expand_questions %}faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+                    <h5 class="faq__question {% unless expand_questions %}link{% endunless %}"><span class="expand-icon plus">&plus;</span><span class="expand-icon minus">&minus;</span> <span class="faq-qtext">{{ block.settings.title }}</span></h5>
+                    <div class="faq__answer rte faq-content" style="">
+                        {{ block.settings.answer }}
+                        <div class="faq__images">
+                            {% if block.settings.q_img1 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img1 | img_url:'large' }}"></div>
+                            {% endif %}
+                            {% if block.settings.q_img2 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img2 | img_url:'large' }}"></div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+        </div>
+        <div class="question-category-block growingtips-question" id="growing">
+        <h2 class="block-title">Growing Tips</h2>
+        {%- for block in section.blocks -%}
+            {%- if block.settings.faq_category == 'growing' -%}
+                <div class="faq__item faq-detail {% unless expand_questions %}faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+                    <h5 class="faq__question {% unless expand_questions %}link{% endunless %}"><span class="expand-icon plus">&plus;</span><span class="expand-icon minus">&minus;</span> <span class="faq-qtext">{{ block.settings.title }}</span></h5>
+                    <div class="faq__answer rte faq-content" style="">
+                        {{ block.settings.answer }}
+                        <div class="faq__images">
+                            {% if block.settings.q_img1 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img1 | img_url:'large' }}"></div>
+                            {% endif %}
+                            {% if block.settings.q_img2 %}
+                                <div class="image-container"><img src="{{ block.settings.q_img2 | img_url:'large' }}"></div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.faq-detail .faq__question').click(function() {
+    var current_status = $(this).parent().find(".faq__answer").css('display');
+    $('.faq__question').removeClass('active');
+    $('.faq-detail .faq__answer').slideUp();
+    //$(this).addClass('active');
+    if(current_status == 'none') {
+      $(this).addClass('active');
+      //$(this).next().addClass('active');
+      $(this).parent().find(".faq__answer").slideDown();
+    }
+  });
+
+  $("ul.anchor-nav li a").click(function(e) {
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).parent().siblings().find('a').removeClass('active');
+    var aTag = $(this).attr('href');
+    $('html,body').animate({scrollTop: $(aTag).offset().top - 90 },'slow');
+  });
+</script>
+<!-- REMOVED IMAGE OPTION NUMBER 3 IN SCHEMA  -->
+{% schema %}
+{
+    "name": "FAQ",
+    "class": "shopify-section__faq",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "expand_questions",
+            "label": "Expand all questions by default",
+            "default": false
+        },
+        {
+            "type": "image_picker",
+            "id": "page_bgimg",
+            "label": "Banner Icon"
+        },
+        {
+          "id": "text_banner_cta",
+          "type": "text",
+          "label": "Banner CTA"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "question",
+            "name": "Question",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Question"
+                },
+                {
+                    "type": "richtext",
+                    "id": "answer",
+                    "label": "Answer"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "q_img1",
+                    "label": "Question Image 1"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "q_img2",
+                    "label": "Question Image 2"
+                },
+                {
+                    "type":      "select",
+                    "id":        "faq_category",
+                    "label":     "Faq Category",
+                    "options": [
+                        { "value": "popular", "label": "Popular Questions"},
+                        { "value": "technical", "label": "Technical Questions"},
+                        { "value": "growing", "label": "Growing Tips"}
+                    ],
+                    "default":   "popular"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

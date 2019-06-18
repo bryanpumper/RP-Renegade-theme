@@ -1,0 +1,43 @@
+{%- capture blog_links -%}{%- for link in linklists['blog_linklist'].links -%}{%- assign blog_handle = link.object.handle -%}{{blog_handle}};{%- endfor -%}{%- endcapture -%}
+{% assign blog_handles = blog_links %}
+{% assign blog_list = blog_handles | split: ';' %}
+{% for blog_handle in blog_list %}
+{%- paginate blogs[blog_handle].articles by 9 -%}
+  {% for article in blogs[blog_handle].articles limit: 100%}
+      
+      <div class="articles-list__item">
+        <article class="article">
+          <div class="article-image"><img src="{{ article.image | img_url: '1600x750' }}"
+                      srcset="{{ article.image | img_url: '750x350' }} 750w, {{ article.image | img_url: '1600x750' }} 1600w"
+                      sizes="(min-width: 35em) 70vw, (min-width: 80em) 750px, 100vw"
+                      alt="{{ article.image.alt | escape }}" class="article__image"></div>
+          <div class="article-content">
+            <div class="article__meta text--uppercase">
+              {%- if section.settings.show_author_name -%}
+                <span class="article__author article__meta-item">{{ 'blog.article.written_by' | t: author: article.user.first_name }}</span>
+              {%- endif -%}
+
+              <time datetime="{{ article.published_at | date: '%Y-%m-%dT%T' }}" class="article__date article__meta-item">{{ article.published_at | date: format: 'month_day_year' }}</time>
+
+              {%- if article.comments_enabled? -%}
+                <a class="article__comments-count article__meta-item link hidden-thumb hidden-handheld" href="{{ article.url }}#comments">{{ 'blog.article.comments_count' | t: count: article.comments_count }}</a>
+              {%- endif -%}
+              <span> | #{{ blog_handle }}</span>
+            </div>
+            <h4 class="article__title h4"><a href="{{ article.url }}" class="link">{{ article.title }}</a></h4>
+            <div class="article__excerpt rte {% if article.image %}hidden-thumb{% endif %}">
+              {%- if article.excerpt != blank -%}
+                {{ article.excerpt }}
+              {%- else -%}
+                {{ article.content | strip_html | truncate: 350 }}
+              {%- endif -%}
+            </div>
+            <a href="{{ article.url }}" class="article__read-more link link--primary link--effect text--uppercase">{{ 'blog.article.continue_reading' | t }}</a>
+          </div>
+        </article>
+      </div>
+
+  {% endfor %}
+  {%- include 'pagination' -%}
+{%- endpaginate -%}
+{% endfor %}

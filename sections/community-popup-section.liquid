@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+    <div class="grid grid--large center">
+      <div class="grid__cell 7/10--handheld-and-up">
+        <div class="popup-section-icon"><img src="{{ section.settings.popup_icon | img_url: 'large' }}" /></div>
+        <p>{{ section.settings.sidebar_title }}</p>
+        <a href="#" class="popmake-vegepod-features">See Features</a>
+      </div>
+    </div>  
+  </div>
+
+{% schema %}
+  {
+  "name": "Community Popup Section",
+  "class": "community-popup-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "Sidebar Featured Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "popup_icon",
+      "label": "Popup Section Icon"
+    }
+  ],
+  "blocks": [
+
+  ]
+}
+{% endschema %}

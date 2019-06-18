@@ -1,0 +1,48 @@
+{%- if section.settings.banner_background  -%}
+  {% capture bannerbg %}
+  background:url({{ section.settings.banner_background | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="{{ bannerbg }}">
+  <div class="container">
+    <div class="page__header">
+      {%- if section.settings.banner_icon  -%}<div class="banner_icon"><img src="{{ section.settings.banner_icon | img_url: '160x160' }}" alt="installer icon"></div>{%- endif -%}
+      <h1 class="page__title h1">{{ page.title }}</h1>
+      {%- if section.settings.button_link  -%}<a href="{{ section.settings.button_link }}" class="button button--primary">{{ section.settings.button_text }}</a>{%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+	"name" : "Installer Banner",
+	"class" : "shopify-section_installer-banner",
+	"settings" : [
+    {
+        "type": "image_picker",
+        "id": "banner_background",
+        "label": "Banner Background"
+    },
+    {
+        "type": "image_picker",
+        "id": "banner_icon",
+        "label": "Banner Icon"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+    },
+    {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+    }
+	]
+}
+{% endschema %}

@@ -1,0 +1,248 @@
+{%- assign first_page = pages[section.settings.tab_page_1_handle] -%}
+{%- assign second_page = pages[section.settings.tab_page_2_handle] -%}
+{%- assign first_custom_page = '' -%}
+{%- assign second_custom_page = '' -%}
+
+{%- comment -%}
+We allow to add two tabs that are extracted using the tag system. To add such a tag, simply create a page and
+note the handle somewhere.
+Next, add a tag to your product in this form: __tab1:page-handle or __tab2:page-handle
+The theme will automatically link the tab to the page
+{%- endcomment -%}
+
+{%- assign has_unique_tab_1 = false -%}
+{%- assign has_unique_tab_2 = false -%}
+
+{%- comment -%}First, check the metafields{%- endcomment -%}
+
+{%- if product.metafields.sf_product_tabs.tab_1_title != blank and product.metafields.sf_product_tabs.tab_1_content != blank -%}
+  {%- assign unique_tab_1_title = product.metafields.sf_product_tabs.tab_1_title -%}
+  {%- assign unique_tab_1_content = product.metafields.sf_product_tabs.tab_1_content -%}
+  {%- assign has_unique_tab_1 = true -%}
+{%- endif -%}
+
+{%- if product.metafields.sf_product_tabs.tab_2_title != blank and product.metafields.sf_product_tabs.tab_2_content != blank -%}
+  {%- assign unique_tab_2_title = product.metafields.sf_product_tabs.tab_2_title -%}
+  {%- assign unique_tab_2_content = product.metafields.sf_product_tabs.tab_2_content -%}
+  {%- assign has_unique_tab_2 = true -%}
+{%- endif -%}
+
+{%- comment -%}Then, let's try the tags{%- endcomment -%}
+
+{%- for tag in product.tags -%}
+  {%- if tag contains '__tab1' -%}
+    {%- assign first_custom_page = tag | split: ':' | last -%}
+    {%- assign first_custom_page = pages[first_custom_page] -%}
+
+    {%- assign unique_tab_1_title = first_custom_page.title -%}
+    {%- assign unique_tab_1_content = first_custom_page.content -%}
+    {%- assign has_unique_tab_1 = true -%}
+  {%- endif -%}
+
+  {%- if tag contains '__tab2' -%}
+    {%- assign second_custom_page = tag | split: ':' | last -%}
+    {%- assign second_custom_page = pages[second_custom_page] -%}
+
+    {%- assign unique_tab_2_title = second_custom_page.title -%}
+    {%- assign unique_tab_2_content = second_custom_page.content -%}
+    {%- assign has_unique_tab_2 = true -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if first_page.handle != blank or second_page.handle != blank or has_unique_tab_1 or has_unique_tab_2 or section.settings.reviews_enabled -%}
+  <div class="product__tabs tabs">
+    <div class="tabs__nav">
+      <ul class="tabs__nav-inner list--unstyled" role="tablist"> 
+        {%- assign current_tab_index = 0 -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            Product Description
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- if section.settings.reviews_enabled -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            {{- 'product.tabs.reviews' | t -}}
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- endif -%}
+
+        {%- if has_unique_tab_1 -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            {{- unique_tab_1_title -}}
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- endif -%}
+
+        {%- if has_unique_tab_2 -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            {{- unique_tab_2_title -}}
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- endif -%}
+
+        {%- unless first_page.empty? -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            {{- first_page.title -}}
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- endunless -%}
+
+        {%- unless second_page.empty? -%}
+          <li class="tabs__nav-item {% if current_tab_index == 0 %}tabs__nav-item--active{% endif %} text--uppercase" data-tab-index="{{ current_tab_index }}" role="tab">
+            {{- second_page.title -}}
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          </li>
+        {%- endunless -%}
+      </ul>
+    </div>
+
+    <ul class="tabs__content list--unstyled">
+      {%- assign current_tab_index = 0 -%}
+
+      <li class="tabs__content-item product-description-tab {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+        {%- if product.description != blank -%}
+            <div class="product__description rte">
+              <div class="container">
+                <div class="grid grid--center">
+                  <div class="grid__cell 4/5--handheld-and-up">
+                    <h3 class="tab-content-title">More Information</h3>
+                    {{ product.description }}
+                    {%- if section.settings.show_share_buttons -%}
+                      {%- include 'share-buttons' -%}
+                    {%- endif -%}
+                  </div>   
+                </div>  
+              </div>  
+            </div>
+            {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+          {%- endif -%}
+      </li>
+      {%- if section.settings.reviews_enabled -%}
+        <li class="tabs__content-item {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+          <div class="container">
+            <div class="grid grid--center">
+              <div class="grid__cell 4/5--handheld-and-up">
+                <h3 class="tab-content-title">Reviews</h3>
+                <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+                {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+                {%- if section.settings.reviews_enabled -%}
+                <div class="product__review-badge">
+                <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">{{ 'product.general.loading_reviews' | t }}</span>
+                </div>
+              </div>  
+            </div>  
+          </div>  
+        {%- endif -%}
+        </li>
+      {%- endif -%}  
+      {%- if has_unique_tab_1 -%}
+        <li class="tabs__content-item {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+          <div class="container">
+            <div class="grid grid--center">
+              <div class="grid__cell 4/5--handheld-and-up">
+              {{- unique_tab_1_content -}}
+              {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+              </div> 
+            </div> 
+          </div> 
+        </li>
+      {%- endif -%}
+
+      {%- if has_unique_tab_2 -%}
+        <li class="tabs__content-item {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+          {{- unique_tab_2_content -}}
+          {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+        </li>
+      {%- endif -%}
+
+      {%- unless first_page.empty? -%}
+        <li class="tabs__content-item {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+          {{- first_page.content -}}
+          {%- assign current_tab_index = current_tab_index | plus: 1 -%}
+        </li>
+      {%- endunless -%}
+
+      {%- unless second_page.empty? -%}
+        <li class="tabs__content-item contact-us-tab {% if current_tab_index == 0 %}tabs__content-item--active{% endif %} rte">
+              <div class="grid" id="contactmapsform">
+                <div class="grid__cell 1/2--lap-and-up">
+                  <div class="contact-page-content rte">
+                    <div class="contact_page_map_container">
+                      <div class="contact-info-area hide-on-desktop">
+                      <h1 class="page__title h1">{{ page.title }}</h1>
+                      <div class="contact-info contact-info-address">
+                        <label>Address</label>
+                        <p>{{section.settings.map_address}}</p>
+                      </div>
+                      <div class="contact-info contact-info-phone">
+                      <label>Phone</label>
+                      <a href="tel:{{section.settings.contact_phone}}">{{section.settings.contact_phone}}</a></div>
+                      <div class="contact-info contact-info-email">
+                      <label>Email</label>
+                      <a href="mailto:{{section.settings.contact_email}}">{{section.settings.contact_email}}</a></div>
+                    </div>
+
+                    <div id="mapwrapper">
+                      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{section.settings.api_key}}"></script>
+                      <input type="hidden" class="map-info" data-map-address="{{section.settings.map_address}}" data-map-zoom="{{section.settings.zoom}}" data-map-pin="{{section.settings.map_pin | img_url: '160x160'}}" data-contact-phone="{{section.settings.contact_phone}}" data-contact-email="{{section.settings.contact_email}}" >
+                      <div id="map-holder" class="map-canvas" style="height: 720px;"></div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid__cell 1/2--lap-and-up no-left-padding">
+                  <div class="box box--secondary">
+                    <div class="box__content">
+                      {%- capture contact_form -%}
+                        {%- form 'contact' -%}
+                          {%- unless form.posted_successfully? -%}
+                            <p class="form__instructions">{{ 'contact.form.instructions' | t }}</p>
+                          {%- endunless -%}
+
+                          {%- if form.posted_successfully? -%}
+                            <div class="alert alert--success">
+                              <span class="alert__title">{{ 'contact.form.successfully_sent' | t }}</span>
+                            </div>
+                          {%- endif -%}
+
+                          {%- if form.errors -%}
+                            <div class="alert alert--error">
+                              <span class="alert__title">{{ 'general.forms.errors' | t }}</span>
+                              {%- include 'form-errors' -%}
+                            </div>
+                          {%- endif -%}
+
+                          <div class="form__control-row">
+                            <div class="form__control">
+                              <label for="contact__name">Name:</label>
+                              <input type="text" class="form__input" id="contact__name" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}">
+                            </div>
+
+                            <div class="form__control">
+                              <label for="contact__email">Email:</label>
+                              <input type="email" class="form__input" id="contact__email" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" placeholder="{{ 'contact.form.email' | t }}" required="required">
+                            </div>
+                          </div>
+
+                          <div class="form__control">
+                            <label for="contact__body">Message:</label>
+                            <textarea rows="8" class="form__textarea" cols="75" id="contact__body" name="contact[body]" required="required" aria-label="{{ 'contact.form.message' | t }}" placeholder="{{ 'contact.form.message' | t }}">{{ form.body }}</textarea>
+                          </div>
+
+                          <input type="submit" class="button button--primary" value="{{ 'contact.form.submit' | t }}">
+                        {%- endform -%}
+                      {%- endcapture -%}
+
+                      <div class="contact-form-wrapper">
+                        <h2 class="section-title h2">Get in Touch</h2>
+                        {{ contact_form }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </li>
+      {%- endunless -%}
+    </ul>
+  </div>
+{%- endif -%}

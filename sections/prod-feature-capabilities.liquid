@@ -1,0 +1,110 @@
+<section class="section section-{{ section.id }}">
+  <div class="container">
+    {%- if section.settings.title != blank -%}
+      <h2 class="section__title h3">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+
+    <div class="prod-features grid grid--large grid--center">
+      {%- for block in section.blocks -%}
+        <div class="prod-features__grid-item grid__cell 1/3--handheld-and-up" {{ block.shopify_attributes }}>
+          <div class="prod_feat-img">
+            {%- if block.settings.author_picture -%}
+              <img src="{{ block.settings.author_picture | img_url: '160x160' }}" alt="{{ block.settings.author_picture.alt | escape }}" class="prod_feat__picture">
+            {%- endif -%}
+          </div>
+          <div class="prod-features {% if block.settings.author_picture != blank %}testimonial--has-image{% endif %}">
+            {%- if block.settings.title != blank -%}
+              <p class="prod-features__author">{{ block.settings.title | escape }}</p>
+            {%- endif -%}
+
+            <div class="prod-features__content">
+              {{ block.settings.quote }}
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+    {% if section.settings.review_button_url != blank %}
+    	{% assign review_url = section.settings.review_button_url %}
+    {% else %}
+		{% assign review_url = "javascript:;" %}
+    {% endif %}
+    {% if section.settings.review_button_text != blank %}
+      <div class="prod-feat-link">
+        <a href="{{ review_url }}">{{ section.settings.review_button_text }}</a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Features",
+  "class": "shopify-section__prodfeatcapabilities",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+	{
+      "type": "text",
+      "id": "review_button_text",
+      "label": "Product Features Link Text"
+    },
+	{
+      "type": "text",
+      "id": "review_button_url",
+      "label": "Product Features Link URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product-feat",
+      "name": "Product Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "author_picture",
+          "label": "Product Feature Icon",
+          "info": "180 x 180px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Product Feature",
+          "default": "Product Feature"
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Product Feature Description",
+          "default": "<p>An easy to manage contained raised gardening bed is perfect for the home. Control your growth and veggie quality in a separate environment away from the ground and away from the pests.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Product Features",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "product-feat",
+          "settings": {}
+        },
+        {
+          "type": "product-feat",
+          "settings": {}
+        },
+        {
+          "type": "product-feat",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

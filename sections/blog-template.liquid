@@ -1,0 +1,247 @@
+<!-- BREADCRUMBS -->
+<div class="container breadcrumbs-page">
+
+</div>
+<div class="page__content-wrapper">
+  <div class="container">
+    {%- if section.settings.show_blog_name -%}
+      <div class="page__header">
+        <h1 class="page__title h1">{{ blog.title }}</h1>
+      </div>
+    {%- endif -%}
+
+    <div class="grid">
+      {%- capture blog_articles -%}
+        {%- paginate blog.articles by section.settings.articles_per_page -%}
+          <div class="articles-list">
+            {%- for article in blog.articles -%}
+            {% if forloop.first == true %}
+              <div class="articles-list__item full grid__cell">
+                <article class="article">
+                  {%- if article.image -%}
+                  <div class="article__image_container">
+                    <canvas width="1184" height="545" style="background-image: url({{ article.image | img_url: '1600x750' }});" class="article__image" ></canvas>
+                  </div>
+                  {%- endif -%}
+
+                  <div class="article__content">
+                    <div class="article__meta text--uppercase">
+                      {%- if section.settings.show_author_name -%}
+                        <span class="article__author article__meta-item">{{ 'blog.article.written_by' | t: author: article.user.first_name }}</span>
+                      {%- endif -%}
+
+                      <time datetime="{{ article.published_at | date: '%Y-%m-%dT%T' }}" class="article__date article__meta-item">{{ article.published_at | date: format: 'month_day_year' }}</time>
+
+                      {%- if article.comments_enabled? -%}
+                        <span> | </span><a class="article__comments-count article__meta-item link hidden-thumb hidden-handheld" href="{{ article.url }}#comments">{{ 'blog.article.comments_count' | t: count: article.comments_count }}</a>
+                      {%- endif -%}
+                    </div>
+
+                    <h1 class="article__title h4">
+                      <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+                    </h1>
+
+                    <div class="article__excerpt rte">
+                      {%- if article.excerpt != blank -%}
+                        {{ article.excerpt }}
+                      {%- else -%}
+                        {{ article.content | strip_html | truncate: 350 }}
+                      {%- endif -%}
+                    </div>
+
+                    <a href="{{ article.url }}" class="article__read-more link link--primary link--effect text--uppercase">Keep reading...</a>
+                  </div>
+                </article>
+              </div>
+            {% else %}
+              <div class="articles-list__item grid_article grid__cell 1/3--handheld-and-up">
+                <article class="article">
+                  {%- if article.image -%}
+                  <div class="article__image_container">
+                    <a href="{{ article.url }}" class=""><canvas width="361" height="333" style="background-image: url({{ article.image | img_url: '1600x750' }});" class="article__image" ></canvas></a>
+                  </div>
+                  {%- endif -%}
+
+                  <div class="article__content">
+                    <div class="article__meta text--uppercase">
+                      {%- if section.settings.show_author_name -%}
+                        <span class="article__author article__meta-item">{{ 'blog.article.written_by' | t: author: article.user.first_name }}</span>
+                      {%- endif -%}
+
+                      <time datetime="{{ article.published_at | date: '%Y-%m-%dT%T' }}" class="article__date article__meta-item">{{ article.published_at | date: format: 'month_day_year' }}</time>
+
+                      {%- if article.comments_enabled? -%}
+                        <span> | </span><a class="article__comments-count article__meta-item link hidden-thumb hidden-handheld" href="{{ article.url }}#comments">{{ 'blog.article.comments_count' | t: count: article.comments_count }}</a>
+                      {%- endif -%}
+                    </div>
+
+                    <h1 class="article__title h4">
+                      <a href="{{ article.url }}" class="link">{{ article.title }}</a>
+                    </h1>
+
+                    <a href="{{ article.url }}" class="article__read-more link link--primary link--effect text--uppercase">Keep reading...</a>
+                  </div>
+                </article>
+              </div>
+            {% endif %}
+              
+            {%- endfor -%}
+          </div>
+
+          {%- include 'pagination' -%}
+        {%- endpaginate -%}
+      {%- endcapture -%}
+
+      {%- if section.blocks.size > 0 -%}
+          {{ blog_articles }}
+      {%- else -%}
+          {{ blog_articles }}
+      {%- endif -%}
+    </div>
+    <div class="load-more-section"><a class="view-more-button">Load more</a></div>
+  </div>
+</div>
+
+<script>
+(function($) {
+  $(document).ready(function() {
+    $('.articles-list').infiniteScroll({
+      path: '.pagination__next',
+      append: '.articles-list__item',
+      button: '.view-more-button',
+      scrollThreshold: false,
+      status: '.scroller-status',
+      hideNav: '.pagination',
+    });
+  });
+})(jQuery);
+
+</script>
+
+{% schema %}
+{
+  "name": "Blog page",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_blog_name",
+      "label": "Show blog name",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author_name",
+      "label": "Show author name",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "min": 2,
+      "max": 7,
+      "step": 1,
+      "label": "Posts per page",
+      "default": 2
+    }
+  ],
+  "blocks": [
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)."
+        },
+        {
+          "type": "paragraph",
+          "content": "You can sync your customers with a newsletter service by installing their app."
+        },
+        {
+          "type": "image_picker",
+          "id": "newsletter_background",
+          "label": "Newsletter section background",
+          "info": "400 x 200 px .jpg recommended"
+        }
+      ]
+    },
+    {
+      "type": "tags",
+      "name": "Tags",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "You can add tags to your articles to more easily organize them."
+        }
+      ]
+    },
+    {
+      "type": "social_media",
+      "name": "Social media and RSS feed",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Make sure that you have filled your social media in the global settings."
+        }
+      ]
+    },
+    {
+      "type": "featured_articles",
+      "name": "Featured articles",
+      "settings": [
+        {
+          "type": "article",
+          "id": "featured_article_1",
+          "label": "Article 1"
+        },
+        {
+          "type": "article",
+          "id": "featured_article_2",
+          "label": "Article 2"
+        },
+        {
+          "type": "article",
+          "id": "featured_article_3",
+          "label": "Article 3"
+        },
+        {
+          "type": "article",
+          "id": "featured_article_4",
+          "label": "Article 4"
+        }
+      ]
+    },
+    {
+      "type": "featured_product",
+      "name": "Featured product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "newsletter",
+        "settings": {}
+      },
+      {
+        "type": "tags",
+        "settings": {}
+      },
+      {
+        "type": "social_media",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

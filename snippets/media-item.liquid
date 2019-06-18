@@ -1,0 +1,23 @@
+{%- case grid_items_per_row -%}
+  {%- when '2' or 2 -%}
+    {%- assign image_size = '500x650' -%}
+  {%- when '3' or 3 -%}
+    {%- assign image_size = '400x550' -%}
+  {%- when '4' or 4 -%}
+    {%- assign image_size = '300x450' -%}
+{%- endcase -%}
+
+
+<a target="_blank" href="{{ block.settings.link }}" class="collection-item" style="background-image: url({{ block.settings.image | img_url: image_size, format: 'pjpg', scale: 2 }})">
+  <div class="collection-item__info">
+    <h3 class="collection-item__title h4">{{ block.settings.title }}</h3>
+
+    <div class="collection-item__bottom">
+      {%- if block.settings.description != blank -%}
+        <p class="collection-item__description">{{ block.settings.description | strip_html | truncate: 100 }}</p>
+      {%- endif -%}
+
+      <button class="collection-item__button button">Read More</button>
+    </div>
+  </div>
+</a>

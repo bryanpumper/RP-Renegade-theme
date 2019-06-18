@@ -1,0 +1,158 @@
+{% comment %}
+{%- if section.settings.show_announcement -%}
+  {% if section.settings.announcement_button_url != blank %}
+	{% assign announcement_button_url = section.settings.announcement_button_url %}
+  {% else %}
+	{% assign announcement_button_url = 'javascript:;' %}
+  {% endif %}
+  <aside class="announcement-bar clearfix">
+    <div class="container">
+      {% if section.settings.announcement_button_text != blank %}
+ 	     <a class="usa-flag" href="{{ announcement_button_url }}">{{ section.settings.announcement_button_text | escape }}</a>
+      {% endif %}
+      {% if section.settings.announcement_text != blank %}
+      	<p class="announcement-bar__content">{{ section.settings.announcement_text | escape }}</p>
+      {% endif %}
+    </div>
+  </aside>
+{%- endif -%}
+{% endcomment %}
+
+{%- if section.settings.show_announcement -%}
+<aside class="announcement-bar clearfix">
+  <div class="container">
+    <div class="country-flag">
+      {% for block in section.blocks limit: 1 %}
+        <span class="location-value"><img src="{{ block.settings.location_image | img_url: 'large' }}">
+          <a href="javascript:">{{ block.settings.location_title }}</a>
+        </span>
+        {% endfor %}
+      <ul style="display:none;" class="location-flag">
+        {% for block in section.blocks %}
+        <li class="location-title">
+          <a href=" {{ block.settings.location_link }}">
+            <img src="{{ block.settings.location_image | img_url: 'large' }}">
+            {% if block.settings.location_title != blank %}
+              {{ block.settings.location_title}}
+            {% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% if section.settings.announcement_text != blank %}
+      	<p class="announcement-bar__content">{{ section.settings.announcement_text | escape }}</p>
+    {% endif %}
+    {% if section.settings.announcement_contact != blank %}
+    	<a class="contact" href="{{ section.settings.announcement_contact_link }}">{{ section.settings.announcement_contact }}</a>
+    {% endif %}
+  </div>
+</aside>
+{%- endif -%}
+
+<style>
+  .announcement-bar {
+    color: {{ section.settings.announcement_color }};
+    background: {{ section.settings.announcement_background }};
+  }
+</style>
+
+<script type="text/javascript">
+  $('.location-title').click(function() { 
+    var location_name = $(this).html();
+   $('.country-flag .location-value').html(location_name);
+  });
+  
+  $('.location-value').click(function(e){
+    e.stopPropagation();
+   var current_status = $(this).next().css('display');
+    if(current_status == 'none') {
+     $(this).next().show();
+      $(this).parent().addClass('open');
+    } else {
+     $('.location-flag').hide();
+      $('.country-flag').removeClass('open');
+    }
+  });
+  $('html').click(function() {
+   $('.location-flag').hide();
+   $('.country-flag').removeClass('open');
+ });
+</script>
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "class": "shopify-section__announcement-bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Enable announcement",
+      "default": true
+    },
+	{
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement text",
+      "default": "Announce something here"
+    },
+    {
+      "type": "text",
+      "id": "announcement_button_text",
+      "label": "Announcement Button Text"
+    },
+	{
+      "type": "text",
+      "id": "announcement_button_url",
+      "label": "Announcement Button URL"
+    },
+    {
+      "type": "color",
+      "id": "announcement_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "announcement_background",
+      "label": "Background",
+      "default": "#0c0c0d"
+    },
+	{
+      "type": "text",
+      "id": "announcement_contact_link",
+      "label": "Link Contact Number"
+    },
+	{
+      "type": "text",
+      "id": "announcement_contact",
+      "label": "Contact Number"
+    }
+  ],
+"blocks": [
+      {
+        "type": "location",
+        "name": "Location",
+     "settings": [
+      {
+        "type": "image_picker",
+        "id": "location_image",
+        "label": "Image"
+      },
+	  {
+        "type": "text",
+        "id": "location_title",
+        "label": "Title "
+      },
+      {
+        "type": "text",
+        "id": "location_link",
+        "label": "Link"
+      }
+     ]
+    }
+   ]
+
+}
+{% endschema %}

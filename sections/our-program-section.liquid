@@ -1,0 +1,55 @@
+<section class="community-grid-wrapper our-programs-section">
+  <div class="container">
+    <h3>{{ section.settings.our_program_title }}</h3>
+    <div class="grid grid--large">
+      {% for block in section.blocks %}
+        {% assign page_handle = block.settings.page_detail %}
+        <div class="grid__cell 1/5--handheld-and-up box">
+          <div class="inner">
+            {% if block.settings.page_featured_img != blank %}
+            <img src="{{ block.settings.page_featured_img | img_url: 'large' }}" />
+            {% endif %}
+            {% if page_handle != blank %}
+            <h3>{{ pages[page_handle].title }}</h3>
+            <div class="desc">{{ pages[page_handle].content | strip_html | truncate: 50 }}</div>
+            <a class="button button-green" href="{{ pages[page_handle].url }}">Read More</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+  "name": "Community Program",
+  "class": "community-program-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "our_program_title",
+      "label": "Programs Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "community_center",
+      "name": "Community Center",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "page_featured_img",
+          "label": "Featured Image"
+    	},
+        {
+          "type": "page",
+          "id": "page_detail",
+          "label": "Page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

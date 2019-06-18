@@ -1,0 +1,110 @@
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="background:url('{{ section.settings.page_bgimg | img_url:'1900x' }}'); background-size:cover;">
+  <div class="container">
+    <div class="page__header">
+        {% if section.settings.video_button_text != blank %}
+          <a href="javascript:;" class="display-video-button"><img src="{{ 'play-button.png' | asset_url }}" alt="play button"></a>
+       {% endif %} 
+      <h1 class="page__title h1">Vegepod {{ page.title }}</h1>
+    </div>
+    {% comment %}
+      <div class="box box--shrinked">
+        <div class="box__content box__content--large-padding rte">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endcomment %}
+  </div>
+</div>
+<section class="feature-tab-section">
+  <div class="feature-tab-section-container">
+  
+<ul class="tab-section clearfix">
+  {% if section.settings.featured_tab_Name_1 != blank %}
+  <li data-val="container-gardens" class="tab-active"><a href="javascript:;">{{ section.settings.featured_tab_Name_1 }}</a></li>
+  {% endif %}
+  {% if section.settings.featured_tab_Name_2 != blank %}
+  <li data-val="self-watering"><a href="javascript:;">{{ section.settings.featured_tab_Name_2 }}</a></li>
+  {% endif %}
+  {% if section.settings.featured_tab_Name_3 != blank %}
+  <li data-val="protective-cover"><a href="javascript:;">{{ section.settings.featured_tab_Name_3 }}</a></li>
+  {% endif %}
+</ul>
+  </div>
+</section>
+
+  <div class="banner-video-popup" style="display:none;">
+    <div class="container">
+      <div class="video-inner">
+      <a href="#" class="close-video"><em class="fa fa-close"></em></a>
+    <iframe src="https://www.youtube.com/embed/ynS33zmGOfY" width="100%" height="700" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  $('.tab-section li').click(function(){
+    $('.tab-section li').removeClass('tab-active');
+    $('.garden--features .hide').hide();
+    $(this).addClass('tab-active');
+    var classes = $(this).attr('data-val');
+    $('.garden--features .'+classes).show();
+  });
+  $('.display-video-button').click(function(e) {
+    e.stopPropagation();
+    $('.banner-video-popup').show();
+  });
+  $('html').click(function() {
+    var stat = $('.banner-video-popup').css('display');
+    if(stat == 'block') {
+   		$('.banner-video-popup').hide();
+    }
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Features Section",
+	"class": "features-section features-section--flush",
+    "settings": [
+	  {
+        "type": "header",
+		"content": "Banner Section"      
+      },      
+	  {
+        "id": "page_bgimg",
+        "type": "image_picker",
+        "label": "Background Image"
+      },
+	  {
+        "id": "video_button_text",
+        "type": "text",
+        "label": "Video Button Text"
+      },
+	  {
+        "type": "header",
+		"content": "Featured Tab Section"      
+      },
+	  {
+        "id": "featured_tab_Name_1",
+        "type": "text",
+		"label": "Featured Tab Name 1"
+      },
+	  {
+        "id": "featured_tab_Name_2",
+        "type": "text",
+		"label": "Featured Tab Name 2"
+      },
+	  {
+        "id": "featured_tab_Name_3",
+        "type": "text",
+        "label": "Featured Tab Name 3"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

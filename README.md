@@ -1,1 +1,2 @@
-RP-Renegade-theme
+# renegade-branding-concepts.myshopify.com
+
