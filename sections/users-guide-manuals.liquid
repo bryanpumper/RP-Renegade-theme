@@ -1,0 +1,51 @@
+<section id="{{ section.id }}">
+	<div class="manuals-list-wrapper">
+		<div class="container">
+			<div class="grid grid--large">
+			{% for block in section.blocks %}
+				<div class="grid__cell 1/4--handheld-and-up">
+					<div class="usermanual-box">
+						<div class="usermanual-box-inner">
+							<a href="{{ block.settings.manual_link }}" target="_blank" rel="noopener noreferrer"><img src="{{ 'icon-file.png' | asset_url }}"></a>
+							<a href="{{ block.settings.manual_link }}" target="_blank" rel="noopener noreferrer"><h5>{{ block.settings.manual_title }}</h5></a>
+							<div class="usermanual-size"></div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}	
+			</div>
+		</div>
+	</div>
+</section>
+
+{% schema %}
+{
+	"name" : "Users Guide Manuals",
+	"class" : "shopify-section_manuallist",
+	"settings" : [
+		{
+			"id": "manuals_title",
+			"type": "text",
+			"label": "Manuals Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "manuals",
+			"name": "Manuals",
+			"settings": [
+				{
+					"type": "text",
+					"id": "manual_title",
+					"label": "Manual Title"
+				},
+				{
+					"type": "url",
+					"id": "manual_link",
+					"label": "Manual Link"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

@@ -1,0 +1,185 @@
+<!doctype html>
+
+<!--[if IE 9 ]><html class="no-js csscalc no-flexbox ie9" lang="{{ shop.locale }}"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="{{ shop.locale }}"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="{{ settings.accent_color }}">
+<meta name="google-site-verification" content="-sgkoHRj9UVfIA51BiycnB9wT6-Rpxw9nA70uAVJm_U" />
+    <title>
+      {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+    </title>
+
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+	<meta name="google-site-verification" content="-sgkoHRj9UVfIA51BiycnB9wT6-Rpxw9nA70uAVJm_U" />
+    <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
+
+    {%- comment -%} We preconnect of two popular domains (Shopify CDN and Google Font) to speed up performance {%- endcomment -%}
+    <link rel="preconnect" href="//cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
+    {%- endif -%}
+
+    {%- include 'social-meta-tags' -%}
+    {%- include 'google-fonts' -%}
+
+    {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+    {{ 'font-awesome.min.css' | asset_url | stylesheet_tag }}
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script> commented out because this was causing issues with old font-awesome fonts-->
+
+
+
+    {{ 'slick.css' | asset_url | stylesheet_tag }}
+  	{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+  
+    
+    {{ content_for_header }}
+
+    {{ '//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' | script_tag }}
+    {{ 'modernizr.min.js' | asset_url | script_tag }}
+    {{ 'slick.js' | asset_url | script_tag }} 
+
+    {{ 'vpod-custom-scripts.js' | asset_url | script_tag }} 
+    
+
+    
+    <script type="text/javascript">
+      // Heap code for event tracking
+    window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("2091426733");
+</script>
+    
+    <script>
+      // This allows to expose several variables to the global scope, to be used in scripts
+      window.shop = {
+        template: {{ template | json }},
+        currentPage: {{ current_page }},
+        shopCurrency: {{ shop.currency | json }},
+        moneyFormat: {{ shop.money_format | json }},
+        moneyWithCurrencyFormat: {{ shop.money_with_currency_format | json }},
+        collectionSortBy: {{ collection.sort_by | default: collection.default_sort_by | json }},
+        locale: {{ shop.locale | json }}
+      };
+
+      window.languages = {
+        productLabelsOnSale: {{ 'product.labels.on_sale' | t | json }},
+        productFormAddToCart: {{ 'product.form.add_to_cart' | t | json }},
+        productFormSoldOut: {{ 'product.form.sold_out' | t | json }},
+        productFormUnavailable: {{ 'product.form.unavailable' | t | json }},
+        cartEstimatedShipping: {{ 'cart.general.estimated_shipping' | t | json }},
+        shippingEstimatorSubmit: {{ 'cart.shipping_estimator.submit' | t | json }},
+        shippingEstimatorSubmitting: {{ 'cart.shipping_estimator.submitting' | t | json }},
+        recoverPasswordTitle: {{ 'customer.recover_password.title' | t | json }},
+        cartDeleteTitle: {{ 'cart.items.delete' | t | json }}
+      }
+    </script>
+
+    {%- include 'microdata-schema' -%}
+
+    {%- if template.name == 'product' -%}
+      {%- comment -%}This is used on product pages to power the "features" section{%- endcomment -%}
+      {{ '//use.fontawesome.com/d822a9b4f8.js' | script_tag }}
+    {%- endif -%}
+    
+	{% if template  == "index" or product.handle == "raised-garden-bed-large" or product.handle == "raised-garden-bed-medium" or product.handle == "raised-garden-bed-small"%}
+        <script src="//www.productreview.com.au/assets/js/widget/embed-json-ld.js"></script> 
+        <script> 
+        ProductReviewComAu.embedJsonLdSnippet({ 
+        'type': 'Product', 
+        'entryId': 329837 
+        }); 
+        </script>
+    {% endif %}
+        <link rel="alternate" hreflang="en-gb" href="https://vegepod.co.uk" />
+  <link rel="alternate" hreflang="en-sg" href="https://vegepod.com.sg/" />
+  <link rel="alternate" hreflang="en-au" href="https://vegepod.com.au/" />
+  <link rel="alternate" hreflang="en-nz" href="https://vegepod.co.nz/" />
+    <link rel="alternate" hreflang="en-us" href="https://vegepod.com/" />  
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>    
+  </head>
+
+  {%- assign template_handle = template | replace: '.', ' ' | truncatewords: 1, '' | handle | replace: '_', '-' -%}
+
+  <body class="trademark--v1 template-{{ template_handle }} {% if page.template_suffix != blank %}template-{{ template_handle }}-{{page.template_suffix}}{% endif %}">
+    {%- include 'svg-icons' -%}
+
+    {%- section 'popup' -%}
+
+    <div class="page__overlay"></div>
+
+    <div class="page__container {% if force_secondary_background %}page__container--secondary{% endif %}">
+      {%- section 'announcement' -%}
+
+      {%- section 'header' -%}
+
+      <main id="main" class="main" role="main">
+        {{ content_for_layout }}
+      </main>
+
+      {% section 'section-afterpaybanner' %}
+
+      {% if page.handle != 'setup-support' and page.handle != 'whats-on' %}
+        {%- section 'newsletter' -%}
+      {% endif %}
+      
+      {%- section 'footer' -%}
+    </div>
+
+    {%- if settings.currency_conversion_enabled -%}
+      {{ '//cdn.shopify.com/s/javascripts/currencies.js' | script_tag }}
+    {%- endif -%}
+
+    {%- if template.directory == 'customers' -%}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+      {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+    {%- endif -%}
+
+    {%- if template.name == 'cart' -%}
+      {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {%- endif -%}
+
+    {{ 'libs.js' | asset_url | script_tag }}
+    {{ 'script.js' | asset_url | script_tag }}
+    {{ 'maps.js' | asset_url | script_tag }}
+    {{ 'infinite-scroll.pkgd.min.js' | asset_url | script_tag }}
+
+    <!--[if IE 9]>
+      {{ 'polyfills-ie9.js' | asset_url | script_tag }}
+    <![endif]-->
+
+  <!-- Delete the Beeketing script below after uninstalling Insightful app to remove it from your theme. For more info, read here: https://bit.ly/2wgfvdg or contact us at hi@beeketing.com. -->
+<a data-fancybox="" id="upsell_click" data-src="#upsell_prods" href="javascript:;" class=""></a>
+<div style="display: none;" id="upsell_prods">
+    <div class="upsell_cont">
+      <div class="upsell-topwrap">
+      </div>
+      <div class="upsell-botwrap">
+        <div class="upsell_header"></div>      
+        <div class="upsell_cont_inside">
+          <div class="prod_item">
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="curr_prod_title_cont"></div>    
+
+<!-- STRUCTURED DATA -->
+{% include 'structured-data' %} 
+
+<!-- BEEKETINGSCRIPT CODE START -->{% include 'bk-tracking' %}<!-- BEEKETINGSCRIPT CODE END -->
+
+  {% include 'sumo' %}
+</body>
+</html>

@@ -1,0 +1,65 @@
+<div class="contact-info-area hide-on-desktop">
+  <h1 class="page__title h1">{{ page.title }}</h1>
+  <div class="contact-info contact-info-address">
+    <label>Address</label>
+    <p>{{section.settings.map_address}}</p>
+  </div>
+  <div class="contact-info contact-info-phone">
+  <label>Phone</label>
+  <a href="tel:{{section.settings.contact_phone}}">{{section.settings.contact_phone}}</a></div>
+  <div class="contact-info contact-info-email">
+  <label>Email</label>
+  <a href="mailto:{{section.settings.contact_email}}">{{section.settings.contact_email}}</a></div>
+</div>
+
+<div id="mapwrapper">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key={{section.settings.api_key}}"></script>
+  <input type="hidden" class="map-info" data-map-address="{{section.settings.map_address}}" data-map-zoom="{{section.settings.zoom}}" data-map-pin="{{section.settings.map_pin | img_url: '160x160'}}" data-contact-phone="{{section.settings.contact_phone}}" data-contact-email="{{section.settings.contact_email}}" >
+  <div id="map-holder" class="map-canvas" style="height: 720px;"></div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact Map",
+    "class": "shopify-section__contact-map",
+    "settings": [
+      {
+        "type": "text",
+        "id": "api_key",
+        "label": "Google Maps API key",
+        "info": "You’ll need to register a [Google Maps API Key](https://help.shopify.com/manual/using-themes/troubleshooting/map-section-api-key) to display the map."
+      },
+      {
+        "id": "contact_phone",
+        "type": "text",
+        "label": "Contact Number"
+      },
+      {
+        "id": "contact_email",
+        "type": "text",
+        "label": "Contact Email"
+      },
+      {
+        "type": "text",
+        "id": "map_address",
+        "label": "Map address",
+        "info": "Google Maps will find the exact location",
+        "default": "Unit 5, 287 Mona Vale Rd, Terrey Hills NSW 2084"
+      },
+      {
+        "type": "range",
+        "id": "zoom",
+        "min": 12,
+        "max": 20,
+        "step": 1,
+        "label": "Map zoom",
+        "default": 14
+      },
+      {
+        "type": "image_picker",
+        "id": "map_pin",
+        "label": "Map Pin"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,102 @@
+<section class="community-popup-section">
+  <div class="container">
+    <div class="grid grid--large center">
+      <div class="grid__cell 7/10--handheld-and-up">
+        <div class="popup-section-icon"><img src="{{ section.settings.popup_icon | img_url: 'large' }}" /></div>
+        <p>{{ section.settings.sidebar_title }}</p>
+        <a href="#" class="popmake-vegepod-features">See Features</a>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<section class="community-grid-wrapper our-programs-section">
+  <div class="container">
+    <h3>{{ section.settings.our_program_title }}</h3>
+    <div class="grid grid--large">
+      {% for block in section.blocks %}
+        {% assign page_handle = block.settings.page_detail %}
+        <div class="grid__cell 1/5--handheld-and-up box">
+          <div class="inner">
+            {% if block.settings.page_featured_img != blank %}
+            <img src="{{ block.settings.page_featured_img | img_url: 'large' }}" />
+            {% endif %}
+            {% if page_handle != blank %}
+            <h3>{{ pages[page_handle].title }}</h3>
+            <div class="desc">{{ pages[page_handle].content | strip_html | truncate: 50 }}</div>
+            <a class="button button-green" href="{{ pages[page_handle].url }}">Read More</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="community-cta-section">
+  <div class="container">
+    <div class="grid grid--large center">
+      <div class="grid__cell 7/10--handheld-and-up">
+        <h4>{{ section.settings.cta_text }} <a href="mailto:{{ section.settings.cta_email }}">{{ section.settings.cta_email }}</a> </h4>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+{% schema %}
+  {
+  "name": "Community Content Lower",
+  "class": "communitycontent-lower-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sidebar_title",
+      "label": "Sidebar Featured Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "popup_icon",
+      "label": "Popup Section Icon"
+    },
+    {
+      "type": "textarea",
+      "id": "sidebar_desc",
+      "label": "Sidebar Featured Content"
+    },
+    {
+      "type": "text",
+      "id": "our_program_title",
+      "label": "Programs Section Title"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text"
+    },
+    {
+      "type": "text",
+      "id": "cta_email",
+      "label": "CTA Email"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "community_center",
+      "name": "Community Center",
+      "settings": [
+		{
+          "type": "image_picker",
+          "id": "page_featured_img",
+          "label": "Featured Image"
+    	},
+        {
+          "type": "page",
+          "id": "page_detail",
+          "label": "Page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

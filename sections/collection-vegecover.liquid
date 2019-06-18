@@ -1,0 +1,94 @@
+<div class="right-image-slide-container" style="background-image: url({{ section.settings.banner_bg_image | img_url: '1600x800', format: 'jpg' }});">
+  <div class="ris-row">
+    <div class="ris-col ris-text-content">
+      <div class="">
+
+          <div class="ris-slide-content">
+            {%- if section.settings.heading != blank -%}
+              <h2 class="fs-slideshow__heading">{{ section.settings.heading | escape }}</h2>
+            {%- endif -%}
+              <p>{{ section.settings.sub_heading }}</p>
+            {%- if section.settings.button_text != blank -%}
+              <a href="{{ block.settings.link }}" class="fs-slideshow__button button button--primary">{{ section.settings.button_text }}</a>
+            {%- endif -%}
+          </div>  
+      </div>
+    </div>
+    <div class="ris-col ris-image-content">
+        <svg class="slide-curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 553.3 1041" preserveAspectRatio="none"><defs></defs><title>Slide Curve</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="slide-curve-color" d="M0,1041V0H553.3S223.89,216.76,0,1041Z"/></g></g></svg>
+      <div class="slide-image-curve-conteiner"><div class="slide-image-transcurveform-inner"></div></div>  
+        <div class="">
+            <div class="ri-slide-image">
+              <canvas width="1054" height="605" style="background-image: url({{ section.settings.image | img_url: '1600x800', format: 'jpg' }});"></canvas>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="v2custom_collection_list">
+  <div class="container">
+  {%- for block in section.blocks -%}
+    <div class="grid grid--center">
+      {% for product in collections[block.settings.set_collection].products limit: 3 %}
+      <div class="collection__grid-item grid__cell 1/3--handheld-and-up">
+        <div class="v2custom_collection_box">
+          <div class="collect__product-image">
+            <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />  
+          </div> 
+          <div class="collect__product-name">
+            <a href="{{ product.url }}">{{ product.title | escape  }}</a>    
+          </div>
+          <div class="collect__product-price">
+            {{ product.price | money }}
+          </div>
+          <a class="shop-now button button--primary" href="{{ product.url }}">Learn More</a> 
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection VegeCover",
+  "class": "collection_vegepod_cover",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_bg_image",
+      "label": "Banner Background"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Banner Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "sub_heading",
+      "label": "Sub Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_group",
+      "name": "Collections",
+      "settings": [
+        {
+          "type":      "collection",
+          "id":        "set_collection",
+          "label":     "Collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

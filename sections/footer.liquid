@@ -1,0 +1,220 @@
+{%- assign has_twitter = false -%}
+
+<div class="footer">
+  <div class="container">
+    <div class="footer__content grid grid--large">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'links' -%}
+            <div class="footer__block grid__cell 1/2--handheld 1/4--lap-and-up" {{ block.shopify_attributes }}>
+              {%- assign menu = linklists[block.settings.menu_linklist] -%}
+
+              <h2 class="footer__title text--uppercase">{{ menu.title }}</h2>
+
+              {%- if menu.links.size > 0 -%}
+                <ul class="footer__links list--unstyled">
+                  {%- for link in menu.links -%}
+                    <li class="footer__link"><a href="{{ link.url }}" class="link">{{ link.title }}</a></li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </div>
+
+          {%- when 'contact' -%}
+            <div class="footer__block grid__cell 1/2--handheld 1/2--lap-and-up" {{ block.shopify_attributes }}>
+              <h2 class="footer__title text--uppercase">{{ block.settings.title | escape }}</h2>
+              <div class="footer__text rte">
+                {{ block.settings.address }}
+              </div>
+              <p>
+                {%- if block.settings.phone_number != blank -%}
+                  {{ 'layout.footer.contact_phone_number' | t: phone_number: block.settings.phone_number }}
+                {%- endif -%}
+
+                {%- if block.settings.email != blank -%}
+                  {%- if block.settings.phone_number != blank -%}
+                    <br>
+                  {%- endif -%}
+
+                  <a href="mailto:{{ block.settings.email }}" class="link">{{ block.settings.email | escape }}</a>
+                {%- endif -%}
+              </p>
+              {%- capture social_media -%}
+                {%- include 'social-media', small_icons: false -%}
+              {%- endcapture -%}
+
+              {%- if block.settings.show_social_media and social_media != blank -%}
+                {{- social_media -}}
+              {%- endif -%}
+            </div>
+
+          {%- when 'twitter' -%}
+            {%- assign has_twitter = true -%}
+            {%- assign twitter_handle = block.settings.twitter_handle | remove_first: '@' -%}
+            <div id="twitter-timeline" style="display: none !important"></div>
+
+            <div class="footer__block grid__cell 1/2--handheld 1/4--lap-and-up"
+                 {% if twitter_handle != blank %}data-twitter-handle="{{ twitter_handle }}"{% endif %}
+                 {{ block.shopify_attributes }}>
+              <div class="tweet box box--secondary">
+                <div class="box__content box__content--small-padding">
+                  <p class="tweet__username">{%- include 'icon' with 'twitter' -%} <a href="https://twitter.com/{{ twitter_handle }}" class="link" target="_blank">@{{ twitter_handle }}</a></p>
+                  <div class="tweet__content"></div>
+                  <date class="tweet__date text--uppercase"></date>
+                </div>
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="footer__copyright">
+      <a href="{{ shop.url }}" class="link">© {{ shop.name }}</a> 
+      <div class="siteby">Site By <img target="_blank" src="https://cdn.shopify.com/s/files/1/2337/4427/t/2/assets/er.png" alt=""><a target="_blank" href="https://www.elephantroom.com.au">Elephant Room</a></div>
+
+      {%- if section.settings.show_payment_methods -%}
+        <ul class="footer__payment-methods list--unstyled">
+          {%- for type in shop.enabled_payment_types -%}
+            {%- if type contains 'visa' -%}<li class="footer__payment-method">{%- include 'icon' with 'visa' -%}</li>{%- endif -%}
+            {%- if type contains 'master' -%}<li class="footer__payment-method">{%- include 'icon' with 'mastercard' -%}</li>{%- endif -%}
+            {%- if type contains 'american_express' -%}<li class="footer__payment-method">{%- include 'icon' with 'amex' -%}</li>{%- endif -%}
+            {%- if type contains 'dankort' -%}<li class="footer__payment-method">{%- include 'icon' with 'dk' -%}</li>{%- endif -%}
+            {%- if type contains 'jcb' -%}<li class="footer__payment-method">{%- include 'icon' with 'jcb' -%}</li>{%- endif -%}
+            {%- if type contains 'dogecoint' -%}<li class="footer__payment-method">{%- include 'icon' with 'dogecoin' -%}</li>{%- endif -%}
+            {%- if type contains 'discover' -%}<li class="footer__payment-method">{%- include 'icon' with 'discover' -%}</li>{%- endif -%}
+            {%- if type contains 'diners_club' -%}<li class="footer__payment-method">{%- include 'icon' with 'diners-club' -%}</li>{%- endif -%}
+            {%- if type contains 'maestro' -%}<li class="footer__payment-method">{%- include 'icon' with 'maestro' -%}</li>{%- endif -%}
+            {%- if type contains 'stripe' -%}<li class="footer__payment-method">{%- include 'icon' with 'stripe' -%}</li>{%- endif -%}
+            {%- if type contains 'paypal' -%}<li class="footer__payment-method">{%- include 'icon' with 'paypal' -%}</li>{%- endif -%}
+            {%- if type contains 'litecoin' -%}<li class="footer__payment-method">{%- include 'icon' with 'litecoin' -%}</li>{%- endif -%}
+            {%- if type contains 'bitcoin' -%}<li class="footer__payment-method">{%- include 'icon' with 'bitcoin' -%}</li>{%- endif -%}
+            {%- if type contains 'forbrugsforeningen' -%}<li class="footer__payment-method">{%- include 'icon' with 'forbrugsforeningen' -%}</li>{%- endif -%}
+            {%- if type contains 'apple_pay' -%}<li class="footer__payment-method">{%- include 'icon' with 'apple-pay' -%}</li>{%- endif -%}
+          {%- endfor -%}
+          <li class="footer__payment-method">{%- include 'afterpay_logo_grey'-%}</li>
+        </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Footer",
+  "class": "shopify-section__footer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_payment_methods",
+      "label": "Show payment methods",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "About the shop"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "links",
+      "name": "Links",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu_linklist",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "Contact",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Contact"
+        },
+        {
+          "type": "text",
+          "id": "phone_number",
+          "label": "Phone number",
+          "default": "(333) 123 456"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "Email address",
+          "default": "john@doe.com"
+        },
+        {
+          "type": "richtext",
+          "id": "address",
+          "label": "Address",
+          "default": "<p>5/287 Mona Vale Rd <br />Terrey Hills NSW | 2084 | Australia</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social_media",
+          "label": "Show social media",
+          "info": "Make sure to have properly configured your social media in the theme settings",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "twitter",
+      "name": "Twitter feed",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "twitter_handle",
+          "label": "Twitter username"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "text",
+        "settings": {}
+      },
+      {
+        "type": "links",
+        "settings": {
+          "menu_linklist": "footer"
+        }
+      },
+      {
+        "type": "contact",
+        "settings": {}
+      }
+    ]
+  }
+}
+{% endschema %}

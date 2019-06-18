@@ -1,0 +1,8 @@
+production:
+  password: 712f7a7de0d5b4c04f83313e84ee41b2
+  theme_id: "36362747959"
+  store: renegade-branding-concepts.myshopify.com
+develop:
+  password: 712f7a7de0d5b4c04f83313e84ee41b2
+  theme_id: "37399461943"
+  store: renegade-branding-concepts.myshopify.com

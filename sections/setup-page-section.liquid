@@ -1,0 +1,257 @@
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="background:url('{{ section.settings.full_banner_image | img_url:'large' }}'); background-size:cover;">
+  <div class="container">
+    <div class="page__header">
+      <h1 class="page__title h1">{{ section.settings.setup_page_title}}</h1>
+		  <a class="shop_now button button-green" href="{{ section.settings.shop_now_link }}">{{ section.settings.shop_now_text }}</a>
+      {% if section.settings.video_text != blank %}
+          <a href="javascript:;" class="display-video button button-green"><i class="fa fa-play-circle-o"></i> {{ section.settings.video_text }}</a>
+       {% endif %} 
+    </div>
+   
+  </div>
+</div>
+
+
+<section class="setup-box-wrapper">
+  <div class="container">
+  {% comment %}
+  <div class="bg-image" style="background:url('{{ section.settings.full_banner_image | img_url:'master' }}') no-repeat;">
+    <h1 class="title">{{ section.settings.setup_page_title}}</h1>
+    <a href="{{ section.settings.shop_now_link }}">{{ section.settings.shop_now_text }}</a>
+    <a  href="javascript:;" class="display-video"><i class="fa fa-play-circle-o"></i>{{ section.settings.video_text }}</a>
+  </div>
+  {% endcomment %}
+  <div class="grid grid--large">
+    <div class="setup-box grid__cell 1/3--handheld-and-up">
+      <div class="easy-assembly setup-cell">
+        <div class="content">
+          <div class="num">1</div>	
+          <div class="title">{{ section.settings.vegepod_title_1 }}</div>
+          <div class="desc">{{ section.settings.vegepod_desc_1 }}</div>
+        </div>
+          <img class="single_image-img" src="{{ section.settings.vegepod_image_1  | img_url: 'grande' }}" />
+        </div>
+      </div>
+    <div class="setup-box grid__cell 1/3--handheld-and-up">
+        <div class="easy-to-fill setup-cell">
+          <div class="content">
+          <div class="num">2</div>
+          <div class="title">{{ section.settings.vegepod_title_2 }}</div>
+          <div class="desc">{{ section.settings.vegepod_desc_2 }}</div>
+          </div>
+          <img class="single_image-img" src="{{ section.settings.vegepod_image_2  | img_url: 'grande' }}" />
+        </div>
+      </div>
+    <div class="setup-box grid__cell 1/3--handheld-and-up">
+        <div class="plant-away setup-cell">
+          <div class="content">
+          <div class="num">3</div>
+          <div class="title">{{ section.settings.vegepod_title_3 }}</div>
+          <div class="desc">{{ section.settings.vegepod_desc_3 }}</div>
+         </div>    
+          <img class="single_image-img" src="{{ section.settings.vegepod_image_3  | img_url: 'grande' }}" />
+       </div>
+     </div>
+    </div>
+    </div>
+  </section>
+
+
+<section class="setup-tab feature-tab-section">
+  <div class="container">
+    <ul class="tab-section clearfix">
+      <li  data-val="assembly" class="tab-active assembly-tab">
+        <a href="javascript:;">
+        {% if section.settings.assembly_image != blank %}
+          <span>
+          <img src="{{ section.settings.assembly_image  | img_url: 'large' }}" />
+            </span>
+        {% endif %}
+          {{ section.settings.assembly_title }}
+         </a>
+      </li>
+      <li data-val="filling-soil" class="filling-tab">
+        <a href="javascript:;">
+        {% if section.settings.filling_image != blank %}
+          <span>
+          <img src="{{ section.settings.filling_image  | img_url: 'large' }}" />
+          </span>
+        {% endif %}
+          {{ section.settings.fillig_soil_title }}</a>
+      </li>
+      <li data-val="planting" class="planting-tab">
+        <a href="javascript:;">
+        {% if section.settings.planting_image != blank %}
+          <span>
+          <img src="{{ section.settings.planting_image  | img_url: 'large' }}" />
+          </span>
+        {% endif %}
+        {{ section.settings.planting_title }}</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  <div class="banner-video-popup" style="display:none;">
+    <div class="container">
+      <div class="video-inner">
+        <iframe src="https://www.youtube.com/embed/ynS33zmGOfY" width="100%" height="700" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      </div>
+    </div>
+  </div>
+
+ 
+
+
+<script type="text/javascript">
+  $(".setup-tab .tab-section li a").click(function() {
+    $('.setup-tab .tab-section li').removeClass('tab-active');
+    $('.vagepod--features .hide-data').hide();
+    $(this).parent().addClass('tab-active');
+    var classes = $(this).parent().attr('data-val');
+    $('.vagepod--features .'+classes).show();
+  });
+
+  $('.display-video').click(function(e) {
+    e.stopPropagation();
+    $('.banner-video-popup').show();
+  });
+
+  $('html').click(function() {
+    var stat = $('.banner-video-popup').css('display');
+    if(stat == 'block') {
+      $('.banner-video-popup').hide();
+    }
+  });
+
+  $('a.close-video').click(function() {
+    $('.banner-video-popup').hide();
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Setup Page",
+    "class": "setup-section setup-section--flush",
+    "settings": [
+     {
+        "type": "header",
+        "content": "Banner section"
+     },
+     {
+         "type": "image_picker",
+         "id": "full_banner_image",
+         "label": "Image"
+      }, 
+      {
+         "type": "text",
+         "id": "setup_page_title",
+         "label": "Title"
+      }, 
+      {
+         "type": "text",
+         "id": "shop_now_text",
+         "label": "Button 1"
+      }, 
+      {
+         "type": "text",
+         "id": "shop_now_link",
+         "label": "Link"
+      }, 
+      {
+         "type": "text",
+         "id": "video_text",
+         "label": "Button 2"
+      }, 
+      {
+        "type": "header",
+        "content": "Vegepod preparation"
+      },
+      {
+         "type": "text",
+         "id": "vegepod_title_1",
+         "label": "Title 1"
+      },
+      {
+         "type": "textarea",
+         "id": "vegepod_desc_1",
+         "label": "Description 1"
+      },
+      {
+         "type": "image_picker",
+         "id": "vegepod_image_1",
+         "label": "Image"
+      }, 
+      {
+         "type": "text",
+         "id": "vegepod_title_2",
+         "label": "Title 2"
+      },
+      {
+         "type": "textarea",
+         "id": "vegepod_desc_2",
+         "label": "Description 2"
+      },
+      {
+         "type": "image_picker",
+         "id": "vegepod_image_2",
+         "label": "Image"
+      },
+      {
+         "type": "text",
+         "id": "vegepod_title_3",
+         "label": "Title 3"
+      },
+      {
+         "type": "textarea",
+         "id": "vegepod_desc_3",
+         "label": "Description 3"
+      },
+      {
+         "type": "image_picker",
+         "id": "vegepod_image_3",
+         "label": "Image"
+      },
+      {
+         "type": "text",
+         "id": "assembly_title",
+         "label":"Assembly"
+      },
+      {
+         "type": "image_picker",
+         "id": "assembly_image",
+         "label": "Image"
+      },
+      {
+         "type": "text",
+         "id": "fillig_soil_title",
+         "label":"Filling Soil"
+      },
+      {
+         "type": "image_picker",
+         "id": "filling_image",
+         "label": "Image"
+      },
+      {
+         "type": "text",
+         "id": "planting_title",
+         "label":"Planting"
+      },
+      {
+         "type": "image_picker",
+         "id": "planting_image",
+         "label": "Image"
+      }
+
+     
+      
+   ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

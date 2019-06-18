@@ -1,0 +1,96 @@
+<div id="{{ section.id }}" class="self-watering hide" style="display:none;">
+  <div class="product_feat_heading">
+    <div class="prod_feat_icon"><img src="{{ section.settings.prod_feat_heading_icon | img_url: 'large' }}" /></div>
+    <h4 class="por_feat_tile">{{ section.settings.prod_feat_heading_name }}</h4>
+  </div>
+  <div class="feature-tabs-desc">
+  <div class="container">
+  {% if section.settings.tab_heading_1 != blank %}
+    <div class="grid grid--large">
+    <div class="grid__cell">
+      <h3>{{ section.settings.tab_heading_1 }}</h3>
+      </div>
+    </div>
+  {% endif %} 
+	 <div class="grid grid--large section-gap">
+  {% if section.settings.tab_desc_1 != blank %}
+      
+    		<div class="grid__cell 1/2--handheld-and-up">
+        {{ section.settings.tab_desc_1 }}
+        </div>
+        
+  {% endif %}
+    
+ <div class="grid__cell 1/2--handheld-and-up text-center">
+  {% if section.settings.tab_image != blank %}
+      <img src="{{ section.settings.tab_image | img_url: 'large'}}" class="cont-img"/>
+  {% endif %}
+    </div>
+    </div>
+  
+    <div class="self-watering-content-area">
+      {% if section.settings.tab_heading_2 != blank %}
+        <div class="grid grid--large"><div class="grid__cell"><h3>{{ section.settings.tab_heading_2 }}</h3></div></div>
+      {% endif %} 
+      {% if section.settings.tab_desc_2 != blank %}
+          <div class="grid grid--large"><div class="grid__cell column-2-content">{{ section.settings.tab_desc_2 }}</div></div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+  </div>
+
+  
+{% schema %}
+  {
+    "name": "Self Watering",
+	"class": "garden--features",
+    "settings": [
+	  {
+        "type": "header",
+		"content": "Watering Detail"
+      },
+      {
+        "id": "prod_feat_heading_icon",
+        "type": "image_picker",
+        "label": "Product Features Icon"
+      },
+      {
+      "id": "prod_feat_heading_name",
+      "type": "text",
+      "label": "Product Features Title"
+      },
+	  {
+        "id": "tab_heading_1",
+        "type": "text",
+        "label": "Heading 1"
+      },
+	  {
+        "id": "tab_desc_1",
+        "type": "textarea",
+        "label": "Description 1"
+      },
+	  {
+        "id": "tab_image",
+        "type": "image_picker",
+        "label": "Featured Image"
+      },
+	  {
+        "id": "tab_heading_2",
+        "type": "text",
+        "label": "Heading 2"
+      },
+	  {
+        "id": "tab_desc_2",
+        "type": "textarea",
+        "label": "Description 2"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

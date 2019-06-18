@@ -1,0 +1,30 @@
+{% for block in section.blocks %}
+<div class="afterpay-logo" {% if block.settings.afterpaybanner_enable == false %} style="display: none;" {% endif %}>
+    <img src="{{ block.settings.aftrpybnnr_image | img_url: 'master' }}" alt="{{ block.settings.title }}" class="afterpay-logoimg">
+</div>
+{% endfor %}
+
+{% schema %}
+    {
+        "name": "Afterpay Banner",
+        "blocks": [ 
+          {  
+            "type": "afterpaybanner", 
+            "name": "Afterpay Banner", 
+            "settings": [ 
+            {
+                "type": "checkbox",
+                "id": "afterpaybanner_enable",
+                "default" : false,
+                "label": "Enable Afterpay Banner"
+            },
+              { 
+                "type": "image_picker", 
+                "id": "aftrpybnnr_image", 
+                "label": "Image" 
+              }
+            ]
+          } 
+        ]
+    }
+{% endschema %}

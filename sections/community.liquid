@@ -1,0 +1,149 @@
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="background:url('{{ section.settings.page_bgimg | img_url:'large' }}'); background-size:cover;">
+  <div class="container">
+    <div class="page__header">
+      <h1 class="page__title h1">{{ page.title }}</h1>
+    </div>
+   
+      <div class="box box--shrinked">
+        
+      </div>
+  
+  </div>
+</div>
+
+<div class="faq-content-wrapper">
+  <div class="container">
+    <div class="grid grid--large">
+      <div class="grid__cell 1--handheld-and-up">
+        {%- assign expand_questions = section.settings.expand_questions -%}
+        {% assign c = 1 %}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'separator' -%}
+              <!--<h3 {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h3>-->
+            {{ page.content }}
+              
+            {%- when 'question' -%}
+          
+              <div class="faq__item faq-detail {% unless expand_questions %}faq__item--expandable{% endunless %}" {{ block.shopify_attributes }}>
+                {% if c == 1 %}
+				  <h5 class="faq__question active {% unless expand_questions %}link{% endunless %}"><img src="https://cdn.shopify.com/s/files/1/2337/4427/t/2/assets/icon-tab.png">{{ block.settings.title }}</h5>                <div class="faq__answer rte faq-content" style="display:block;" >
+                  {{ block.settings.answer }}
+                </div>
+                {% else %}
+			      <h5 class="faq__question {% unless expand_questions %}link{% endunless %}"><img src="https://cdn.shopify.com/s/files/1/2337/4427/t/2/assets/icon-tab.png">{{ block.settings.title }}</h5>                 <div class="faq__answer rte faq-content" style="">
+                  {{ block.settings.answer }}
+                </div>
+                {% endif %}
+                {% assign c = c | plus: 1 %}
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  /* jQuery('.faq-title').click(function() {
+ 	if(jQuery(this).parent().parent().find('.faq-content').css('display') == 'none') {
+ 		jQuery('.faq-detail .faq-title').removeClass('arrow');
+ 		jQuery(this).addClass('arrow');
+
+ 		jQuery('.faq-content').slideUp();
+ 		jQuery(this).parent().parent().find('.faq-content').removeClass('hidden');
+ 		jQuery(this).parent().parent().find('.faq-content').slideDown();
+ 	}
+ }); */
+
+</script>
+
+
+<script>
+  $('.faq-detail .faq__question').click(function() {
+    var current_status = $(this).parent().find(".faq__answer").css('display');
+    $('.faq__question').removeClass('active');
+    $('.faq-detail .faq__answer').slideUp();
+    //$(this).addClass('active');
+    if(current_status == 'none') {
+      $(this).addClass('active');
+      //$(this).next().addClass('active');
+      $(this).parent().find(".faq__answer").slideDown();
+    }
+  });
+  
+  $('.vegepod-gardening').click(function(e){
+    $('.community-popup').css('display','block');
+      $('.community-popup-overlay').css('display','block');
+     e.stopPropagation();
+  });
+   $("html").click(function() {
+        $('.community-popup').css('display','none');
+        $('.community-popup-overlay').css('display','none');
+
+      });
+   $('.close').click(function() {
+    $('.community-popup').css('display','none');
+        $('.community-popup-overlay').css('display','none');
+      
+    }); 
+    
+</script>
+
+{% schema %}
+{
+  "name": "Whats On",
+  "class": "shopify-section__whats-on",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "expand_questions",
+      "label": "Expand all questions by default",
+      "default": false
+    },
+	{
+      "type": "image_picker",
+      "id": "page_bgimg",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "separator",
+        "settings": {
+          "title": "General"
+        }
+      }
+    ]
+  }
+}
+{% endschema %}

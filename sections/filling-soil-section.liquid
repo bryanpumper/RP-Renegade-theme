@@ -1,0 +1,106 @@
+<div class="filling-soil hide-data" style="display:none;">
+  <div class="feature-tabs-desc">
+  <div class="container">
+    <div class="grid grid--large">
+    <div class="grid__cell">
+      <h3>{{ section.settings.filling_soil_title_1 }}</h3>
+      </div>
+    </div>
+    
+    <div class="grid grid--large bottom15">
+    <div class="grid__cell 7/10--handheld-and-up">
+    <div class="content"><p>{{ section.settings.filling_soil_desc_1 }}</p></div>
+      </div>
+      {% if section.settings.filling_soil_image_1 != blank %}
+      <div class="grid__cell 3/10--handheld-and-up">
+      <img src="{{ section.settings.filling_soil_image_1  | img_url: 'large' }}" />
+        </div>
+      {% endif %}
+    
+    </div>
+    
+    <div class="grid grid--large bottom15">
+    <div class="grid__cell">
+      <div class="special-content">
+    	 {% if section.settings.filling_soil_image_2 != blank %}
+        <img src="{{ section.settings.filling_soil_image_2  | img_url: 'large' }}" />
+        {% endif %}
+          <h3>{{ section.settings.filling_soil_title_2 }}</h3> 
+         <p> {{ section.settings.filling_soil_desc_2 }}  </p>
+      </div>
+      </div>
+      
+      </div>
+    
+    <div class="grid grid--large bottom15">
+    <div class="grid__cell">
+   
+      <h3>{{ section.settings.filling_soil_title_3 }}</h3>
+      <div class="content potting">{{ section.settings.filling_soil_desc_3 }}</div>
+      {% if section.settings.filling_soil_image_3 != blank %}
+      <img src="{{ section.settings.filling_soil_image_3  | img_url: 'large' }}" />
+      {% endif %}
+    
+  </div>
+    </div>
+</div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Filling Soil Section",
+    "class": "vagepod--features",
+    "settings": [
+     {
+        "type": "header",
+        "content": "Filling Soil section"
+     },
+     {
+         "type": "text",
+         "id": "filling_soil_title_1",
+         "label": "Title 1"
+     }, 
+     {
+         "type": "textarea",
+         "id": "filling_soil_desc_1",
+         "label": "Description 1"
+     },
+     {
+         "type": "image_picker",
+         "id": "filling_soil_image_1",
+         "label": "Image 1"
+     },
+     {
+         "type": "text",
+         "id": "filling_soil_title_2",
+         "label": "Title 2"
+     }, 
+     {
+         "type": "textarea",
+         "id": "filling_soil_desc_2",
+         "label": "Description 2"
+     },
+     {
+         "type": "image_picker",
+         "id": "filling_soil_image_2",
+         "label": "Image 2"
+     },
+     {
+         "type": "text",
+         "id": "filling_soil_title_3",
+         "label": "Title 3"
+     }, 
+     {
+         "type": "textarea",
+         "id": "filling_soil_desc_3",
+         "label": "Description 3"
+     }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

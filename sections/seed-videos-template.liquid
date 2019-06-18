@@ -1,0 +1,189 @@
+{%- if section.settings.page_bgimg2  -%}
+  {% capture bannerbg %}
+  background:url({{ section.settings.page_bgimg2 | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="{{ bannerbg }}">
+    <div class="container">
+      <div class="page__header">
+        {%- if section.settings.page_bgicon -%}<div class="banner_icon"><img src="{{ section.settings.page_bgicon | img_url: '160x160' }}" alt="Events icon"></div>{%- endif -%}
+        <h1 class="page__title h1">{{ page.title }}</h1>
+        <p class="banner-cta-text">{{ section.settings.text_banner_cta }}</p>
+      </div>
+      {% comment %}
+        <div class="box box--shrinked">
+          <div class="box__content box__content--large-padding rte">
+            {{ page.content }}
+          </div>
+        </div>
+      {% endcomment %}
+    </div>
+  </div>
+  
+  <div class="pod-stand-wrapper">
+    
+    <div class="container">
+      <div class="grid grid--large">
+        <div class="grid__cell 1--handheld-and-up">
+        {% if section.settings.text_heading_one != blank %}
+        <h3>{{ section.settings.text_heading_one }}</h3>
+    {% endif %}
+        </div>
+        
+         {% for block in section.blocks %}
+          {% if block.type == 'pod_seed' %}
+           <div class="grid__cell 1/2--handheld-and-up">
+           {% if block.settings.title != blank %} 
+                  <h4>{{ block.settings.title }}</h4>
+              {% endif %}
+           {% if block.settings.seed_video_link != blank %}
+                <iframe width="100%" height="340" src="{{ block.settings.seed_video_link }}" frameborder="0" allowfullscreen=""></iframe>
+              {% endif %}
+             </div>
+          {% endif %}
+         {% endfor %}
+      
+    
+     <div class="grid__cell 1--handheld-and-up">
+        {% if section.settings.text_heading_two != blank %}
+        <h3>{{ section.settings.text_heading_two }}</h3>
+    {% endif %}
+        </div>
+         
+     
+        {% for block in section.blocks %}
+          {% if block.type == 'seed_regular_stand' %}
+        <div class="grid__cell 1/2--handheld-and-up">
+           {% if block.settings.title != blank %} 
+                  <h4>{{ block.settings.title }}</h4>
+              {% endif %}
+           {% if block.settings.reg_video_link != blank %}
+                <iframe width="100%" height="340" src="{{ block.settings.reg_video_link }}" frameborder="0" allowfullscreen=""></iframe>
+              {% endif %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      
+    
+     <div class="grid__cell 1--handheld-and-up">
+       {% if section.settings.text_heading_three != blank %}
+        <h3>{{ section.settings.text_heading_three }}</h3>
+    {% endif %}
+        </div>
+    
+      
+        {% for block in section.blocks %}
+          {% if block.type == 'seed_trolley_stand' %}
+         <div class="grid__cell 1/2--handheld-and-up">
+            {% if block.settings.title != blank %} 
+                  <h4>{{ block.settings.title }}</h4>
+              {% endif %}
+           {% if block.settings.trolley_video_link != blank %}
+                <iframe width="100%" height="340" src="{{ block.settings.trolley_video_link }}" frameborder="0" allowfullscreen=""></iframe>
+              {% endif %}
+        </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  {% schema %}
+    {
+      "name": "Seed Videos Section",
+      "class": "assembly-section videos-section--flush seed-section",
+      "settings": [
+        {
+          "id": "page_bgimg2",
+          "type": "image_picker",
+          "label": "Background Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "page_bgicon",
+          "label": "Banner Icon"
+        },
+        {
+          "id": "text_heading_one",
+          "type": "text",
+          "label": "Heading 1"
+        },
+        {
+          "id": "text_heading_two",
+          "type": "text",
+          "label": "Heading 2"
+        },
+        {
+          "id": "text_heading_three",
+          "type": "text",
+          "label": "Heading 3"
+        },
+        {
+          "id": "text_banner_cta",
+          "type": "text",
+          "label": "Banner CTA"
+        }
+      ],
+      "blocks": [
+          {
+            "type": "pod_seed",
+            "name": "POD Seed Videos",
+            "settings": [
+              {
+                "id": "title",
+                "type": "text",
+                "label": "Title"
+              },
+              {
+                "id": "seed_video_link",
+                "type": "text",
+                "label": "Video link"
+              }
+            ]
+          },
+          {
+            "type": "seed_regular_stand",
+            "name": "Regular Stand",
+            "settings": [
+              {
+                "id": "title",
+                "type": "text",
+                "label": "Title"
+              },
+              {
+                "id": "reg_video_link",
+                "type": "text",
+                "label": "Video link"
+              }
+            ]
+          },
+          {
+            "type": "seed_trolley_stand",
+            "name": "Trolley Stand",
+            "settings": [
+              {
+                "id": "title",
+                "type": "text",
+                "label": "Title"
+              },
+              {
+                "id": "trolley_video_link",
+                "type": "text",
+                "label": "Video link"
+              }
+            ]
+          }
+        ]
+     }
+  {% endschema %}
+  
+  {% stylesheet %}
+  {% endstylesheet %}
+  
+  {% javascript %}
+  {% endjavascript %}
+  

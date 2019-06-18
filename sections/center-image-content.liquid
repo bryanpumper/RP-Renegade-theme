@@ -1,0 +1,31 @@
+<section id="center-image-section" class="section section--positioned section-{{ section.id }}">
+  <div class="container">
+    <div class="grid grid--large grid--center">
+      <div class="grid__cell 3/5--desk">
+        {%- if section.settings.image -%}
+          <img src="{{ section.settings.image | img_url: 'master'}}" alt="Content Image"> 
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Center Image Content",
+  "class": "shopify-section__center-image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Center Image Content"
+    }
+  ]
+}
+{% endschema %}

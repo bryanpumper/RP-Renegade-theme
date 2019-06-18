@@ -1,0 +1,70 @@
+<div id="{{ section.id }}" class="about-us-content">
+  <div class="container">
+  <div class="grid grid--large grid--center">
+    <div class="grid__cell 3/4--handheld-and-up">
+      <div class="about-upper-content">
+        {{ page.content }}
+        <div class="prod-capabilities-list">
+          <ul>
+            {% for block in section.blocks %}
+              <li>{{ block.settings.capability}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-lower-content">
+    <div class="grid grid--large grid--center">
+    {%- if section.settings.content_image  -%}
+      <div class="grid__cell 1/2--handheld-and-up">
+        <div class="about-image-content">
+          <canvas width="582" height="431" style="background:url({{ section.settings.content_image | img_url:'1600x900' }}); background-size:cover;"></canvas>
+        </div>
+      </div>
+    {%- endif -%}  
+      <div class="grid__cell 1/2--handheld-and-up">
+        <div class="about-text-content">
+          {{ section.settings.content_text }}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+{% schema %}
+{
+	"name" : "About Us Content",
+	"class" : "shopify-section_about-us-content",
+	"settings" : [
+    {
+        "type": "header",
+        "content": "Left Image Content"
+    },
+    {
+        "type": "image_picker",
+        "id": "content_image",
+        "label": "Content Image"
+    },
+    {
+			"id": "content_text",
+			"type": "textarea",
+			"label": "Content Text"
+		}
+	],
+  "blocks": [
+      {
+        "type": "capability_list",
+        "name": "Capability",
+        "settings": [
+          {
+            "type": "text",
+            "id": "capability",
+            "label": "Capability "
+          }
+        ]
+      }
+   ]
+}
+{% endschema %}

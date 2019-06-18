@@ -1,0 +1,52 @@
+<section class="community-grid-wrapper our-programs-section our-partner-section">
+  <div class="container">
+    <h3>{{ section.settings.our_program_title }}</h3>
+    <div class="grid grid--large">
+      {% for block in section.blocks %}
+        {% assign page_handle = block.settings.page_detail %}
+        <div class="grid__cell 1/5--handheld-and-up box">
+          <div class="inner">
+            {% if block.settings.page_featured_img != blank %}
+            <a href="{{ block.settings.partners_link }}" target="_blank">
+            <img src="{{ block.settings.page_featured_img | img_url: 'large' }}" />
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+  "name": "Our Parnters",
+  "class": "community-partners-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "our_program_title",
+      "label": "Programs Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "community_center",
+      "name": "Community Center",
+      "settings": [
+		    {
+          "type": "image_picker",
+          "id": "page_featured_img",
+          "label": "Partners Image"
+    	  },
+        {
+          "type": "text",
+          "id": "partners_link",
+          "label": "Partners Link"
+    	  }
+      ]
+    }
+  ]
+}
+{% endschema %}

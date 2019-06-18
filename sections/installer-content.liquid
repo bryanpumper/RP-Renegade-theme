@@ -1,0 +1,96 @@
+<div id="{{ section.id }}" class="page_main-content">
+  <div class="container">
+  <div class="grid grid--large grid--center">
+    <div class="grid__cell--center 3/5--handheld-and-up">
+      <div class="installation-upper-content">
+        <h2>{{ section.settings.content_title }}</h2>
+        <p>{{ section.settings.content_text }}</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container installation-steps">
+    <div class="grid grid--large grid--center">
+    <div class="grid__cell 11/12--handheld-and-up">
+    {% assign stepctr = 0 %}
+    {%- for block in section.blocks -%}
+    {%- assign stepctr = stepctr | plus: 1 -%}
+      <div class="installation_step grid__cell 1/3--handheld-and-up">
+        <div class="installation-step-icon">
+          <img src="{{ block.settings.steps_icon | img_url: 'master' }}" alt="installation icon">
+        </div>
+        <div class="installation-step-number">Step {{ stepctr }}:</div>
+        <h5 class="steps-title">{{ block.settings.steps_title | escape }}</h5>
+        <p class="steps-description">{{ block.settings.steps_desc | escape }}</p>
+      </div>
+    {%- endfor -%}  
+    </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="installation-video">
+      <div class="video-holder js-videoWrapper">
+        <canvas width="1210" height="505" style=""></canvas>
+        <div class="videoPoster js-videoPoster" style="background-image: url({{ section.settings.fvideo_placeholder | img_url: 'master' }});"><div class="playicon"><i class="icon fa fa-play"></i></div></div>
+        <div id="ytplayer" type="text/html" data-video-id="{{ section.settings.feat_vid }}" class="js-videoIframe"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+	"name" : "Installer Content",
+	"class" : "shopify-section_installer-content",
+	"settings" : [
+    {
+        "type": "text",
+        "id": "content_title",
+        "label": "Content Title"
+    },
+    {
+        "type": "textarea",
+        "id": "content_text",
+        "label": "Content Paragraph"
+    },
+    {
+        "type": "header",
+        "content": "Featured Video"
+    },
+    {
+        "type": "text",
+        "id": "feat_vid",
+        "label": "Add Featured Video here",
+        "placeholder": "Sample Video ID: NpEaa2P7qZI"
+    },
+    {
+        "type": "image_picker",
+        "id": "fvideo_placeholder",
+        "label": "Upload Video Placeholder"
+    }
+	],
+  "blocks": [
+    {
+      "type": "steps",
+      "name": "Steps",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "steps_icon",
+          "label": "Steps Icon"
+        },
+        {
+          "type": "text",
+          "id": "steps_title",
+          "label": "Steps Title"
+        },
+        {
+          "type": "text",
+          "id": "steps_desc",
+          "label": "Steps Description"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

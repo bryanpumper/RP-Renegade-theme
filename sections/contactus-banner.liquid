@@ -1,0 +1,36 @@
+{%- if section.settings.page_bgimg  -%}
+  {% capture bannerbg %}
+  background:url({{ section.settings.page_bgimg | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+<div id="{{ section.id }}" class="hero-section" style="{{ bannerbg }}">
+  <div class="container">
+    <div class="page__header">
+      {%- if section.settings.page_bgicon -%}<div class="banner_icon"><img src="{{ section.settings.page_bgicon | img_url: '160x160' }}" alt="Events icon"></div>{%- endif -%}
+      <h1 class="page__title h1">{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact Banner",
+    "class": "shopify_section-contact-banner",
+    "settings": [
+      {
+        "id": "page_bgimg",
+        "type": "image_picker",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "page_bgicon",
+        "label": "Banner Icon"
+      }
+	]
+  }
+{% endschema %}

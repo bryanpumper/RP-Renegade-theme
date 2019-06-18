@@ -1,0 +1,36 @@
+{%- assign cleaned_content = page.content | strip_html -%}
+
+{%- if cleaned_content == blank -%}
+  {%- assign force_secondary_background = true -%}
+{%- endif -%}
+{%- section 'contactus-banner' -%}
+<div class="page__content-wrapper">
+  <div class="">
+  
+    {%- if cleaned_content == blank -%}
+      <div class="box box--mini">
+        <div class="box__content box__content--large-padding box__content--centered">
+          {{ contact_form }}
+        </div>
+      </div>
+    {%- else -%}
+      <div class="grid grid--huge" id="contactmapsform">
+        <div class="grid__cell 1/2--lap-and-up">
+          <div class="contact-page-content rte">
+            <div class="contact_page_map_container">
+              {% section 'maps' %}
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__cell 1/2--lap-and-up no-left-padding">
+          <div class="box box--secondary">
+            <div class="box__content">
+              {% section 'contact-form' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>

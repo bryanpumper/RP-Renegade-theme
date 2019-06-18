@@ -1,0 +1,128 @@
+<div class="feature-slide-section">
+  <div class="container">
+<div id="{{ section.id }}">
+  {% if section.settings.store_title != blank %}
+  	<h2>{{ section.settings.store_title }}</h2>
+  {% endif %}
+   
+   {% if section.settings.store_subtitle != blank %}
+  		<p>{{ section.settings.store_subtitle }}</p>
+   {% endif %}
+  
+  	<div class="slider slider-logo" style="display:none;">
+      {% for block in section.blocks %}
+        <div>
+          <a target=_blank href="{{ block.settings.awards_link }}"><img src="{{ block.settings.store_logo | img_url:'200x' }}" /></a>
+      	</div>        
+      {% endfor %}
+    </div>
+   {% if section.settings.shop_button_url != blank %} 
+      	{% assign shop_button_url = section.settings.shop_button_url %}
+   {% else %}
+      	{% assign shop_button_url = 'javascript:;' %}
+   {% endif %}
+   {% if section.settings.shop_button_text != blank %}
+       <a href="{{ shop_button_url }}" class="button button--primary shop-btn">{{ section.settings.shop_button_text }}</a>
+   {% endif %}
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(window).bind('load', function() {
+    $('.slider-logo').css('display','block');
+     $('.slider-logo').slick({
+	    autoplay:true,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+       	responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+          },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+       
+        }
+  		]
+      });
+  }); 
+  
+ 
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Awards Section",
+	"class": "awards-section",
+    "settings": [
+	  {
+        "type": "header",
+		    "content": "Awards"
+      },
+	  {
+        "id": "store_title",
+        "type": "text",
+        "label": "Title"
+      },
+	  {
+        "id": "store_subtitle",
+        "type": "text",
+        "label": "Subtitle"
+      },
+	  {
+        "id": "shop_button_text",
+        "type": "text",
+        "label": "Button Text"
+      },
+	  {
+        "id": "shop_button_url",
+        "type": "text",
+        "label": "Button URL"
+      }
+	],
+ 	"blocks": [
+        {
+          "type": "add-awards",
+          "name": "Awards",
+          "settings": [
+            {
+              "id": "store_logo",
+              "type": "image_picker", 
+              "label": "Award Logo"
+            },
+            {
+              "id": "awards_link",
+              "type": "url",
+              "label": "Award Link"
+            }
+          ]
+        }
+	 ],
+    "presets": [
+      {
+        "category": "Awards",
+        "name": "Awards List",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

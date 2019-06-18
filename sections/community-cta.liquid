@@ -1,0 +1,31 @@
+<div>
+  <div class="container">
+    <div class="grid grid--large center">
+      <div class="grid__cell 7/10--handheld-and-up">
+        <h4>{{ section.settings.cta_text }} <a href="mailto:{{ section.settings.cta_email }}">{{ section.settings.cta_email }}</a> </h4>
+      </div>
+    </div>  
+  </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Community CTA",
+  "class": "community-cta-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text"
+    },
+    {
+      "type": "text",
+      "id": "cta_email",
+      "label": "CTA Email"
+    }
+  ],
+  "blocks": [
+
+  ]
+}
+{% endschema %}

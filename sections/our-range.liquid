@@ -1,0 +1,84 @@
+<section class="section section-{{ section.id }} our-range-section">
+  <div class="container">
+    <h2 class="section__title h3">Our Range</h2>
+    <div class="our-range-grid grid grid--large grid--center">
+    {% assign rangectr = 0 %}
+    {%- for block in section.blocks -%}
+      {%- if rangectr == 0 -%}<div class="our-range-item our-range-item-full grid__cell">{%- endif -%}  
+      {%- if rangectr >= 1 -%}<div class="our-range-item our-range-item-half grid__cell 1/2--handheld-and-up">
+      {%- endif -%}
+        <div class="our-range-item-inner">
+          <div class="our-range-image">
+            <canvas width="525" height="340" style="background-image: url({{ block.settings.range-image | img_url: '500x500' }});"><canvas>
+          </div>
+          <div class="our-range-text">
+            <h4 class="our-range-title">{{ block.settings.range-title | escape }}<h4>
+            <a href="{{ block.settings.range-link | escape }}" class="our-range-btn button button--primary">Discover more</a>
+          </div>
+        </div>
+      </div>
+      {%- assign rangectr = rangectr | plus: 1 -%}
+      {%- if rangectr == 3 -%}{%- assign rangectr = 0 -%}{%- endif -%}
+    {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Our Range",
+  "class": "shopify-section__our-range",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Our Range List"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "range",
+      "name": "Range",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "range-image",
+          "label": "Range Image"
+        },
+        {
+          "type": "text",
+          "id": "range-title",
+          "label": "Range Title"
+        },
+        {
+          "type": "url",
+          "id": "range-link",
+          "label": "Range Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Our Range",
+      "name": "Our Range list",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "range"
+        },
+        {
+          "type": "range"
+        },
+        {
+          "type": "range"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,157 @@
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="background:url('{{ section.settings.comm_banner_image | img_url: '1600x900' }}'); background-size:cover;">
+  <div class="container">
+    <div class="page__header">
+      <div class="banner-icon">{%- if section.settings.comm_icon != blank -%}
+          <img src="{{ section.settings.comm_icon | img_url: 'large' }}" />
+          {%- endif -%}</div>
+      <h1 class="page__title h1">{{ page.title }}</h1>
+      <div class="sub-heading">
+        {{ page.content }}
+      </div>
+    </div>    
+  </div>
+</div>
+<section class="community-video">
+  <div class="container">
+  <div class="grid grid--large grid--center">
+    <div class="grid__cell 3/5--handheld-and-up">
+      <div class="video-holder js-videoWrapper">
+      <canvas width="888" height="500" style=""></canvas>
+      <div class="videoPoster js-videoPoster" style="background-image: url({{ section.settings.fvideo_placeholder | img_url: 'master' }});"><div class="playicon"><i class="icon fa fa-play"></i></div></div>
+      <div id="ytplayer" type="text/html" data-video-id="{{ section.settings.feat_vid }}" class="js-videoIframe"></div>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="community-program-wrapper">
+  <div class="container">
+    <div class="grid grid--large">
+      <div class="grid__cell">
+        <div class="heading">
+          {% if section.settings.comm_title != blank %}
+          <h3>{{ section.settings.comm_title }}</h3>
+          {% endif %}
+          <p>{{ section.settings.comm_subtitle }}</p>
+        </div>
+      </div>
+      <div class="grid__cell">
+        <div class="community-programs-list">
+          {% for block in section.blocks %}
+              <div class="community-program-item">
+                <div class="comm-program-icon">
+                  <img src="{{ block.settings.comm_progam_icon | img_url: 'large' }}" alt="Community Program">
+                </div>
+                <div class="comm-program-name"><h6>{{ block.settings.comm_progam_name }}</h6></div>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="grid__cell 1/2--handheld-and-up comm-image-content">
+        <img src="{{ section.settings.comm_content_image | img_url: '600x' }}" alt="Community Program">
+      </div>
+      <div class="grid__cell 1/2--handheld-and-up comm-text-content">
+        <div class="desc">
+          {% if section.settings.comm_desc != blank %}
+          <p>{{ section.settings.comm_desc }}</p>
+          {% endif %}
+        </div>
+        <div class="vidwrap">
+          {% if section.settings.comm_addvidtitle != blank %}
+            <p class="vidtitle">{{ section.settings.comm_addvidtitle }}</p>
+          {% endif %}
+          
+          {% if section.settings.comm_addvid != blank %}
+          <div class="vidiframe">
+            <iframe width="100%" height="340" src="https://www.youtube.com/embed/{{ section.settings.comm_addvid }}" frameborder="0" allowfullscreen=""></iframe>
+          </div>
+       	 {% endif %}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+  "name": "Community",
+  "class": "community-section community--flush",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Community Programs"
+    },
+    {
+      "type": "image_picker",
+      "id": "comm_icon",
+      "label": "Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "comm_banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "comm_title",
+      "label": "Program Title"
+    },
+    {
+      "type": "textarea",
+      "id": "comm_subtitle",
+      "label": "Program Sub-title"
+    },
+    {
+      "type": "image_picker",
+      "id": "comm_content_image",
+      "label": "Content Image"
+    },
+    {
+      "type": "richtext",
+      "id": "comm_desc",
+      "label": "Program Description"
+    },
+    {
+        "type": "header",
+        "content": "Featured Video"
+    },
+    {
+        "type": "text",
+        "id": "feat_vid",
+        "label": "Add Featured Video here",
+        "placeholder": "Sample Video ID: NpEaa2P7qZI"
+    },
+    {
+        "type": "image_picker",
+        "id": "fvideo_placeholder",
+        "label": "Upload Video Placeholder"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "community_programs",
+      "name": "Community Program",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "comm_progam_icon",
+          "label": "Community Program Icon"
+        },
+        {
+          "type": "text",
+          "id": "comm_progam_name",
+          "label": "Community Program Name"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

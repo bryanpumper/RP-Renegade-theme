@@ -1,0 +1,188 @@
+{%- if section.settings.page_bgimg  -%}
+  {% capture bannerbg %}
+  background:url({{ section.settings.page_bgimg | img_url:'1600x900' }}); background-size:cover;
+  {% endcapture %}
+{%- else -%}
+{% capture bannerbg %}
+  background: #054f29;
+  {% endcapture %}
+{%- endif -%}
+<div id="{{ section.id }}" class="page__content-wrapper hero-section" style="{{ bannerbg }}">
+  <div class="container">
+    <div class="page__header">
+    {%- if section.settings.page_bgicon -%}<div class="banner_icon"><img src="{{ section.settings.page_bgicon | img_url: '160x160' }}" alt="Events icon"></div>{%- endif -%}
+      <h1 class="page__title h1">{{ page.title }}</h1>
+      <p class="banner-cta-text">{{ section.settings.text_banner_cta }}</p>
+    </div>
+	{% comment %}
+      <div class="box box--shrinked">
+        <div class="box__content box__content--large-padding rte">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endcomment %}
+  </div>
+</div>
+
+<div class="pod-stand-wrapper">
+  
+  <div class="container">
+    <div class="grid grid--large">
+      <div class="grid__cell 1--handheld-and-up">
+      {% if section.settings.text_heading_1 != blank %}
+  	<h3>{{ section.settings.text_heading_1 }}</h3>
+  {% endif %}
+      </div>
+      
+       {% for block in section.blocks %}
+        {% if block.type == 'pod_assembly' %}
+         <div class="grid__cell 1/2--handheld-and-up">
+         {% if block.settings.video_title != blank %} 
+       	 	<h4>{{ block.settings.video_title }}</h4>
+       	 {% endif %}
+         {% if block.settings.video_link != blank %}
+          	<iframe width="100%" height="340" src="{{ block.settings.video_link }}" frameborder="0" allowfullscreen=""></iframe>
+       	 {% endif %}
+           </div>
+        {% endif %}
+       {% endfor %}
+    
+  
+   <div class="grid__cell 1--handheld-and-up">
+      {% if section.settings.text_heading_2 != blank %}
+  	<h3>{{ section.settings.text_heading_2 }}</h3>
+  {% endif %}
+      </div>
+       
+   
+      {% for block in section.blocks %}
+        {% if block.type == 'regular_stand' %}
+      <div class="grid__cell 1/2--handheld-and-up">
+         {% if block.settings.video_title != blank %} 
+       	 	<h4>{{ block.settings.video_title }}</h4>
+       	 {% endif %}
+         {% if block.settings.video_link != blank %}
+          	<iframe width="100%" height="340" src="{{ block.settings.video_link }}" frameborder="0" allowfullscreen=""></iframe>
+       	 {% endif %}
+        </div>
+        {% endif %}
+      {% endfor %}
+    
+  
+   <div class="grid__cell 1--handheld-and-up">
+     {% if section.settings.text_heading_3 != blank %}
+  	<h3>{{ section.settings.text_heading_3 }}</h3>
+  {% endif %}
+      </div>
+  
+    
+      {% for block in section.blocks %}
+        {% if block.type == 'trolley_stand' %}
+       <div class="grid__cell 1/2--handheld-and-up">
+          {% if block.settings.video_title != blank %} 
+       	 	<h4>{{ block.settings.video_title }}</h4>
+       	 {% endif %}
+         {% if block.settings.video_link != blank %}
+          	<iframe width="100%" height="340" src="{{ block.settings.video_link }}" frameborder="0" allowfullscreen=""></iframe>
+       	 {% endif %}
+      </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Assembly Video Section",
+	"class": "assembly-section videos-section--flush",
+    "settings": [
+      {
+        "id": "page_bgimg",
+        "type": "image_picker",
+        "label": "Background Image"
+      },
+      {
+        "id": "text_banner_cta",
+        "type": "text",
+        "label": "Banner CTA"
+      },
+      {
+        "type": "image_picker",
+        "id": "page_bgicon",
+        "label": "Banner Icon"
+      },
+	  {
+        "id": "text_heading_1",
+        "type": "text",
+        "label": "Heading 1"
+      },
+	  {
+        "id": "text_heading_2",
+        "type": "text",
+        "label": "Heading 2"
+      },
+	  {
+        "id": "text_heading_3",
+        "type": "text",
+        "label": "Heading 3"
+      }
+	],
+    "blocks": [
+        {
+          "type": "pod_assembly",
+          "name": "POD Assembly",
+          "settings": [
+            {
+              "id": "video_title",
+              "type": "text",
+              "label": "Video Title"
+            },
+            {
+              "id": "video_link",
+              "type": "text",
+              "label": "Video link"
+            }
+          ]
+        },
+		{
+          "type": "regular_stand",
+          "name": "Regular Stand",
+          "settings": [
+            {
+              "id": "video_title",
+              "type": "text",
+              "label": "Video Title"
+            },
+            {
+              "id": "video_link",
+              "type": "text",
+              "label": "Video link"
+            }
+          ]
+        },
+		{
+          "type": "trolley_stand",
+          "name": "Trolley Stand",
+          "settings": [
+            {
+              "id": "video_title",
+              "type": "text",
+              "label": "Video Title"
+            },
+            {
+              "id": "video_link",
+              "type": "text",
+              "label": "Video link"
+            }
+          ]
+        }
+      ]
+   }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

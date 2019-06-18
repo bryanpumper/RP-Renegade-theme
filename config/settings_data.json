@@ -1,0 +1,3212 @@
+{
+  "current": {
+    "heading_color": "#0c0c0d",
+    "text_color": "#66656e",
+    "light_text_color": "#a1a1a6",
+    "accent_color": "#043d20",
+    "background": "#ffffff",
+    "secondary_background": "#ffffff",
+    "secondary_background_pattern": "",
+    "primary_button_color": "#ffffff",
+    "primary_button_background": "#91c62e",
+    "secondary_button_color": "#ffffff",
+    "secondary_button_background": "#25572b",
+    "product_features_color": "#ffffff",
+    "product_features_background": "#141415",
+    "product_on_sale_label_background": "#91c62e",
+    "product_unavailable_label_background": "#000000",
+    "heading_font": "Google_Poppins",
+    "heading_font_weight": "600",
+    "text_font": "Google_Poppins",
+    "font_size": "1",
+    "slideshow_heading_font_weight": "400",
+    "currency_conversion_enabled": false,
+    "currency_conversion_supported_currencies": "USD CAD EUR GBP",
+    "currency_conversion_default_currency": "AUD",
+    "search_mode": "product,article,page",
+    "product_show_vendor": false,
+    "cart_type": "drawer",
+    "empty_cart_link": "",
+    "view_cart": "",
+    "social_facebook": "https:\/\/www.facebook.com\/Vegepod\/",
+    "social_twitter": "",
+    "social_google_plus": "",
+    "social_pinterest": "",
+    "social_instagram": "https:\/\/www.instagram.com\/vegepod\/",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCocVF-jXsIRo0Mhj18Kh3fQ\/videos",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/cropped-favi-192x192.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/vegepod_logo_small_1bb2c409-751c-4b98-a0bb-2b725812382f.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#e8eedb",
+    "checkout_heading_font": "Lato",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#25572b",
+    "checkout_button_color": "#91c62e",
+    "checkout_error_color": "#ff6d6d",
+    "view_cart_and_checkout": "View Cart & Checkout",
+    "top_bar_color": "#ffffff",
+    "top_bar_background": "#0c0c0d",
+    "sections": {
+      "slideshow": {
+        "type": "home-slideshow",
+        "blocks": {
+          "1505970936222": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/hp-slide1.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/hp-slide1.jpg",
+              "heading": "Award Winning Self Contained Raised Garden Beds",
+              "heading_color": "#ffffff",
+              "button_text": "Learn More",
+              "link": "shopify:\/\/pages\/product-features",
+              "position": "center"
+            }
+          },
+          "1508726815533": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Awards-Desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Awards-Mobile.jpg",
+              "heading": "Recent Awards Won",
+              "heading_color": "#ffffff",
+              "button_text": "SHOP NOW",
+              "link": "shopify:\/\/collections",
+              "position": "center"
+            }
+          },
+          "1523936079511": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Influencer-Post-Desktop.jpg",
+              "image_mobile": "shopify:\/\/shop_images\/Influencer-Post-Mobile.jpg",
+              "heading": "Look who else loves Vegepods",
+              "heading_color": "#ffffff",
+              "button_text": "Learn More",
+              "link": "https:\/\/vegepod.com.au\/blogs\/news\/vegepods-top-5-endorsers",
+              "position": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1505970936222",
+          "1508726815533",
+          "1523936079511"
+        ],
+        "settings": {
+          "type": "right-image",
+          "autoplay": true,
+          "cycle_speed": 5
+        }
+      },
+      "text-with-optional-image": {
+        "type": "text-with-optional-image",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Our_Range_Image_81a949da-05e5-4374-8e00-7f941f658c54.jpg",
+          "title": "",
+          "title_position": "left",
+          "show_overlay": false,
+          "content": "<p><strong>Efficient Growing Technology<\/strong><\/p>\n<p><\/p>\n<p>The Vegepod has revolutionised the backyard veggie patch. Our cutting edge technology removes all the effort and ongoing maintenance of a traditional veggie patch.<\/p>\n<p><\/p>\n<p><strong>Protection<\/strong><\/p>\n<p>Vegepod&rsquo;s range of covers protect your veggies and accelerates plant growth. Made of a unique greenhouse mesh that allows air and water to penetrate, our Vegepod covers create the ideal micro-climate for your produce.<\/p>\n<p><\/p>\n<p><strong>Self Watering<\/strong><\/p>\n<p>Using a Vegepod container gives you full control over soil quality, with the added bonus of implementing self-watering reservoirs. These reservoirs significantly reduce water usage and also recycle the nutrients in the potting mix.<\/p>",
+          "button_text": "",
+          "button_link": "",
+          "background_image": "shopify:\/\/shop_images\/Leaf_Left.png"
+        }
+      },
+      "image-with-text-overlay": {
+        "type": "image-with-text-overlay",
+        "disabled": true,
+        "blocks": {
+          "1505972631280": {
+            "type": "testimonial",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/customer-order-bg.jpg",
+              "overlay_color": "rgba(0,0,0,0)",
+              "text_color": "#ffffff",
+              "title": "“27% of our customers order a 2nd Vegepod”\n\nFinally a product that makes growing your own veggies easy"
+            }
+          }
+        },
+        "block_order": [
+          "1505972631280"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/customer-order-bg.jpg",
+          "overlay_color": "rgba(0,0,0,0)",
+          "text_color": "#ffffff",
+          "title": "“27% of our customers order a 2nd Vegepod”\n\nFinally a product that makes growing your own veggies easy"
+        }
+      },
+      "testimonials": {
+        "type": "testimonials",
+        "blocks": {
+          "testimonial-0": {
+            "type": "testimonial",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/download-1.png",
+              "title": "Davidhenry - Product Review",
+              "testi_rating": "5",
+              "quote": "<p><a href=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\" title=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\">\"Excellent after sales Customer service\"<\/a>.<\/p>\n<p><a href=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\" title=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\">\"I have not experienced this quality of customer service with a product ever.<\/a><br><a href=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\" title=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\">Thank you for everything<\/a><br><a href=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\" title=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\">Regards<\/a><br><a href=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\" title=\"https:\/\/www.productreview.com.au\/reviews\/dfba86a2-1fa8-3537-81cd-f80c7bc7a271\">Happy as Larry\"<\/a>.<\/p>"
+            }
+          },
+          "testimonial-1": {
+            "type": "testimonial",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/download-1.png",
+              "title": "CMO - Product Review",
+              "testi_rating": "5",
+              "quote": "<p><a href=\"https:\/\/www.productreview.com.au\/reviews\/3eee2480-3887-3806-9982-a296651e19fa\" title=\"https:\/\/www.productreview.com.au\/reviews\/3eee2480-3887-3806-9982-a296651e19fa\">\"Love it to bits\".<\/a><\/p>\n<p><\/p>\n<p><a href=\"https:\/\/www.productreview.com.au\/reviews\/3eee2480-3887-3806-9982-a296651e19fa\" title=\"https:\/\/www.productreview.com.au\/reviews\/3eee2480-3887-3806-9982-a296651e19fa\">\"We live in a townhouse with a small courtyard, and I have had no luck growing in pots. However, the Vegepod has transformed my backyard into a small productive garden\".<\/a><\/p>"
+            }
+          },
+          "testimonial-2": {
+            "type": "testimonial",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/download-1.png",
+              "title": "Hew - Product Review",
+              "testi_rating": "5",
+              "quote": "<p>\"I absolutely love my Vegepod\".<\/p>\n<p>\"It's an absolutely fantastic product! It makes growing veggies and herbs beyond easy. It's great for if you're renting, own your own home and for appartments too!\".<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "testimonial-0",
+          "testimonial-1",
+          "testimonial-2"
+        ],
+        "settings": {
+          "title": "Our 50,000+ Customers Love Us",
+          "review_button_text": "Click to view thousands of reviews from our loyal customers.",
+          "review_button_url": "https:\/\/www.productreview.com.au\/listings\/vegepod",
+          "testi_background_image": "shopify:\/\/shop_images\/testi-background.jpg"
+        }
+      },
+      "featured-blog": {
+        "type": "featured-article",
+        "blocks": {
+          "blog": {
+            "type": "blog",
+            "settings": {
+              "blog": "news"
+            }
+          }
+        },
+        "block_order": [
+          "blog"
+        ],
+        "settings": {
+          "title": "Latest From The Blog",
+          "show_author_name": false,
+          "background_image": "shopify:\/\/shop_images\/Leaf_Right_600x1360_70e4dadb-9155-47df-a2a4-c27a0e457a48.png"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "popup_enabled": false,
+          "popup_heading": "Register",
+          "popup_content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "popup_show_newsletter": true,
+          "popup_delay": 5,
+          "popup_only_on_index": true,
+          "popup_only_visitors": true,
+          "popup_remember_me": "7"
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "blocks": {
+          "1508749946293": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/au.png",
+              "location_title": "AU",
+              "location_link": "https:\/\/vegepod.com.au"
+            }
+          },
+          "1515668602079": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/nz-flag.png",
+              "location_title": "NZ",
+              "location_link": "https:\/\/vegepod.co.nz\/"
+            }
+          },
+          "1508750097819": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/USA-flag.png",
+              "location_title": "USA",
+              "location_link": "https:\/\/vegepod.com\/"
+            }
+          },
+          "1515668630345": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/sg-flag.png",
+              "location_title": "SG",
+              "location_link": "https:\/\/vegepod.com.sg"
+            }
+          },
+          "1527476548126": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/uk-flag_large_large_1bd2cfc2-821e-4835-b2d8-6f6fcaede7a8.png",
+              "location_title": "UK",
+              "location_link": "https:\/\/vegepod.co.uk"
+            }
+          },
+          "1551236589842": {
+            "type": "location",
+            "settings": {
+              "location_image": "shopify:\/\/shop_images\/flag-800_large_68373f4f-dc60-4d23-8c68-25d4844e1aac.png",
+              "location_title": "Can",
+              "location_link": "https:\/\/vegepod.ca\/"
+            }
+          }
+        },
+        "block_order": [
+          "1508749946293",
+          "1515668602079",
+          "1508750097819",
+          "1515668630345",
+          "1527476548126",
+          "1551236589842"
+        ],
+        "settings": {
+          "show_announcement": true,
+          "announcement_text": "Afterpay now available!",
+          "announcement_button_text": "",
+          "announcement_button_url": "https:\/\/vegepod.com.au\/collections\/raised-garden-beds",
+          "announcement_color": "#ffffff",
+          "announcement_background": "#25572b",
+          "announcement_contact_link": "tel:+1800428431",
+          "announcement_contact": "1800 428 431"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1505536094468": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "shop-menu"
+            }
+          }
+        },
+        "block_order": [
+          "1505536094468"
+        ],
+        "settings": {
+          "show_tall_header": false,
+          "logo": "shopify:\/\/shop_images\/logo_c7024bb0-0de2-484d-81b6-8daff529bba0.png",
+          "logo_max_width": 350,
+          "logo_position": "left",
+          "mobile_logo": "",
+          "navigation_menu": "main-menu",
+          "mobile_expand_nav_first_level": false
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "show_newsletter": true,
+          "title": "Get the latest product specials, grow tips and news!",
+          "newsletter_image": "",
+          "apply_newsletter_gradient": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-2": {
+            "type": "contact",
+            "settings": {
+              "title": "Contact Us",
+              "phone_number": "1800 428 431",
+              "email": "info@vegepod.com.au",
+              "address": "<p>5\/287 Mona Vale Rd <br>Terrey Hills NSW | 2084 | Australia<\/p>",
+              "show_social_media": true
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>5\/287 Mona Vale Rd<\/p>\n<p>Terrey Hills NSW&nbsp;|&nbsp;2084&nbsp;|&nbsp;Australia<\/p>",
+              "show_social_media": true
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu_linklist": "main-menu"
+            }
+          },
+          "1515670913722": {
+            "type": "links",
+            "settings": {
+              "menu_linklist": "policies"
+            }
+          }
+        },
+        "block_order": [
+          "footer-2",
+          "footer-0",
+          "footer-1",
+          "1515670913722"
+        ],
+        "settings": {
+          "show_payment_methods": true
+        }
+      },
+      "1505615797129": {
+        "type": "instagram-feed",
+        "settings": {
+          "title": "Social Feed",
+          "access_token": "1514412050.3a81a9f.b1c881eeced64a4da1481e4fa9a5183c"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "1508736947336": {
+            "type": "question",
+            "settings": {
+              "title": "What Soil Should I Use In My Vegepod?",
+              "answer": "<p>Have a read of our blog post by Angus Stewart on the <strong><a href=\"\/blogs\/news\/ask-angus-what-growing-mix-should-i-use-for-my-raised-garden-bed\" title=\"Ask Angus: What Growing Mix Should I Use For My Raised Garden Bed?\">best growing mix for your Vegepod<\/a><\/strong><\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "technical"
+            }
+          },
+          "1508736878592": {
+            "type": "question",
+            "settings": {
+              "title": "My cover keeps coming off. What's going on?",
+              "answer": "<p>Firstly, please refer to our assembly support videos for clear instructions on the link below: <a href=\"\/pages\/assembly-videos\" title=\"Assembly Videos\">https:\/\/vegepod.com.au\/assembly-videos\/<\/a><\/p>\n<p>You must ensure the hinge clips click over the edge of the walls to secure in place. This requires some decent force to click the little lip over the wall panel.<\/p>\n<p>You must also ensure to put at least two of the hinge clips on the front wall and not use all of them on your back wall. This ensures wind does not simply blow the cover up and down.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1505619317062": {
+            "type": "question",
+            "settings": {
+              "title": "Can I grow tomatoes in it? (What about other high-stakers like beans and peas?)",
+              "answer": "<p>Yep, you sure can. If you scroll through all of our voluminous&nbsp;<a href=\"https:\/\/www.facebook.com\/Vegepod\/\">Facebook<\/a>&nbsp;and&nbsp;<a href=\"https:\/\/www.instagram.com\/vegepod\/\">Instagram<\/a>&nbsp;posts, you will come across lots of pics of our customers growing tomatoes successfully. &nbsp;For smaller varieties, like Romas and Cherries, we don&rsquo;t even stake them. Just let &lsquo;em go wild and push out against your canopy till it&rsquo;s bursting. Most of these smaller fruits&nbsp;don&rsquo;t&nbsp;drop to the soil anyway. For your larger varieties, it&rsquo;s best to get dwarf plants. &nbsp;You can stake them as high as the canopy. Otherwise, there is a simple and effective way to snake your tommies, beans or peas around the canopy. &nbsp;Just train the veggies to the stakes that you have going up, across, down, diagonally &ndash; you tell them where to go and make the most of your space!<\/p>\n<p><\/p>\n<p>Want to know more about growing tomatoes in containers? Read our blog '<a href=\"\/blogs\/news\/grow-tomatoes-containers\" title=\"How To Grow Tomatoes in a Raised Garden Bed\">How To Grow Tomatoes In A Raised Garden Bed<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          },
+          "1505619505792": {
+            "type": "question",
+            "settings": {
+              "title": "Ants are in the pod. What do I do?",
+              "answer": "<p>Ants generally like to live in really dry areas so you could try using a wetter soil agent and\/or soak the pod continuously for a bit until they bugger off. Google and people will mention various deterrents such as cinnamon, lemon, borax \/ food grade diatomaceous earth etc. But don&rsquo;t necessarily malign the ants, they are often helping out or at worst innocuous. They will help pollinate inside the pod whilst the bigger pollinators like bees can&rsquo;t get in. Have a look to see what they are doing. They may be feeding on nasty pests like scale insects. But if in plague proportion or destroying your plants, then you could try Ant-Rid which usually works well.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1505619533432": {
+            "type": "question",
+            "settings": {
+              "title": "How much should I water the pod?",
+              "answer": "<p><strong>For Mature Plants<\/strong><\/p>\n<p>It does depend on the weather and how established your plants are. For a start, note the canopy is permeable, so if it&rsquo;s ever raining, it&rsquo;s getting watered like any other garden. Also, once your plants are established you don&rsquo;t have to water them as much. They are being serviced by the water reservoirs below, and the wicking system. I.e.: even when the top soil looks and feels dry, you will notice the plants still thrive. They are drinking from the wetter soil below via the wicking bed. Don&rsquo;t overwater the Vegepod &ndash; the beauty of the wicking system is its water efficiency. It doesn&rsquo;t need the typical amount of watering that a standard garden would.<\/p>\n<p>As an example, a customer didn&rsquo;t water their pods last year for the 6 months of autumn \/ winter, as Sydney had regular coastal rain every couple of weeks and the weather was cool. This continually replenished the reservoirs. The warmer months obviously use more. Even in a Sydney summer though when you go away the established plants will be self-watered and okay for up to 2 to 4 weeks without rain or watering! Every time you get rain or use the misters or manually water the pod, your plants are getting watered and the water leaches down through the soil to replenish the reservoirs .<\/p>\n<p><strong>For Seedlings<\/strong><\/p>\n<p>Having said all that, when your seedlings are just babies, or the summer days are really cooking, we recommend using the mist spray for at least three minutes per day until the seedlings establish. Once they have decent roots sent below or the super hot days are finished, you&rsquo;ll no longer need to spray. If in doubt, remember, the plants tell the story. Are they drying or wilting? Give &lsquo;em a water!<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "technical"
+            }
+          },
+          "1505619556153": {
+            "type": "question",
+            "settings": {
+              "title": "What about pollination with a pod? Won’t there be problems with the canopy blocking bees?",
+              "answer": "<p>We have never really had any problems with pollination or fertilisation over the years, and we have grown pretty much everything in the Vegepods. This is due to a few factors:<\/p>\n<p>- So many fruits these days are self-pollinating varieties.<\/p>\n<p>- The bees get all the glory but pollination is not solely performed by the larger pollinators like bees and butterflies. Tiny insect pollinators, such as ants and small beetles, are still active. (We are bee lovers too by the way, we have both native and euro hives at Shedquarters!)<\/p>\n<p>- Pollination also occurs via wind \/ movement which happens thanks to the permeable canopy.<\/p>\n<p>Also remember that for all the leafy greens, herbs and root vegetables we don&rsquo;t want or need to go to flower \/ seed anyway!<\/p>\n<p>The only things we have ever really bothered giving some attention (i.e: some finger poking) are cucumbers and zucchinis just to make sure. However, for such big vine growers, we sometimes take the canopy off once they are bursting against the canopy walls anyway. Once the cover is off the bigger pollinators can have access.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "technical"
+            }
+          },
+          "1505619574347": {
+            "type": "question",
+            "settings": {
+              "title": "What can I grow in my pod?",
+              "answer": "<p>You can grow just about anything in the pods &ndash; definitely all your leafy salad greens and most herbs are easily contained (and eaten down) within the pod. We&rsquo;re great believers in packing the hell out of them. Silverbeet, spinach, parsley, chard, lettuce etc. are great for continual harvest.<\/p>\n<p>Most of your rooty veggies can be grown as your pod has a full foot of soil for them to grow in.<\/p>\n<p>Winter crop brassicas such as cauliflower, broccoli, cabbage, kale etc are all good to go. Shrubs and fruit trees, however, are clearly a no go.<\/p>\n<p>Please scroll through the hundreds of pics on our Facebook and Instagram to see all our fellow podders out there growing all sorts of wonderful things in them.<\/p>\n<p>Lastly, we recommend the website and app called GardenAte. It&rsquo;s a free Aussie resource advising what, when and how to plant based on your climate zone.<\/p>\n<p><\/p>\n<p>Want to know more about what plants for what Aussie season? Read our blogs:<\/p>\n<p><\/p>\n<p>- '<a href=\"\/blogs\/news\/how-to-grow-autumn-winter-veggies-in-a-raised-garden-bed\" title=\"How to Grow Autumn\/Winter Veggies In A Raised Garden Bed\">How to Grow Autumn\/Winter Veggies In a Raised Garden Bed<\/a>'<\/p>\n<p>- '<a href=\"\/blogs\/news\/what-to-grow-in-summer\" title=\"What to Grow in Summer\">What to Grow In Summer<\/a>'<\/p>\n<p>- '<a href=\"\/blogs\/news\/winter-growth-tips\" title=\"Winter Growth Tips\">Winter Growth Tips<\/a>'<\/p>\n<p>- '<a href=\"\/blogs\/news\/what-to-plant-in-early-spring\" title=\"What to Plant In Early Spring\">What to Plant In Early Spring<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          },
+          "1505619583186": {
+            "type": "question",
+            "settings": {
+              "title": "I have grubs in my pod! I thought you said these pods were pest-free…",
+              "answer": "<p>Usually, this means you have brought the eggs and\/or grubs in with your seedlings from the garden centre. This is not uncommon and can take time to manifest within the pod, especially if the pests are only at the egg stage. Most nurseries do not protect their plants like our canopies do.<\/p>\n<p>If it&rsquo;s curl grubs, these are brought in via your soil. They will mow down your seedlings like a chainsaw and also eat and destroy roots. Either give your soil a good raking through to clean them out, or get new soil.<\/p>\n<p>The most common green grub is the notorious and ubiquitous white butterfly. Most new podders are indeed flummoxed, because you have already rationalised that it&rsquo;s impossible for the butterfly to squeeze through the canopy. How did they get in there, you ask?! Well their eggs are deposited as tiny single sporadic eggs, so they&rsquo;re not as easy to see as bigger eggs or batched eggs. You need to look hard. They are the size of a pin head, yellow and cylinder shaped. They are also often on the underside of leaves, to make it even trickier!<\/p>\n<p>Always check your seedlings and rub off any eggs and\/or their green grubs before transplanting to your pod. (Their favourite dish is kale and the other brassicas like broccoli, cabbage and cauliflower.)<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          },
+          "1505619615965": {
+            "type": "question",
+            "settings": {
+              "title": "My mist sprays are not wetting the far corners of my pod top soil. Do we have a problem?",
+              "answer": "<p>The misters produce a high volume of super fine mist. The mist will cover most of the plants and soil area in your pod, but you are correct, they do not necessarily reach into the corner extremities of the pod. This is not a problem for established plants because what we are basically aiming for is to have all the water leach down through the soil, and replenish the wicking reservoirs at the base. That&rsquo;s where established plants get the vast majority of their water from. Even if ALL the top soil was dry, for example, it doesn&rsquo;t really matter. Technically you could have all the water enter from beneath the soil and the wicking job still does the job. We didn&rsquo;t design it like that, however, as it is indeed natural to have soil dampened from above too. We emulate nature as much as possible.<\/p>\n<p>Having said all of this, if your plants are still tiny seedlings without decent roots to drink from the wells, it is recommended to water by hand the whole lot until they establish.<\/p>\n<p><\/p>\n<p>Read more about the Vegepod's self-watering system by reading our blog '<a href=\"\/blogs\/news\/vegepod-wicking-system-explained\" title=\"The Vegepod Wicking System Explained\">The Vegepod Wicking Bed System Explained<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1505619626857": {
+            "type": "question",
+            "settings": {
+              "title": "Should I be leaving the canopy open at times?",
+              "answer": "<p>No! Leave it down all the time&hellip;apart from when you are working with the plants of course.<\/p>\n<p>The protective mesh has the lowest shade rate we could find in commercial grade crop cover (only 17 %). In general, veggies need as much sunlight as possible to grow well. At least 4 hours of direct sunlight is recommended for most veggies and herbs. Having said that, the 17% shade provided by our mesh does help against those real scorcher days.<\/p>\n<p>The canopy is permeable so it breathes and allows airflow for plant respiration. In other words, it doesn&rsquo;t cook and kill your plants on hot days, like many non-permeable greenhouse plastic covers out there. So, it&rsquo;s fine to keep the canopy down all day. Likewise, the permeability allows rain to go through, so no need to open for watering during those periods.<\/p>\n<p>Apart from creating a perfect micro-climate for plant growth, the main point of the cover is to keep pests at bay. It clearly therefore needs to be down to achieve this.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          },
+          "1505619646712": {
+            "type": "question",
+            "settings": {
+              "title": "What do I do on the extra hot days? Do I need extra shade cloth? Watering?",
+              "answer": "<p>If you are getting say a few days of plus 33&deg;<strong>C<\/strong>&nbsp;heat in a row, then a bit of shade cloth over the canopy can be a good touch during those periods. You can either drape the cloth over the canopy or peg it to the Vegepod&rsquo;s poles. Remember, we chose the lowest shade rate in commercial grade crop mesh, to allow as much light in as possible for ideal veggie growing&hellip;and to cater for those customers who only get a few hours sun a day. However, on hot days, the cover is only 17% shade, so adding a bit of green shade cloth on those days is recommended.<\/p>\n<p>If your plants are still young seedlings and unestablished this is particularly recommended. Whilst still small seedlings, their roots have yet to take a good hold or grow much towards the lower and wetter regions of the wicking base. Until they get a bit bigger and more established, a good 3 to 5 minutes of daily mist spray or manual watering is also recommended.<\/p>\n<p><\/p>\n<p>Want to know more about our shade covers and managing the Pod in summer? Read our blog '<a href=\"\/blogs\/news\/beat-the-heat-with-vegepods-shade-cover-plus-tips-for-summer-gardening\" title=\"Beat the Heat With Vegepod's Shade Cover! Plus Tips for Summer Gardening\">Beat the Heat With Vegepod's Shade Cover! Plus Tips for Summer Gardening<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1505619657973": {
+            "type": "question",
+            "settings": {
+              "title": "What are the pods made of?",
+              "answer": "<p>The pods are made of excellent quality and food-safe materials, tweaked and enhanced over the years.<\/p>\n<p>For a start, the wicking bed bases and raised walls are all virgin polypropylene (right down to the nuts and bolts!), which is certifiably food-safe plastic. This ensures no leaching of chemicals and maintain organic status for soils, unlike treated timbers or iron beds. Some think it may be better to utilise recycled plastics to help the environment as an added bonus, but unfortunately such plastics have a myriad of unknown plastics in every single batch and could not warrant a food-safe check for every lot. Having said that, polypropylene is recyclable (if indeed someone ever wanted to recycle down the track, but it should just keep going!).<\/p>\n<p>The mesh is commercial grade crop cover as seen on fruit tree farms. The poles are made of galvanised steel to ensure no rust and a powder coating for good measure.<\/p>\n<p>The stands are also all made of gal steel and powder coated.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "technical"
+            }
+          },
+          "1505619670797": {
+            "type": "question",
+            "settings": {
+              "title": "I have aphids. What to do?",
+              "answer": "<p>Aphids are about the only pest tiny enough to get through our super fine protective mesh. They are the size of pin-head in green\/grey\/brown colours and typically infest in large numbers on leaves of the leafy green veggies. There are many &ldquo;quick-fix&rdquo; spray suggestions out there (such as organic options of garlic\/chilli\/milk sprays or the pyrethrum oil spray), but really, we never find those truly effective and besides, who wants to spray the very leaves we are going to east with all that stuff!? The sprays don&rsquo;t stand up to a good ole bit of elbow grease anyway. Take your time and literally run your fingers over top and and bottom side of every leaf and squish all of those buggers for good. It&rsquo;s the only sure-fire way to really ensure they are kaput in our view. It&rsquo;s a good way to spend time with your plants and get to know them, it&rsquo;s therapy and education! However if your greens are decimated already or you have a timid heart or you just can&rsquo;t be bothered, then rip out the infested plants and start again. (You can often just wash all the aphids off the pulled out plants out under a running tap and eat them rather than tossing too).<\/p>\n<p><\/p>\n<p>Read more about preventing pests in the garden with our blog '<a href=\"\/blogs\/news\/5-produce-pests-how-to-beat\" title=\"5 Produce Pests And How To Beat Them\">5 Produce Pests and How to Beat Them<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1529644850219": {
+            "type": "question",
+            "settings": {
+              "title": "How do fungus gnats appear? How do I control them?",
+              "answer": "<p>Firstly, note the fungus gnats or sciarid flies are not bred in the water reservoirs&nbsp;below to make their way up into the soil and plants. The larvae are either brought in with your soil or&nbsp;flies are attracted to damp spots with lots of organic matter&nbsp;&nbsp;(which is what is in abundance in most potting mixes, or rotting leaves above the potting mix)&nbsp;if the canopy is left open. The flies will fly in and lay eggs in the top&nbsp;layer of the potting mix.&nbsp;The Vegepod reservoir&nbsp;wells don&rsquo;t stagnate as they have an overflow hole to allow regular flush outs when there is lots of rain or you can purposely water the pods through from the top.<\/p>\n<p><\/p>\n<p>If you notice them then also&nbsp;STOP watering. The top layer of soil in a Vegepod should generally be dry. &nbsp;You should always&nbsp;place your vegepods in sunny locations that gives as at least 6 hours direct sunlight a day, that is best for veggie growing anyway, and will ensure you don&rsquo;t get any wet\/damp related pests or fungi probs.&nbsp;Dead foliage attracts the gnats so always clean away anything you don&rsquo;t intend eating.<\/p>\n<p><\/p>\n<p>One solution to rid the gnats altogether is a biological control in the form of a nematode that is introduced to the soil. Apart from using the predatory nematodes (check your local producer for supply), another&nbsp;option&nbsp;is to kill any adult flies that are hanging around above the potting mix. They lay eggs which hatch into the larvae that do the damage. A sticky trap is a good non-toxic way to get the flies (see for example&nbsp;<a href=\"https:\/\/www.bunnings.com.au\/trappit-yellow-sticky-insect-garden-trap-5-pack_p2960969\">https:\/\/www.bunnings.com.au\/trappit-yellow-sticky-insect-garden-trap-5-pack_p2960969<\/a>).&nbsp;Stopping the flies will stop the larvae that cause the problem.&nbsp;<\/p>\n<p>Here is a photo of fungus&nbsp;gnat larvae which could be in the potting mix. Run your fingers through your top soil and look for these as a tell tale sign.<\/p>",
+              "q_img1": "shopify:\/\/shop_images\/fungas_gnat_pic.png",
+              "q_img2": "",
+              "faq_category": "technical"
+            }
+          },
+          "1533777402758": {
+            "type": "question",
+            "settings": {
+              "title": "Can I use two medium trolleys to make a trolley stand for the large vegepod?",
+              "answer": "<p><em>&ldquo;Vegepod&nbsp;<\/em><em>does<\/em><em>&nbsp;not&nbsp;<\/em><em>recommend<\/em><em>&nbsp;nor endorse doing this, but it has been witnessed before and does&nbsp;<\/em><em>technically<\/em><em>&nbsp;<\/em><em>&lsquo;<\/em><em>fit<\/em><em>&rsquo;<\/em><em>&nbsp;into place.&nbsp;<\/em><em>Note<\/em><em>&nbsp;the large vegepod is&nbsp;<\/em><em>weighing&nbsp;approximately<\/em><em>&nbsp;450kgs when full of wet soil and&nbsp;<\/em><em>full<\/em><em>&nbsp;reservoirs, so any such unintended use of such&nbsp;<\/em><em>trolleys<\/em><em>&nbsp;is at your own risk. Vegepod will not be held responsible. <\/em><em>The surface would&nbsp;<\/em><em>definitely<\/em><em>&nbsp;also need to be absolutely smooth, hard and level like a concrete slab as even a fairly small ridge could place undue pressure on the separated trolleys.&rdquo;<\/em><\/p>\n<p><\/p>\n<p>Read more about the benefits of our trolley stands in our blog '<a href=\"\/blogs\/news\/7-reasons-to-use-the-vegepod-stand\" title=\"7 Reasons To Use the Vegepod Stand\">7 Reasons to Use the Vegepod Stand<\/a>'.<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1537149176802": {
+            "type": "question",
+            "settings": {
+              "title": "What sunlight should my Vegepod be in?",
+              "answer": "<p>The best choices for a vegepod that is only getting sun for part of the day is to grow crops where the leaves are the harvested part of the plant. In other words parents like spinach, silver beet, lettuce, rocket and herbs such as mint, basil, thyme and oregano. Avoid crops such as tomatoes, beans and eggplants that rely on flowering and fruiting to produce because the reduced sunlight hours will reduce the amount of flowers and therefore fruits that are produced. On the flip side of the coin, lower light levels tend to result in extra foliage to try and catch the available light and hence you will get a reasonable harvest of leaves.&nbsp;<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          },
+          "1537332146057": {
+            "type": "question",
+            "settings": {
+              "title": "What about adding worm juice?",
+              "answer": "<p>The benefits of worm juice come in several ways as follows:<\/p>\n<p>It has a very well balanced nutrient content usually depending what your worms have been fed.&nbsp; If they have had the usual diet of things like kitchen scraps and manure these materials have the same&nbsp; balance of nutrients that plants need for optimal growth.&nbsp; Humus which is the end result of the breakdown of organic materials. Humus builds a soil's ability to store more water and nutrients Beneficial microbes from the worm's gut is in the juice.&nbsp;<\/p>\n<p>Storing the juice for more than a week or so will greatly reduce the quantity of beneficial microbes and for that reason we like to use it as fresh as possible.&nbsp; However, your stored juice will still have the full benefits of points 1 and 2. So for that reason it will still be good to use.&nbsp;<\/p>\n<p><\/p>\n<p>Want to know more about making worm tea for your garden? Read our blogs:<\/p>\n<p><\/p>\n<p>- '<a href=\"\/blogs\/news\/the-benefits-of-worm-juice\" title=\"The Benefits of Worm Juice\">The Benefits of Worm Juice<\/a>'<\/p>\n<p>- '<a href=\"\/blogs\/news\/international-compost-awareness-week-3-ways-to-compost-with-angus-stewart\" title=\"International Compost Awareness Week: 3 Ways to Compost With Angus Stewart\">International Compost Awareness Week: 3 Ways to Compost<\/a>'<\/p>",
+              "q_img1": "",
+              "q_img2": "",
+              "faq_category": "growing"
+            }
+          },
+          "1551750622476": {
+            "type": "question",
+            "settings": {
+              "title": "What if I don’t have a standard garden tap near my Vegepod? Does it matter?",
+              "answer": "<p>No! Firstly, the mist spray is merely an additional option for watering. Rain and manual watering is most common anyway. BUT, If you really don&rsquo;t want to manually water and you want to use the misters \/ use a timer for example, then there is a way to attach your misters to internal house sink taps anyway. Check this adapter!<\/p>",
+              "q_img1": "shopify:\/\/shop_images\/tap_connector.jpg",
+              "q_img2": "",
+              "faq_category": "popular"
+            }
+          }
+        },
+        "block_order": [
+          "1508736947336",
+          "1508736878592",
+          "1505619317062",
+          "1505619505792",
+          "1505619533432",
+          "1505619556153",
+          "1505619574347",
+          "1505619583186",
+          "1505619615965",
+          "1505619626857",
+          "1505619646712",
+          "1505619657973",
+          "1505619670797",
+          "1529644850219",
+          "1533777402758",
+          "1537149176802",
+          "1537332146057",
+          "1551750622476"
+        ],
+        "settings": {
+          "expand_questions": false,
+          "page_bgimg": "shopify:\/\/shop_images\/icon-faq.png",
+          "text_banner_cta": "can’t find what you’re looking for below? <a href=\"https:\/\/vegepod.com.au\/pages\/contact-us\">contact us<\/a>"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "blocks": {
+          "blog-template-0": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_background": ""
+            }
+          },
+          "blog-template-2": {
+            "type": "social_media",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "blog-template-0",
+          "blog-template-2"
+        ],
+        "settings": {
+          "show_blog_name": false,
+          "show_author_name": false,
+          "articles_per_page": 7
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "show_description": true,
+          "grid_items_per_row": 3
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_tag_filters": true,
+          "show_sort_by": true,
+          "grid_items_per_row": 3,
+          "grid_number_of_rows": 10,
+          "show_color_swatch": true,
+          "image_dimension": "normal",
+          "show_instagram": false,
+          "instagram_title": "Follow us on Instagram",
+          "instagram_access_token": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "allow_selecting_sold_out_variants": true,
+          "hide_variants_if_only_one": false,
+          "show_color_swatch": false,
+          "show_size_swatch": false,
+          "show_quantity_selector": true,
+          "show_share_buttons": true,
+          "enable_image_zoom": true,
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "contact-us",
+          "reviews_enabled": false,
+          "api_key": "AIzaSyBPx3S-qV_LqAMhKs8A4FesW_cvcgfJ8hc",
+          "contact_phone": "1800 428 431",
+          "contact_email": "info@vegepod.com.au",
+          "map_address": "Unit 5, 287 Mona Vale Rd, Terrey Hills NSW 2084",
+          "zoom": 15,
+          "map_pin": "shopify:\/\/shop_images\/map-pin.png"
+        }
+      },
+      "product-features": {
+        "type": "product-features",
+        "blocks": {
+          "product-features-0": {
+            "type": "feature",
+            "settings": {
+              "icon_name": "Contained Gardening",
+              "title": "Container Gardening",
+              "content": "An easy to manage contained gardening bed is perfect for the home. Control your growth and veggie quality in a separate environment away from the ground."
+            }
+          },
+          "product-features-1": {
+            "type": "feature",
+            "settings": {
+              "icon_name": "Self-Watering",
+              "title": "Self Watering",
+              "content": "Veggie health is ensured with our self-watering technology by using a wicking system and watering the plants from below. Plants can last weeks without watering in our Vegepods."
+            }
+          },
+          "product-features-2": {
+            "type": "feature",
+            "settings": {
+              "icon_name": "Protective Cover",
+              "title": "Protective Cover",
+              "content": "A greenhouse in our backyard - a polyethylene knitted mesh protects crops from UV and pests. The cover also helps manage temperature by allowing water and air to penetrate."
+            }
+          }
+        },
+        "block_order": [
+          "product-features-0",
+          "product-features-1",
+          "product-features-2"
+        ],
+        "settings": {}
+      },
+      "related-products": {
+        "type": "related-products",
+        "settings": {
+          "show_related_products": true,
+          "show_related_products_color_swatch": false,
+          "related_products_image_dimension": "normal"
+        }
+      },
+      "assembly-videos-template": {
+        "type": "assembly-videos-template",
+        "blocks": {
+          "1505726469589": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "1. Setting out Base Trays",
+              "video_link": "https:\/\/www.youtube.com\/embed\/HoU-1rPUmNI?feature=oembed"
+            }
+          },
+          "1505727481952": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "2. Joining Base Tray",
+              "video_link": "https:\/\/www.youtube.com\/embed\/vB7xql8TILU?feature=oembed"
+            }
+          },
+          "1505727488343": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "3. Building The Wall",
+              "video_link": "https:\/\/www.youtube.com\/embed\/10WrGusF2qg?feature=oembed"
+            }
+          },
+          "1505727514529": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "4. Connecting Wall To Base",
+              "video_link": "https:\/\/www.youtube.com\/embed\/o03CeC0LGqM"
+            }
+          },
+          "1505727539350": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "5. Attaching Wicking Wells",
+              "video_link": "https:\/\/www.youtube.com\/embed\/lTwD7FFagZk?feature=oembed"
+            }
+          },
+          "1505727556642": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "6. Assembling Canopy Frame",
+              "video_link": "https:\/\/www.youtube.com\/embed\/DKg1WTLPrC4?feature=oembed"
+            }
+          },
+          "1505727569922": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "7. Mist Spray Assembly",
+              "video_link": "https:\/\/www.youtube.com\/embed\/ZBSBMYA8aLA?feature=oembed"
+            }
+          },
+          "1505727580874": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "8. Putting Canopy Mesh On",
+              "video_link": "https:\/\/www.youtube.com\/embed\/o3Cc79lkzzM?feature=oembed"
+            }
+          },
+          "1505727585937": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "9. Attaching Hinge Clips",
+              "video_link": "https:\/\/www.youtube.com\/embed\/VzNb8ttTlWE?feature=oembed"
+            }
+          },
+          "1505727597915": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "10. Attaching Canopy String Holder",
+              "video_link": "https:\/\/www.youtube.com\/embed\/ZjTKzrd-x3c?feature=oembed"
+            }
+          },
+          "1542085875218": {
+            "type": "pod_assembly",
+            "settings": {
+              "video_title": "11. Adding Soil Mix To Your Vegepod",
+              "video_link": "https:\/\/www.youtube.com\/embed\/dFhECkxKNWU"
+            }
+          },
+          "1505728249495": {
+            "type": "regular_stand",
+            "settings": {
+              "video_title": "1. Joining Cross Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/SoSv3pZn-l4?feature=oembed"
+            }
+          },
+          "1505728261712": {
+            "type": "regular_stand",
+            "settings": {
+              "video_title": "2. Attaching Corner Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/EiqaLGMBPmY?feature=oembed"
+            }
+          },
+          "1505728275384": {
+            "type": "regular_stand",
+            "settings": {
+              "video_title": "3. Attaching Last 2 Angle Cross Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/gAFY_sVrWXI?feature=oembed"
+            }
+          },
+          "1505728291180": {
+            "type": "regular_stand",
+            "settings": {
+              "video_title": "4. Attaching Legs",
+              "video_link": "https:\/\/www.youtube.com\/embed\/BLigEYlv5Sk?feature=oembed"
+            }
+          },
+          "1505728575716": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "1. Joining Cross Braces Tubes To Angle Cross Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/Auo6Lz4mpxg?feature=oembed"
+            }
+          },
+          "1505728583462": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "2. Attaching Corner Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/vxZ5DcUOhhg?feature=oembed"
+            }
+          },
+          "1505728600117": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "3. Attaching Last 2 Angle Cross Braces",
+              "video_link": "https:\/\/www.youtube.com\/embed\/KM8y1Wo6WNc?feature=oembed"
+            }
+          },
+          "1505728616516": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "4. Attaching Legs",
+              "video_link": "https:\/\/www.youtube.com\/embed\/MoEg0CORWqs?feature=oembed"
+            }
+          },
+          "1505728640681": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "5. Adding The Base and Trolley Tubes",
+              "video_link": "https:\/\/www.youtube.com\/embed\/1Wqvle2wYqY?feature=oembed"
+            }
+          },
+          "1505728656399": {
+            "type": "trolley_stand",
+            "settings": {
+              "video_title": "6. Attaching Wheels",
+              "video_link": "https:\/\/www.youtube.com\/embed\/NQlM7SOzW44?feature=oembed"
+            }
+          }
+        },
+        "block_order": [
+          "1505726469589",
+          "1505727481952",
+          "1505727488343",
+          "1505727514529",
+          "1505727539350",
+          "1505727556642",
+          "1505727569922",
+          "1505727580874",
+          "1505727585937",
+          "1505727597915",
+          "1542085875218",
+          "1505728249495",
+          "1505728261712",
+          "1505728275384",
+          "1505728291180",
+          "1505728575716",
+          "1505728583462",
+          "1505728600117",
+          "1505728616516",
+          "1505728640681",
+          "1505728656399"
+        ],
+        "settings": {
+          "page_bgimg": "shopify:\/\/shop_images\/Assembly.png",
+          "text_banner_cta": "can’t find what you’re looking for below? <a href=\"https:\/\/vegepod.com.au\/pages\/contact-us\">contact us<\/a>",
+          "page_bgicon": "shopify:\/\/shop_images\/Assembly_Icon_2x_1f50dd33-b15a-4032-8f7e-94bf563df87f.png",
+          "text_heading_1": "POD ASSEMBLY <span>– 22 mins watching time<\/span>",
+          "text_heading_2": "REGULAR STAND <span>– 5 mins watching time<\/span>",
+          "text_heading_3": "TROLLEY STAND <span>– 8 mins watching time<\/span>"
+        }
+      },
+      "features-page-template": {
+        "type": "features-page-template",
+        "settings": {
+          "page_bgimg": "shopify:\/\/shop_images\/featured-banner-bg.jpg",
+          "video_button_text": "Watch Video",
+          "featured_tab_Name_1": "Container Gardens",
+          "featured_tab_Name_2": "Self-Watering",
+          "featured_tab_Name_3": "Protective Cover"
+        }
+      },
+      "container-gardens-template": {
+        "type": "container-gardens-template",
+        "blocks": {
+          "1505738264058": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Protects Soil",
+              "benifits_link": "\/blogs\/news\/sustainable-growing-plastic-pods\/"
+            }
+          },
+          "1505738339359": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Stop Contamination",
+              "benifits_link": "\/blogs\/news\/soil-lead-contamination\/"
+            }
+          },
+          "1505738379449": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Stops Trees Pilfering Nutrients",
+              "benifits_link": "\/blogs\/news\/soil-lead-contamination\/"
+            }
+          },
+          "1505738428618": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Control Nutrient Levels",
+              "benifits_link": "\/blogs\/news\/soil-lead-contamination\/"
+            }
+          },
+          "1505738453612": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Retains Warmth",
+              "benifits_link": ""
+            }
+          },
+          "1505738465183": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Portable",
+              "benifits_link": "\/blogs\/news\/pain-points-urban-gardeners\/"
+            }
+          },
+          "1505738490853": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Easily Raised",
+              "benifits_link": "\/blogs\/news\/raised-beds-versus-ground-gardening\/"
+            }
+          },
+          "1505738499655": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Easy To Fill",
+              "benifits_link": "\/blogs\/news\/from-pot-to-plate-growing-your-dinner\/"
+            }
+          },
+          "1505738550336": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Easy Set Up",
+              "benifits_link": ""
+            }
+          },
+          "1505738579770": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Easy To Maintain",
+              "benifits_link": "\/blogs\/news\/start-container-garden\/"
+            }
+          },
+          "1505738599849": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Durable",
+              "benifits_link": "\/https:\/\/vegepod.com.au\/news\/sustainable-growing-plastic-pods\/"
+            }
+          }
+        },
+        "block_order": [
+          "1505738264058",
+          "1505738339359",
+          "1505738379449",
+          "1505738428618",
+          "1505738453612",
+          "1505738465183",
+          "1505738490853",
+          "1505738499655",
+          "1505738550336",
+          "1505738579770",
+          "1505738599849"
+        ],
+        "settings": {
+          "prod_feat_heading_icon": "shopify:\/\/shop_images\/icon-container-gardening.png",
+          "prod_feat_heading_name": "Container Gardening",
+          "tab_heading_1": "Enclosed and Raised Vegetable Gardens",
+          "tab_desc_1": "<p>Vegepod Raised Garden Bed Kits give you the best of both worlds and more. You get the size of a raised garden bed with all the benefits of container gardening. Not only that, you also get the benefit of an Raised Garden Bed Cover that extends growing seasons and accelerates plant growth.<\/p>\n<p>Garden maintenance is minimal and watering is only required during the early stages of plant growth. Vegepod Raised Garden Bed Kits are simply the easiest way to grow your own vegetables.<\/p>",
+          "tab_desc_image": "shopify:\/\/shop_images\/high-res-info-graphics.jpg",
+          "item_button_text": "View Products",
+          "item_button_url": "\/collections\/all",
+          "icon_1": "shopify:\/\/shop_images\/icon-cg-benefits1.png",
+          "maintenance_title_1": "Protects Soil",
+          "maintenance_desc_1": "The quality of your soil is paramount to growing success. While looking after soil in contact with the ground can mean a lot of time and effort, Vegepod is contained, meaning your soil is secure and you know what’s in it.",
+          "icon_2": "shopify:\/\/shop_images\/icon-cg-benefits2.png",
+          "maintenance_title_2": "Stop Contamination",
+          "maintenance_desc_2": "Container gardening means you never have to worry about soil contamination again.  While lead and chemicals can be found in your existing, in-ground soil, container gardening ensures you can monitor what your soil is exposed to.",
+          "icon_3": "shopify:\/\/shop_images\/icon-cg-benefits3.png",
+          "maintenance_title_3": "Portable",
+          "maintenance_desc_3": "Great for renters, if you need to move house just empty out your portable raised vegetable garden and pack it on a truck. You can also place the container gardens on castor wheels for moving the Vegepod around.",
+          "icon_4": "shopify:\/\/shop_images\/icon-cg-benefits4.png",
+          "maintenance_title_4": "Easy To Fill",
+          "maintenance_desc_4": "Vegepod raised garden beds require less than half the potting mix required for a corrugated steel bed or raised timber bed of the same dimensions. Bagged potting mix will be easy to transport and easy to pour in.",
+          "benefits_image": "shopify:\/\/shop_images\/Medium-Vegepod-_-Stand-_-Plants-_-Cover.png"
+        }
+      },
+      "self-watering-template": {
+        "type": "self-watering-template",
+        "settings": {
+          "prod_feat_heading_icon": "shopify:\/\/shop_images\/icon-self-watering.png",
+          "prod_feat_heading_name": "Self Watering",
+          "tab_heading_1": "Wicking System",
+          "tab_desc_1": "<p>The Vegepod is a self-watering garden bed, meaning it utilises a <a href=\"https:\/\/vegepod.com.au\/vegepod-wicking-system-explained\/\">wicking system<\/a>. The wick is the soil or perlite that is in contact with the water in the reservoir at the base of the garden bad. Soil uses a capillary action to draw the water upwards keeping the soil moist. A plant's roots will locate this moisture hence watering from below.<\/p>\n<p>Established plants can last weeks without watering and in cooler times your plants may not require water for months at a time.<\/p>\n<p>It is important to water seeds and seedlings daily for a week or more. After that the reservoir will have enough water to keep the plant healthy. It is a good idea to reduce watering significantly once the plant is established. Over-watering can cause as much harm to your plants as under-watering.<\/p>",
+          "tab_image": "shopify:\/\/shop_images\/Wicking-System-Animation_v2.gif",
+          "tab_heading_2": "How Much to Water?",
+          "tab_desc_2": "<p>After you plants your seedlings give them a good soaking using the mist-spray (20 mins). This will wet the soil through and fill the reservoir.<\/p>\n<p>All climates are different and may vary. But mostly for the next 7 to 10 days water with the mist spray for about 3 mins only. If it rains during this period then don’t water at all.<\/p>\n<p>After 10 days your seedling’s roots will have located the necessary water source for survival and the reservoir will be full. Each plant differs on how much water it requires. Some plants like basil will send their roots into the reservoir itself. Hold right back on watering now – Base your watering on the season and weather. If it is winter and there is patchy rain don’t water at all. If it is mid summer and 30 degrees with no rain in sight then give them 3 minutes everyday.<\/p>\n<p>You can be neglectful and still get tremendous growing results. We have seen Vegepods left for 6 weeks through January and have still been fine.<\/p>\n<p>If you are going away for more than 2 weeks in summer it might be an idea to get a 24hr tap timer (around $50) and have it come on daily for 2 or 3 minutes.<\/p>"
+        }
+      },
+      "protective-cover-template": {
+        "type": "protective-cover-template",
+        "blocks": {
+          "1505802707228": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Provides a Micro Climate",
+              "benifits_link": "#"
+            }
+          },
+          "1505802728001": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Promotes Rapid Growth",
+              "benifits_link": "#"
+            }
+          },
+          "1505802770396": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Higher Yields",
+              "benifits_link": "#"
+            }
+          },
+          "1505802785665": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Permeable To Air and Water",
+              "benifits_link": "#"
+            }
+          },
+          "1505802827913": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Hinged Lid For Full Access to Plants",
+              "benifits_link": "#"
+            }
+          },
+          "1505802907904": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Mist-Spray Watering System",
+              "benifits_link": "#"
+            }
+          },
+          "1505802913410": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Protection From Weather",
+              "benifits_link": "#"
+            }
+          },
+          "1505802924809": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Protection From Wildlife",
+              "benifits_link": "#"
+            }
+          },
+          "1505802935303": {
+            "type": "benifits",
+            "settings": {
+              "benifits_Name": "Protection From Pests\/Bugs",
+              "benifits_link": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1505802707228",
+          "1505802728001",
+          "1505802770396",
+          "1505802785665",
+          "1505802827913",
+          "1505802907904",
+          "1505802913410",
+          "1505802924809",
+          "1505802935303"
+        ],
+        "settings": {
+          "prod_feat_heading_icon": "shopify:\/\/shop_images\/icon-protective-cover.png",
+          "prod_feat_heading_name": "Protective Cover",
+          "tab_heading_1": "Protection For Your Veggies",
+          "tab_desc_image": "<img width=\"75%\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/Cover_Infographic_v3.jpg?2804859477125760124\">",
+          "tab_desc_1": "<p>The VegeCover is unique to the Vegepod and is simply the best way to protect veggies. No need for pesticides or wildlife deterrents anymore.<\/p>\n<p>Providing a shade-rate of 17% it is ideal for keeping that harsh sun at bay and providing a superior growing environment.<\/p>\n<p>And the only real way to put an end to those voracious night-time predators.<\/p>",
+          "icon_1": "shopify:\/\/shop_images\/icon-pcbenefits1.png",
+          "maintenance_title_1": "Permeable to Air and Water",
+          "maintenance_desc_1": "An advanced greenhouse material made specifically for Vegepods it allows air and water to penetrate. Unlike plastic covers that will cook your veggies on a hot day the VegeCover will protect from harsh heat.",
+          "icon_2": "shopify:\/\/shop_images\/icon-pcbenefits2.png",
+          "maintenance_title_2": "Protection from Wildlife",
+          "maintenance_desc_2": "The never-ending bane of veggie growers in all capital cities the world over – wildlife is fighting back for our invasion of their space by eating our veggies the very night before we intended picking them.",
+          "icon_3": "shopify:\/\/shop_images\/icon-pcbenefits3.png",
+          "maintenance_title_3": "Protection from Pests\/Bugs",
+          "maintenance_desc_3": "Are you sick of seeing those holes in your leaves from the grubs. Green grubs seem to eat more leafy greens than most children. Stop the moths and butterflies to avoid these issues!",
+          "icon_4": "shopify:\/\/shop_images\/icon-pcbenefits4.png",
+          "maintenance_title_4": "Mist-Spray Watering System",
+          "maintenance_desc_4": "To make life even easier running along the top of the VegeCover is a mist-spray watering system. Just plug into a standard hose fitting and you are away. You can even attach a timer to your tap to water on extended vacations.",
+          "benefits_image": "shopify:\/\/shop_images\/Medium-Vegepod-_-Stand-_-Plants-_-Cover_600x_313a23ac-ea02-4ec3-9e37-af5409b79e95.png"
+        }
+      },
+      "online-store-template": {
+        "type": "online-store-template",
+        "blocks": {
+          "1505812935059": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Swanes.png",
+              "store_link": "http:\/\/www.swanes.com"
+            }
+          },
+          "1505813282716": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Trethowan-Nursery.jpg",
+              "store_link": "http:\/\/www.trethowannursery.com.au\/"
+            }
+          },
+          "1505813289520": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/wyee.jpg",
+              "store_link": "http:\/\/www.wyeenursery.com.au\/"
+            }
+          },
+          "1505813300897": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/village.jpg",
+              "store_link": "https:\/\/www.facebook.com\/GlenbrookVillageNursery\/"
+            }
+          },
+          "1505813306268": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/stone.jpg",
+              "store_link": "http:\/\/www.stonehengebeltana.com.au\/"
+            }
+          },
+          "1505813314332": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Hertirage.jpg",
+              "store_link": "http:\/\/heritagenursery.com.au\/"
+            }
+          },
+          "1505813321453": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/eden.jpg",
+              "store_link": "https:\/\/www.edengardens.com.au\/"
+            }
+          },
+          "1505813327798": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/bullen.jpg",
+              "store_link": "http:\/\/www.baag.com.au\/"
+            }
+          },
+          "1505813333951": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/GreenLife.jpg",
+              "store_link": "http:\/\/www.greenlifesoil.com.au\/"
+            }
+          }
+        },
+        "block_order": [
+          "1505812935059",
+          "1505813282716",
+          "1505813289520",
+          "1505813300897",
+          "1505813306268",
+          "1505813314332",
+          "1505813321453",
+          "1505813327798",
+          "1505813333951"
+        ],
+        "settings": {
+          "store_title": "Start Growing Today",
+          "store_subtitle": "Available in over 200 stores nationwide or purchase online today",
+          "shop_button_text": "Shop Online",
+          "shop_button_url": "#"
+        }
+      },
+      "1505975496780": {
+        "type": "online-store-template",
+        "disabled": true,
+        "blocks": {
+          "1505975772439": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Swanes.png",
+              "store_link": "http:\/\/www.swanes.com"
+            }
+          },
+          "1505975798192": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Trethowan-Nursery.jpg",
+              "store_link": "http:\/\/www.trethowannursery.com.au\/"
+            }
+          },
+          "1505975805792": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/wyee.jpg",
+              "store_link": "http:\/\/www.wyeenursery.com.au\/"
+            }
+          },
+          "1505975812724": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/village.jpg",
+              "store_link": "https:\/\/www.facebook.com\/GlenbrookVillageNursery\/"
+            }
+          },
+          "1505975818071": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/stone.jpg",
+              "store_link": "http:\/\/www.stonehengebeltana.com.au\/"
+            }
+          },
+          "1505975823489": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Hertirage.jpg",
+              "store_link": "http:\/\/heritagenursery.com.au\/"
+            }
+          },
+          "1505975828710": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/eden.jpg",
+              "store_link": "https:\/\/www.edengardens.com.au\/"
+            }
+          },
+          "1505975836700": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/bullen.jpg",
+              "store_link": "http:\/\/www.baag.com.au\/"
+            }
+          },
+          "1505975841276": {
+            "type": "store_detail",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/GreenLife.jpg",
+              "store_link": "http:\/\/www.greenlifesoil.com.au\/"
+            }
+          }
+        },
+        "block_order": [
+          "1505975772439",
+          "1505975798192",
+          "1505975805792",
+          "1505975812724",
+          "1505975818071",
+          "1505975823489",
+          "1505975828710",
+          "1505975836700",
+          "1505975841276"
+        ],
+        "settings": {
+          "store_title": "Start Growing Today",
+          "store_subtitle": "Available in over 200 stores nationwide or purchase online today",
+          "shop_button_text": "Shop Online",
+          "shop_button_url": "https:\/\/vegepod.com.au\/collections\/all"
+        }
+      },
+      "setup-page-section": {
+        "type": "setup-page-section",
+        "settings": {
+          "full_banner_image": "shopify:\/\/shop_images\/vagepod-bg_large_18309d4a-f023-4b5d-96cb-162258172c37.jpg",
+          "setup_page_title": "Setting Up Your Raised Garden Bed",
+          "shop_now_text": "Shop Now",
+          "shop_now_link": "\/collections\/all",
+          "video_text": "Watch Video",
+          "vegepod_title_1": "Easy Assembly",
+          "vegepod_desc_1": "Just slide and click together. A 2m x 1m Vegepod with cover can be assembled in 1 hour.",
+          "vegepod_image_1": "shopify:\/\/shop_images\/assembly1.jpg",
+          "vegepod_title_2": "Easy to Fill",
+          "vegepod_desc_2": "<div class=\"desc\">Just use a <a href=\"https:\/\/vegepod.com.au\/news\/the-different-soils-that-can-affect-how-you-grow-your-plants-and-vegetables\/\" target=\"_blank\" rel=\"noopener noreferrer\">good quality bagged potting mix<\/a>.<br>\nSmall Vegepod – 5 x 25L bags<br>\nMedium Vegepod – 9 x 25L bags<br>\nLarge Vegepod – 18 x 25L bags<\/div>",
+          "vegepod_image_2": "shopify:\/\/shop_images\/filling1.jpg",
+          "vegepod_title_3": "Plant Away",
+          "vegepod_desc_3": "Once your Vegepod is filled with a good quality potting mix – just plant it out.",
+          "vegepod_image_3": "shopify:\/\/shop_images\/planting1.jpg",
+          "assembly_title": "Assembly",
+          "assembly_image": "",
+          "fillig_soil_title": "Filling\/Soil",
+          "filling_image": "",
+          "planting_title": "Planting",
+          "planting_image": ""
+        }
+      },
+      "assembly-section": {
+        "type": "assembly-section",
+        "settings": {
+          "vagepod_assembly_title": "Assembly",
+          "vagepod_assembly_desc": "<p>READ THE USER GUIDE<\/p>\n<p>The Vegepods are quite easy to put together especially if you follow the User Guides.<\/p>\n<p>If you have any issues &ndash; READ THE USER GUIDE AGAIN<\/p>\n<p>If you don&rsquo;t have a User Guide download one<\/p>\n<p>VEGEPODS<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-large.pdf?3022366542525183476\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-large.pdf?3022366542525183476\">LARGE VEGEPOD<\/a>&nbsp;2m x 1m<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-medium.pdf?3022366542525183476\">MEDIUM VEGEPOD<\/a>&nbsp;1m x 1m<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-small.pdf?3022366542525183476\">SMALL VEGEPOD<\/a>&nbsp;0.5m x 1m<\/p>\n<p><\/p>\n<p>VEGECOVERS<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-large.pdf?3022366542525183476\">LARGE COVER<\/a>&nbsp;2m x 1m<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-medium.pdf?3022366542525183476\">MEDIUM COVER<\/a>&nbsp;1m x 1m<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-small.pdf?3022366542525183476\">SMALL&nbsp;COVER<\/a>&nbsp;0.5m x 1m<\/p>\n<p><\/p>\n<p>STANDS<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_large_joining_NEW.pdf?16265266030423035422\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_large_joining_NEW.pdf?16265266030423035422\">LARGE STAND<\/a>&nbsp;2m x 1m (download medium stand also)<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_medium_NEW_a2c4c146-673c-4e5d-aad5-ed1cb9364bbe.pdf?16265266030423035422\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_medium_NEW_a2c4c146-673c-4e5d-aad5-ed1cb9364bbe.pdf?16265266030423035422\">MEDIUM STAND<\/a>&nbsp;1m x 1m<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_small_NEW_2a372a23-bf03-425b-a6ab-a1b4aeab1c8d.pdf?16265266030423035422\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_small_NEW_2a372a23-bf03-425b-a6ab-a1b4aeab1c8d.pdf?16265266030423035422\">SMALL STAND<\/a>&nbsp;0.5m x 1m<\/p>\n<p><\/p>\n<p>TROLLEY&nbsp;STANDS&nbsp;<\/p>\n<p><\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_medium_2b004338-b961-4d97-8535-57e493fe40b1.pdf?16265266030423035422\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_medium_2b004338-b961-4d97-8535-57e493fe40b1.pdf?16265266030423035422\">MEDIUM TROLLEY STAND<\/a>&nbsp;1m x 1m&nbsp;<\/p>\n<p>User guide (PDF)&nbsp;<a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_small_72778455-ccbf-4f5e-8920-6c1ac898f9f3.pdf?16265266030423035422\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_small_72778455-ccbf-4f5e-8920-6c1ac898f9f3.pdf?16265266030423035422\">SMALL TROLLEY STAND<\/a>&nbsp;0.5m x 1m<\/p>\n<p>If you are missing any parts or there is something broken &ndash; don&rsquo;t hesitate to contact us at&nbsp;<a href=\"mailto:info@vegepod.com.au\">info@vegepod.com.au<\/a><\/p>",
+          "assembly_video_link": ""
+        }
+      },
+      "filling-soil-section": {
+        "type": "filling-soil-section",
+        "settings": {
+          "filling_soil_title_1": "Filling your Vegepod",
+          "filling_soil_desc_1": "<p>The easiest way to fill a Vegepod is to use a good quality bagged potting mix. This is available from all Garden Centres and most hardware stores. Generally the more expensive the potting mix the better results you will get.<\/p>\n<p>You can also substitute a portion of the potting mix for Perlite or Vermiculite. These will help lighten the soil allowing plants roots to grow more easily. They also retain water so you are able to reduce the amount of watering. You will need to look for this online as most garden centres only sell it in 5 litre bags. A large Vegepod can use 100 litres.<\/p>",
+          "filling_soil_image_1": "shopify:\/\/shop_images\/filling_perlite.jpg",
+          "filling_soil_title_2": "Fertilising",
+          "filling_soil_desc_2": "<p>We use bagged cow manure, you can use, chicken manure, compost, mushroom compost or any other natural fertiliser. We also use Seasol which helps promote root growth.<\/p>\n<h3>Method<\/h3>\n<p><strong>Always ensure you fill the Vegepod right to the top.<\/strong><br>\nThe self-watering reservoir is designed to operate at maximum efficiency when this is the case. You can even fill it past the rim as over time it will settle lower.<\/p>\n<p>We use perlite at the bottom as the wicking properties of perlite are superior to potting mix. We fill the wells and 2cm on the trays as the first layer. We then add potting mix and cow manure in the bottom half combined with more of the perlite and mix this all together. (It is recommended you use a face- mask when pouring bagged potting mix.)<\/p>\n<p>The top half of the soil should contain the rest of the potting mix and perlite combined. It is a good idea to keep the cow manure lower so as to prevent the roots of seedlings from burning. The roots will soon find the fertiliser when the plant requires it.<\/p>",
+          "filling_soil_image_2": "shopify:\/\/shop_images\/potting_mix.jpg",
+          "filling_soil_title_3": "It is fine to use straight potting mix – the following mixes are optional",
+          "filling_soil_desc_3": "<div class=\"grid grid--large\">\n  <div class=\"grid__cell 1\/3--handheld-and-up\">\n    <h4>Small Vegepod<\/h4>\n    <ul>\n      <li>Requires 5 Bags (25L) of quality potting mix<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITH PERLITE<\/strong><\/li>\n      <li>3 bags (25L) potting mix<\/li>\n      <li>1 bag (25L) cow manure<\/li>\n      <li>(25L) perlite<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITHOUT PERLITE<\/strong><\/li>\n      <li>4 bags (25L) potting mix<\/li>\n      <li>1 bag (25L) cow manure<\/li>\n    <\/ul>\n  <\/div>\n  <div class=\"grid__cell 1\/3--handheld-and-up\">\n    <h4>Medium Vegepod<\/h4>\n    <ul>\n      <li>Requires 9 Bags (25L) of quality potting mix<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITH PERLITE<\/strong><\/li>\n      <li>5 bags (25L) potting mix<\/li>\n      <li>2 bags (25L) cow manure<\/li>\n      <li>(50L) perlite<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITHOUT PERLITE<\/strong><\/li>\n      <li>7 bags (25L) potting mix<\/li>\n      <li>2 bags (25L) cow manure<\/li>\n    <\/ul>\n  <\/div>\n  <div class=\"grid__cell 1\/3--handheld-and-up\">\n    <h4>Large Vegepod<\/h4>\n    <ul>\n      <li>Requires 18 Bags (25L) of quality potting mix<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITH PERLITE<\/strong><\/li>\n      <li>10 bags (25L) potting mix<\/li>\n      <li>4 bags (25L) cow manure<\/li>\n      <li>(100L) perlite<\/li>\n    <\/ul>\n    <ul>\n      <li><strong>WITHOUT PERLITE<\/strong><\/li>\n      <li>14 bags (25L) potting mix<\/li>\n      <li>4 bags (25L) cow manure<\/li>\n    <\/ul>\n  <\/div>\n<\/div>"
+        }
+      },
+      "planting-section": {
+        "type": "planting-section",
+        "settings": {
+          "planting_title_1": "‘Go To Town We Always Say’",
+          "planting_desc_1": "<p>Pack as much as you like in a Vegepod, the cover provides a great growing environment.<br>\nSome plants will struggle while others thrive. <a href=\"https:\/\/vegepod.com.au\/celebrating-3-years-impressive-pods\/\">Experiment<\/a>, try more plants or less plants and see what works for you. Try growing from seed or for the impatient – just buy punnets of seedlings.<\/p>\n<p><strong>Example quantities<\/strong><\/p>\n<ul>\n<li>Small Vegepod – 3 punnets<\/li>\n<li>Medium Vegepod – 5 punnets<\/li>\n<li>Large Vegepod – 8 punnets<\/li>\n<\/ul>",
+          "planting_image_1": "shopify:\/\/shop_images\/planting2.jpg",
+          "planting_desc_2": "<p>Punnets of seedlings are available from all garden centres and some larger hardware stores or the best place is your local food market. They range in price a bit – from about $3 at the markets to about $6 or more in some of the garden centres. Things like lettuce, silverbeet or asian greens will come with 8 or 10 plants in a punnet.<\/p>\n<p>Of course quality varies – if the sellers punnets have just arrived they look great, a week later some of them are a little sad. Thats why markets are usually the best place to buy.<\/p>\n<h3>What to look out for<\/h3>\n<p>If they look healthy and vibrant then they generally are and will handle the transplant well. Always check the leaves of the seedlings, underneath as well. Grubs or aphids might be found, if so leave those alone. Grubs aren’t too bad in a covered Vegepod as you can find and eliminate them. But aphids are harder to control without using sprays.<\/p>\n<p>Carrot seedlings are difficult as you need to separate each plant very carefully, meaning you will be removing the soil from them. This will cause the plant distress and take a little longer to start growing. Individual punnets make life much easier especially leafy greens, they can rebound immediately and you can be eating them a few weeks later.<\/p>\n<h3>Watering in<\/h3>\n<p>Always give them a good watering in. Using the mist-spray for this is ideal as you won’t flatten your precious seedlings. If using a hose or watering can then pick them back up after watering.<\/p>",
+          "planting_image_2": "shopify:\/\/shop_images\/planting3.jpg"
+        }
+      },
+      "whats-on-section": {
+        "type": "whats-on-section",
+        "blocks": {
+          "1549928275329": {
+            "type": "separator",
+            "settings": {
+              "title": "Click event for more info"
+            }
+          },
+          "1559005533780": {
+            "type": "question",
+            "settings": {
+              "title": "1-2 June 2019 - Brisbane Plant Collectors Fair",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;1st &amp; 2nd<\/em>&nbsp;June 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><span style=\"text-decoration: none;\">Rocklea Showgrounds<\/span><\/em><\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;Saturday and Sunday 8:30<span style=\"text-decoration: none;\">am - 4pm&nbsp;<\/span><\/em><\/p>\n<p><\/p>",
+              "q_img1": "shopify:\/\/shop_images\/60514674_2083962461901166_5635186453165113344_o.jpg",
+              "q_img2": ""
+            }
+          },
+          "1519700374778": {
+            "type": "separator",
+            "settings": {
+              "title": ""
+            }
+          },
+          "1557113156684": {
+            "type": "question",
+            "settings": {
+              "title": "4 - 6 June 2019 FarmFest - Toowoomba",
+              "answer": "<p><em><strong>When:<\/strong> 4<\/em>th - 6th June 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><span style=\"text-decoration: none;\">Kingsthorpe Park, on the Warrego Highway, 20 kms west of Toowoomba<\/span><\/em><\/p>\n<p><em><strong>Hours:<\/strong> Tues &amp; Wed <span style=\"text-decoration: none;\">9am - 4pm Thurs <\/span>9am - 4pm&nbsp;<\/em><\/p>\n<p><em><strong>For more information;&nbsp;<a href=\"https:\/\/fairfaxruralevents.com.au\/farmfest\/home\" title=\"https:\/\/fairfaxruralevents.com.au\/farmfest\/home\">https:\/\/fairfaxruralevents.com.au\/farmfest\/home<\/a><\/strong><\/em><\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1557113560397": {
+            "type": "question",
+            "settings": {
+              "title": "12 - 13 July 2019 - Mudgee Field Days",
+              "answer": "<p><em><strong>When:<\/strong> 13<\/em>th - 14th October 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><span style=\"text-decoration: none;\">2.5 kms north of Mudgee township, adjacent the Mudgee airport.<\/span><\/em><\/p>\n<p><em><strong>Hours:<\/strong> 8:30am - 5pm&nbsp;<\/em><\/p>\n<p><em><strong>For more information; <\/strong><a href=\"https:\/\/mudgeefielddays.com.au\" title=\"https:\/\/mudgeefielddays.com.au\">https:\/\/mudgeefielddays.com.au<\/a><\/em><\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1549927997697": {
+            "type": "question",
+            "settings": {
+              "title": "12 - 14 July 2019 - Queensland Garden Expo, Nambour",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;<\/em>12th - 14th&nbsp;July 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><\/em>Nambour Showgrounds<\/p>\n<p><em><strong>Hours:&nbsp;<\/strong><\/em>Fri &amp; Sat&nbsp;8am - 5pm, Sun 8am - 4pm<\/p>\n<p><em><strong>For more information:&nbsp;<\/strong><\/em><\/p>\n<p>https:\/\/www.qldgardenexpo.com.au\/<\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1549928026309": {
+            "type": "question",
+            "settings": {
+              "title": "9 - 18 August 2019 - The Royal Queensand Show (EKKA), Brisbane",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;9<\/em>th - 18th August 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><\/em>Brisbane ShowGrounds<\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;tbc<\/em><\/p>\n<p><em><strong>For more information:&nbsp;<\/strong><\/em><\/p>\n<p><a href=\"https:\/\/www.ekka.com.au\/\" title=\"https:\/\/www.ekka.com.au\/\">https:\/\/www.ekka.com.au\/<\/a><\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1557113996442": {
+            "type": "question",
+            "settings": {
+              "title": "20 -22 August 2019 - AgQuip, Gunnedah NSW",
+              "answer": "<p><em><strong>When:<\/strong> <\/em>20 -22 August 2019<\/p>\n<p><em><strong>Where: <\/strong>Blackjack Road, Gunnedah, NSW<\/em><\/p>\n<p><em><strong>Hours:<\/strong> Tues &amp; Wed 9am - 5pm Thurs 9am - 4pm&nbsp;<\/em><\/p>\n<p><em><strong>For more information;&nbsp;<a href=\"https:\/\/fairfaxruralevents.com.au\/agquip\/home\" title=\"https:\/\/fairfaxruralevents.com.au\/agquip\/home\">https:\/\/fairfaxruralevents.com.au\/agquip<\/a><\/strong><\/em><\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1549928068378": {
+            "type": "question",
+            "settings": {
+              "title": "30 August - 8 September 2019 - Royal Adelaide Show",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;30<\/em>th August - 8th September 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><\/em>Adelaide Showgrounds<\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;Opening at 9am daily. Fri and Sat closes @ 9pm Mon - Thur &amp; Sundays closes@ 8pm<\/em><\/p>\n<p><em><strong>For more information:&nbsp;<a href=\"https:\/\/theshow.com.au\/\" title=\"https:\/\/theshow.com.au\">https:\/\/theshow.com.au<\/a><\/strong><\/em><\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1549928186894": {
+            "type": "question",
+            "settings": {
+              "title": "27 - 30 August 2019 - AHURI National Housing Conference, Darwin",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;27<\/em>th -&nbsp;30th August 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><\/em>Darwin Convention Centre<\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;tbc<\/em><\/p>\n<p><em><strong>For more information;&nbsp;<\/strong><\/em><\/p>\n<p>https:\/\/www.ahuri.edu.au\/events\/national-housing-conference-2019<\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1557114632572": {
+            "type": "question",
+            "settings": {
+              "title": "28 - 29 September 2019 - Rivendell Flower & Garden Show, Concord NSW",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;28<\/em>th - 29th September 2019<\/p>\n<p><em><strong>Where: <\/strong><\/em>Concord Hospital <span style=\"text-decoration: none;\">Rivendell, Thomas Walker Estate&nbsp;<\/span><\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;9am - 3pm&nbsp;<\/em><\/p>\n<p><em><strong>For more information;&nbsp;<\/strong><a href=\"https:\/\/www.slhd.nsw.gov.au\/Concord\/RivendellFlowerShow\/\" title=\"https:\/\/www.slhd.nsw.gov.au\/Concord\/RivendellFlowerShow\/\">https:\/\/www.slhd.nsw.gov.au\/Concord\/RivendellFlowerShow\/<\/a><\/em><\/p>\n<p><\/p>\n<p>https:\/\/www.slhd.nsw.gov.au\/Concord\/RivendellFlowerShow\/<\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          },
+          "1549928220228": {
+            "type": "question",
+            "settings": {
+              "title": "27 - 29 October 2019 - LASA (Leading Aged Services Australia) National Congress - Adelaide",
+              "answer": "<p><em><strong>When:<\/strong>&nbsp;27<\/em>th - 29th October 2019<\/p>\n<p><em><strong>Where:&nbsp;<\/strong><\/em>Adelaide&nbsp;Convention Centre<\/p>\n<p><em><strong>Hours:<\/strong>&nbsp;9am - 4pm&nbsp;<\/em><\/p>\n<p><em><strong>For more information;&nbsp;<\/strong><\/em><\/p>\n<p>https:\/\/lasa.asn.au\/event\/lasa-national-congress2019\/<\/p>",
+              "q_img1": "",
+              "q_img2": ""
+            }
+          }
+        },
+        "block_order": [
+          "1549928275329",
+          "1559005533780",
+          "1519700374778",
+          "1557113156684",
+          "1557113560397",
+          "1549927997697",
+          "1549928026309",
+          "1557113996442",
+          "1549928068378",
+          "1549928186894",
+          "1557114632572",
+          "1549928220228"
+        ],
+        "settings": {
+          "expand_questions": false,
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Events_Icon_2x_fd5efaa1-ad37-41dd-8d80-2bc6fec04358.png"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "blocks": {
+          "1508218481585": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Saw in Independent Stockist\/Shop"
+            }
+          },
+          "1508218498737": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Google"
+            }
+          },
+          "1508218507929": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Facebook"
+            }
+          },
+          "1508218522089": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Instagram"
+            }
+          },
+          "1508218530838": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Word of Mouth"
+            }
+          },
+          "1509762335601": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "TV"
+            }
+          },
+          "1509762341263": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Radio"
+            }
+          },
+          "1521512415262": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Event\/Show"
+            }
+          },
+          "1509840126376": {
+            "type": "text",
+            "settings": {
+              "add_option_value": "Other"
+            }
+          }
+        },
+        "block_order": [
+          "1508218481585",
+          "1508218498737",
+          "1508218507929",
+          "1508218522089",
+          "1508218530838",
+          "1509762335601",
+          "1509762341263",
+          "1521512415262",
+          "1509840126376"
+        ],
+        "settings": {
+          "show_notes": true,
+          "show_shipping_estimator": true,
+          "show_refer": false,
+          "shipping_estimator_default_country": "United States"
+        }
+      },
+      "cart-recommended-products": {
+        "type": "cart-recommended-products",
+        "blocks": {
+          "cart-recommended-products-1": {
+            "type": "product",
+            "settings": {
+              "product": ""
+            }
+          },
+          "cart-recommended-products-2": {
+            "type": "product",
+            "settings": {
+              "product": ""
+            }
+          },
+          "cart-recommended-products-3": {
+            "type": "product",
+            "settings": {
+              "product": ""
+            }
+          }
+        },
+        "block_order": [
+          "cart-recommended-products-1",
+          "cart-recommended-products-2",
+          "cart-recommended-products-3"
+        ],
+        "settings": {
+          "show_related_products": false,
+          "title": "You may also like",
+          "show_color_swatch": true,
+          "image_dimension": "small"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_blog_name": false,
+          "show_author_name": false,
+          "show_tags": false
+        }
+      },
+      "community": {
+        "type": "community",
+        "blocks": {
+          "community-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Community Programs"
+            }
+          },
+          "1509419808467": {
+            "type": "question",
+            "settings": {
+              "title": "KindyGarden (for Early Years Learning Centres)",
+              "answer": "<p>The team at Vegepod have sourced the expertise of Dr Kate Neale from the <a href=\"http:\/\/www.ccyp.scu.edu\/\"><u>Centre for Children and Young People at Southern Cross University<\/u><\/a>&nbsp;and <a href=\"http:\/\/www.firstyears.com.au\"><u>First Years Early Childhood Consulting<\/u><\/a>&nbsp;to develop a suite of gardening lesson plans designed to help guide the educators throughout the entire growing process.<\/p>\n<p><u>How the lessons link to the Early Years Learning Framework?<\/u><strong>&nbsp;<\/strong><\/p>\n<p>Each lesson links to principles, practices and learning outcomes of the Early Years Learning Framework, which are highlighted for educator&rsquo;s convenience on each lesson plan. These links have been identified through trialling these lesson plans in Early Childhood settings, however other outcomes may be observed depending on the children and educators taking part in the lessons. Each lesson plan clearly articulates how it links to the EYLF.<\/p>\n<p><u>How do the lessons help meet the National Quality Standards?<\/u><\/p>\n<p>The Kindy Garden lesson plans can help services meet the National Quality Standards in the following ways.<\/p>\n<p><em><i>Quality area 1- Educational program and practice<\/i><\/em>.<\/p>\n<p>The Kindy Garden is implemented as part of the educational curriculum. The documentation templates allow educators to document children&rsquo;s voices and learning, as well as showing links to the EYLF.<\/p>\n<p><em>Quality area 2- Children&rsquo;s health and safety<\/em>.<\/p>\n<p>Children are introduced and encouraged to participate in healthy eating and hygiene practices.<\/p>\n<p><em><i>Quality area 3- Physical Environment.<\/i><\/em><\/p>\n<p>The Kindy Garden helps embed sustainable practices in the Early Childhood service. The Kindy Garden also supports children to take responsibility for the environment.<\/p>\n<p>Furthermore, the Kindy Garden is perfect to help services meet Education and Care Services Regulation regarding children having access to natural materials and resources.<\/p>\n<p><em><i>Quality area 5- Relationships with children.<\/i><\/em><\/p>\n<p>The Kindy Garden encourages all children to be involved if they choose. As a group project, this encourages children to collaborate, communicate, share ideas and be respectful. The Kindy Garden also offers opportunities for educators to build reciprocal relationships with the children throughout the project.<\/p>\n<p><\/p>"
+            }
+          },
+          "1509419876079": {
+            "type": "question",
+            "settings": {
+              "title": "Vegepods in Schools",
+              "answer": "<p>There are many garden programs available for schools. Most focus on engaging children in specific tasks around growing vegetables. &nbsp;Which is great, but Vegepod sees things a little differently.<\/p>\n<p>For students to be really engaged in gardening (and learning), they need to feel a sense of place and belonging. Only then will they truly be engaged in learning and actively involved.<\/p>\n<p>Research tells us students&rsquo; wellbeing and resilience is linked to time spent in greenspaces. The benefits of constructive time in gardens includes: lower anxiety, increased sense of wellbeing, improved mindfulness and better concentration.&nbsp;Socio-cultural theory tells us kids learn through active participation. Participation is also a central tenet of <strong>children&rsquo;s wellbeing<\/strong>&nbsp;in schools.<\/p>"
+            }
+          },
+          "1509419882527": {
+            "type": "question",
+            "settings": {
+              "title": "Social housing",
+              "answer": "<p>Communal gardens within social housing properties play a vital role for tenants and the local community more broadly. They encourage individual wellbeing of tenants through nutrition, physical exercise and mental wellness as well as help facilitate and increase tenant involvement in social interactions on site. On-site community gardens encourage stronger communications, acceptance and understanding between diverse tenants from different backgrounds, cultures and age groups and as well as an opportunity to celebrate each other&rsquo;s unique differences through shared activities and opportunities for communal harvest celebrations. Tenants are also able to build and exhibit a range of capacity building skills in communication, teamwork, project management and gardening. Tenants are also able to show leadership in and pride for their local community and physical environment.<\/p>\n<p>The universal design of Vegepods, their ability to be set up anywhere and be self-contained, and product features that ensure both organic and low maintenance gardening, make them the perfect solution for community style gardening projects.<\/p>"
+            }
+          },
+          "1509419895409": {
+            "type": "question",
+            "settings": {
+              "title": "Disability",
+              "answer": "<p><em><i>A capacity building and inclusive gardening program <\/i><\/em>specifically designed for people with cognitive disability that enables service users and interested support workers to establish and maintain a garden within a disability service.<\/p>\n<p>The <em><i>project goal<\/i><\/em>&nbsp;is to increase the capacity of people with disability (and workers) to create and maintain an accessible community hub vegetable garden, with potential to extend into a sustainable social enterprise.<\/p>\n<p>The <em><i>purpose of the project <\/i><\/em>is to develop and pilot resources designed to develop life skills (capacity building); reduce social isolation and boredom; increase community\/social interactions; increase organisational sustainability initiatives lessening its environmental impact; contribute to urban greenspaces; and provide service users access to therapeutic horticulture techniques.<\/p>\n<p>We use participatory action research (PAR), as an inclusive framework with involvement of all stakeholders throughout the project. This is a way of enacting inclusivity in the project, with the &lsquo;nothing about us without us&rsquo; philosophy. It is collaborative between the project team, people in the community, workers and people with disability to work together to develop knowledge and effect change. PAR sees people as experts in their own lives. It creates knowledge that reflects what is important to the participants for meaningful change in quality of support and work satisfaction.<\/p>"
+            }
+          },
+          "1509419900983": {
+            "type": "question",
+            "settings": {
+              "title": "Aged care",
+              "answer": "<p><em><i>Vegepod&rsquo;s accessible gardening program<\/i><\/em>&nbsp;is specifically designed for people living in independent and assisted living accommodation, enabling residents and interested staff to establish and maintain waist height, low maintenance, pest-free and safe organic gardens.<\/p>\n<p>The <em><i>program <\/i><\/em>is committed to allowing everyone to get (or continue) growing and actively involved in their community. The program allows for both community style &ldquo;podding&rdquo; in common areas as well as individual &ldquo;podding&rdquo; in private residences.<\/p>\n<p>The <em><i>Vegepod accessible gardening program<\/i><\/em>&nbsp;encourages residents to come together to share knowledge, learn from each other, get to know each other, find commonalities, celebrate differences, foster community cohesion and lessen social isolation &ndash; all through spending time together in the garden. Residents can spend time in the community garden before returning to their own individual pods to continue their gardening independently.<\/p>\n<p>The <em><i>program <\/i><\/em>is&nbsp;designed to develop or engage resident&rsquo;s life skills; reduce social isolation and boredom; increase community\/social interactions; increase organisational sustainability initiatives by lessening its environmental impact; contribute to residential greenspaces; and improve the general wellbeing of residents and staff through therapeutic horticulture.<\/p>"
+            }
+          },
+          "1509419888776": {
+            "type": "question",
+            "settings": {
+              "title": "Rehabilitation and health care services",
+              "answer": "<p>The <em><i>Vegepod accessible gardening program<\/i><\/em>&nbsp;encourages people to come together to share knowledge, learn from each other, get to know each other, find commonalities, celebrate differences, foster communication, build team work and lessen isolation &ndash; all through spending time together in the garden. Patients and service users can spend time in the community garden before returning to their own individual pods to continue their gardening independently.<\/p>\n<p>The benefits of gardening on a person&rsquo;s well-being are well known (and immense):<\/p>\n<p><\/p>\n<p>. lowers anxiety<\/p>\n<p>. improves concentration<\/p>\n<p>. engages our senses<\/p>\n<p>. encourages healthy eating<\/p>\n<p>. promotes being active<\/p>\n<p>. encourages continued use of fine and gross motor skills (if you&rsquo;ve ever planted carrot seeds, you&rsquo;ll know what we mean)<\/p>\n<p>. promotes citizenship<\/p>\n<p>. promotes a sense of belonging and connection to place<\/p>\n<p>Vegepod&rsquo;s universal design makes gardening accessible and safe for everyone.<\/p>\n<p><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "community-0",
+          "1509419808467",
+          "1509419876079",
+          "1509419882527",
+          "1509419895409",
+          "1509419900983",
+          "1509419888776"
+        ],
+        "settings": {
+          "expand_questions": false,
+          "page_bgimg": "shopify:\/\/shop_images\/vagepod-bg_large_18309d4a-f023-4b5d-96cb-162258172c37.jpg"
+        }
+      },
+      "communities": {
+        "type": "communities",
+        "blocks": {
+          "1544676912577": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm1.png",
+              "comm_progam_name": "Preschools & Schools"
+            }
+          },
+          "1544676928819": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm2.png",
+              "comm_progam_name": "Physical Health Rehabilitation"
+            }
+          },
+          "1544676947032": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm3.png",
+              "comm_progam_name": "Social Housing"
+            }
+          },
+          "1544676964448": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm4.png",
+              "comm_progam_name": "Mental Health Rehabilitation"
+            }
+          },
+          "1544677081968": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm5.png",
+              "comm_progam_name": "Disability Services"
+            }
+          },
+          "1544677002825": {
+            "type": "community_programs",
+            "settings": {
+              "comm_progam_icon": "shopify:\/\/shop_images\/icon-comm6.png",
+              "comm_progam_name": "Aged Care"
+            }
+          }
+        },
+        "block_order": [
+          "1544676912577",
+          "1544676928819",
+          "1544676947032",
+          "1544676964448",
+          "1544677081968",
+          "1544677002825"
+        ],
+        "settings": {
+          "comm_icon": "shopify:\/\/shop_images\/community-icon.png",
+          "comm_banner_image": "shopify:\/\/shop_images\/community-bg.jpg",
+          "comm_title": "Vegepod Community Programs",
+          "comm_subtitle": "Vegepod, in a formal collaboration with Southern Cross University and the Australian Federal Government, researched the therapeutic benefits of gardening in a range of settings including:",
+          "comm_content_image": "shopify:\/\/shop_images\/comm-content-image.jpg",
+          "comm_desc": "<p><strong>Vegepod, in a formal collaboration with Southern Cross University and the Australian Federal Government, researched the therapeutic benefits of gardening<\/strong> in a range of settings including: preschools, schools, disability services, aged care, social housing, + physical and mental health rehabilitation services.<br><br><strong>The research and use of Vegepods in these settings has meant the programs developed now ensure those who may not normally have access to growing their own food, get growing, whilst also receiving all the benefits of therapeutic horticulture!<\/strong> The programs cater for all gardening levels and gardener ages, in any cirucmstance, in any location.<br><br>Tapping into the enormous knowledge around therapeutic gardening, <strong>the programs are evidence-based, person-focussed and wellbeing centred.<\/strong> The benefits of gardening on an individual and societal level are immense and well known. They include lowering anxiety, lessening social isolation, building skills and bringing people together.<br><br>Vegepod were proud <strong>co-hosts and major sponsors of the 2018 Annual Therapeutic Horticulture Conference,<\/strong> which showcased the best programs and research in this burgeoning field.<br><br>To find out more about our programs, or discuss a potential research collaboration, please contact info@vegepod.com.au&nbsp;<\/p>",
+          "feat_vid": "SldKayXBwn0",
+          "fvideo_placeholder": "shopify:\/\/shop_images\/Screen_Shot_2019-01-28_at_12.21.46_PM.png"
+        }
+      },
+      "popup-vegepod-features": {
+        "type": "popup-vegepod-features",
+        "blocks": {
+          "1511524778654": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Self-watering:",
+              "popup_features_desc": "Once the garden is established, it can be left for up to three weeks without watering thanks to the ingenious reservoir at the bottom and wicking bed technology. Where residents may need to leave their home for an extended period of time, or fall ill and be unable to maintain their garden, they can be assured the garden will continue to flourish."
+            }
+          },
+          "1511524789400": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Durable Design:",
+              "popup_features_desc": "Vegepod’s are made from certifiably food-safe materials guaranteed for ten years, ensuring client health and product longevity (unlike other raised beds such as corrugated iron and treated timbers). The durability of the product also ensures the garden beds won’t need to be replaced, ensuring program longevity too."
+            }
+          },
+          "1511524814622": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Fully Contained:",
+              "popup_features_desc": "Vegepod’s fully contained design ensures no undirected flow of soil or water can affect\/ damage surrounding buildings or shared areas. No harmful ground contaminates can leach into the Vegepod soil and conversely the nutrients within the Vegepod won’t be lost to competing ground covers, plants or trees."
+            }
+          },
+          "1511524837667": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Accessible Height:",
+              "popup_features_desc": "Vegepod stands enable gardeners to stand or lean comfortably to garden. It is also the perfect height for those needing to sit to garden and accessible for those in a wheelchair."
+            }
+          },
+          "1511524855017": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Moveable:",
+              "popup_features_desc": "Both the small and medium Vegepod’s can be placed on sturdy casters allowing them to be moved around verandahs, courtyards or gardens as needed, ensuring residents can still make the most of any small spaces."
+            }
+          },
+          "1511524878983": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Transferrable:",
+              "popup_features_desc": "Vegepod’s can be easily dismantled and re-established in different locations, ensuring residents or their families can take their Vegepod to new homes or locations at any time."
+            }
+          },
+          "1511524891457": {
+            "type": "vegepod_features",
+            "settings": {
+              "popup_features_title": "Canopy:",
+              "popup_features_desc": "The possum and rodent proof commercial grade mesh canopy makes organic gardening easy, enabling plants to thrive without the need for pesticides whilst protecting them from inclement weather and harsh elements and providing a perfect micro-climate for better growth rates."
+            }
+          }
+        },
+        "block_order": [
+          "1511524778654",
+          "1511524789400",
+          "1511524814622",
+          "1511524837667",
+          "1511524855017",
+          "1511524878983",
+          "1511524891457"
+        ],
+        "settings": {}
+      },
+      "in-the-media": {
+        "type": "in-the-media",
+        "blocks": {
+          "1551760153659": {
+            "type": "media",
+            "settings": {
+              "title": "Channel 7's morning show segment with Vegepod Community Programs. HomeGrown, GrowAbility and SeniorGrow.",
+              "image": "shopify:\/\/shop_images\/ch7_compass.png",
+              "link": "https:\/\/www.youtube.com\/watch?v=MHwj9qNgAd0&feature=youtu.be.",
+              "description": ""
+            }
+          },
+          "1541646677813": {
+            "type": "media",
+            "settings": {
+              "title": "Southern Cross University's  \"Innovations with Industry\" Program built around Vegepod and our Accessible and Community gardening Programs.",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-10-29_at_12.13.35_pm_1.png",
+              "link": "https:\/\/vimeo.com\/295906788\/b690994c46",
+              "description": ""
+            }
+          },
+          "1537147409425": {
+            "type": "media",
+            "settings": {
+              "title": "Sydney Morning Herald feature with gardening columnist Robin Powell  - \"Eat your Vegetables and Grow them too\"",
+              "image": "shopify:\/\/shop_images\/16.09.16_Vegepods25.jpg",
+              "link": "https:\/\/www.smh.com.au\/entertainment\/eat-your-vegetables-but-grow-them-too-20180903-h14us9.html",
+              "description": ""
+            }
+          },
+          "1536897082129": {
+            "type": "media",
+            "settings": {
+              "title": "Jamie Duries talks Vegepod on The AM Show, Channel 3, New Zealand. August 2018.",
+              "image": "shopify:\/\/shop_images\/JD_AM_SHow_NZ_Sept_2018.png",
+              "link": "https:\/\/www.facebook.com\/TheAMShowNZ\/videos\/534486653641942\/",
+              "description": ""
+            }
+          },
+          "1537146609548": {
+            "type": "media",
+            "settings": {
+              "title": "The Garden Clinic, with Dr Kate Neale talking therapeutic benefits of gardening and Vegepod specific educational programs. August 2018",
+              "image": "shopify:\/\/shop_images\/linda_Ross.JPG",
+              "link": "https:\/\/player.whooshkaa.com\/shows\/garden-clinic-digs-deeper-with-linda-ross?query=kate+neale",
+              "description": "What are the therapeutic benefits of gardening in social housing, preschools, schools, health services and aged care? Dr Kate Neale from Southern Cross University talks abut Vegepod educational programs including KindyGarden, a program aimed at getting 3-5 year olds growing food.\n\n\n\nFor more information in this field check out the upcoming therapeutic gardening conference on the Gold Coast where Kate will be speaking.\nAustralian Therapeutic Horticulture Conference October 25-26-27, 2018"
+            }
+          },
+          "1535508410124": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod on Channel 9 Weekend Show - August 2018",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_channel_9_weekend_today.png",
+              "link": "https:\/\/www.youtube.com\/watch?v=y9QH100RYZ4&feature=youtu.be",
+              "description": "Jordon Sly from Wormticklers talks Vegepod features and seedling growing"
+            }
+          },
+          "1534131730285": {
+            "type": "media",
+            "settings": {
+              "title": "Landscape Contractor Magazine July\/ August 2018 - Vegepod main feature on the trend of planting up",
+              "image": "shopify:\/\/shop_images\/LCM_JulAug18_HR.P01-1.jpg",
+              "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/LandscapeContractor_winter_2018_Mag.png?1419900449450500098",
+              "description": ""
+            }
+          },
+          "1529892406975": {
+            "type": "media",
+            "settings": {
+              "title": "Garden Clinic, Winter 2018 features our Vegepod KindyGarden Program",
+              "image": "shopify:\/\/shop_images\/Kate-Neale-and-friends-_1_-web.jpg",
+              "link": "https:\/\/www.gardenclinic.com.au\/how-to-grow-article\/meet-dr-kate-neale",
+              "description": "Exploring the many therapeutic and educational benefits of our KindyGarden program."
+            }
+          },
+          "1528083541188": {
+            "type": "media",
+            "settings": {
+              "title": "Naomi Simson talks Vegepod on the Fitzy and Wippa Radio Show",
+              "image": "shopify:\/\/shop_images\/1400x1400---nnatpodcast-fw-j15z732k.jpg",
+              "link": "https:\/\/www.youtube.com\/watch?v=WvDDjVQnWaQ&feature=youtu.be",
+              "description": "Naomi Simson from Shark Tank talks about her favourite investment from the show - Vegepod!"
+            }
+          },
+          "1535507029708": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod Studio10 Feature - May 16 2018",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_Studio_10.png",
+              "link": "https:\/\/youtu.be\/RxiZz-fGGAQ",
+              "description": "Jamie Durie talks Vegepod growing, educational and community programs and the Chelsea flower show!"
+            }
+          },
+          "1535427160090": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod Channel 9 News Feature - May 22 2018",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_channel_9_news.png",
+              "link": "https:\/\/youtu.be\/gU81jl-j23E",
+              "description": "Live cross to Chelsea Flower Show UK. Vegepod guest exhibitors inside the famed Discovery Hall."
+            }
+          },
+          "1527220000670": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod on the Alan Jones Radio Show.",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-05-25_at_1.48.03_pm.png",
+              "link": "https:\/\/omny.fm\/shows\/the-alan-jones-breakfast-show\/simon-holloway-vegepod",
+              "description": "Simon chats to Allan Jones on Vegepod and The Chelsea Flower Show."
+            }
+          },
+          "1525844895553": {
+            "type": "media",
+            "settings": {
+              "title": "Healthy Homes TV Australia",
+              "image": "shopify:\/\/shop_images\/walt_collins_and_dani_wales_healthy_homes_on_ten-1000x563.jpg",
+              "link": "https:\/\/vimeo.com\/178408491",
+              "description": "Simon from Vegepod setting up a Vegepod on Healthy Homes Australia showing the ease of setting up your very own Vegepod."
+            }
+          },
+          "1525844972117": {
+            "type": "media",
+            "settings": {
+              "title": "Jamie Durie's Gardening Tips",
+              "image": "shopify:\/\/shop_images\/MGL9399_2.jpg",
+              "link": "https:\/\/homes.nine.com.au\/2016\/09\/22\/13\/28\/austrailia-jamie-durie-spring-outdoor-garden-tips\/5",
+              "description": "Jamie Durie Shares his top five garden tips for Spring – Featuring the Vegepod."
+            }
+          },
+          "1525845001625": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod in the Top 5 biggest Shark Tank success",
+              "image": "shopify:\/\/shop_images\/ImageHandler.jpg",
+              "link": "https:\/\/www.smartcompany.com.au\/entrepreneurs\/shark-tank-recap-every-entrepreneur-a-winner-on-last-nights-deal-filled-episode\/",
+              "description": "One of season two’s big success stories was Vegepod, a covered, self-watering, raised garden bed created by “frustrated vegie gardener” and family man Matt Harris."
+            }
+          },
+          "1525845081136": {
+            "type": "media",
+            "settings": {
+              "title": "Garden’s Online talking about the Self Watering Vegepod",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-05-01_at_12.33.15_pm.png",
+              "link": "https:\/\/www.youtube.com\/watch?v=M9J6G7WJr3E&feature=em-share_video_user",
+              "description": "Bob Saunders of www.GardensOnline.com.au puts the Vegepod through its paces to see how good it is."
+            }
+          },
+          "1525845113934": {
+            "type": "media",
+            "settings": {
+              "title": "Read about Vegepod in a blog on Swiish by sally Obermeder",
+              "image": "shopify:\/\/shop_images\/vegepod6-1.jpg",
+              "link": "http:\/\/www.swiish.com\/blog-post\/lettuce-turnip-the-beet\/",
+              "description": "The good news is that we have found the best contraption to help us achieve our green thumb dreams, and it is sooo easy. It’s called a Vegepod and it’s a Sydney born and bred business that is gaining global attention."
+            }
+          },
+          "1525845148698": {
+            "type": "media",
+            "settings": {
+              "title": "Jamie Durie creates a healing sanctuary for a deserving single mum featuring a Vegepod",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-05-01_at_12.43.17_pm.png",
+              "link": "https:\/\/tenplay.com.au\/channel-ten\/the-living-room\/season-6\/episode-5",
+              "description": "Jamie Durie on the Living room, redesigning a backyard with the installations of multiple Vegepods- Season 6, Episode 5 – watch full episode here"
+            }
+          },
+          "1525845192724": {
+            "type": "media",
+            "settings": {
+              "title": "Vegepod’s featuring in blog by Calikim Garden and Home DIY",
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2018-05-01_at_12.46.01_pm.png",
+              "link": "https:\/\/calikimgardenandhome.com\/growing-lettuce-in-extreme-summer-heat-yes-you-can-in-a-vegepod\/",
+              "description": "Vegepod’s featuring in blog by Calikim Garden and Home DIY exploring the use of Vegepod’s to grow produce in Extreme Heats-"
+            }
+          },
+          "1525845223781": {
+            "type": "media",
+            "settings": {
+              "title": "Jamie Durie on Home and Family in America talking about the Vegepod",
+              "image": "shopify:\/\/shop_images\/cdn.crownmediadev-1.jpg",
+              "link": "http:\/\/www.hallmarkchannel.com\/home-and-family\/thursday-may-11th-2017?o=2",
+              "description": "Teaching Your Kids to Grow Veggies\n\nAuthor and design expert Jamie Durie is talking about the importance of teaching your children to garden, which is something he learned from his own mother. When it comes to soil, use compost and mulch to improve the structure."
+            }
+          }
+        },
+        "block_order": [
+          "1551760153659",
+          "1541646677813",
+          "1537147409425",
+          "1536897082129",
+          "1537146609548",
+          "1535508410124",
+          "1534131730285",
+          "1529892406975",
+          "1528083541188",
+          "1535507029708",
+          "1535427160090",
+          "1527220000670",
+          "1525844895553",
+          "1525844972117",
+          "1525845001625",
+          "1525845081136",
+          "1525845113934",
+          "1525845148698",
+          "1525845192724",
+          "1525845223781"
+        ],
+        "settings": {
+          "grid_items_per_row": 2
+        }
+      },
+      "section-afterpaybanner": {
+        "type": "section-afterpaybanner",
+        "settings": {}
+      },
+      "seed-videos-template": {
+        "type": "seed-videos-template",
+        "blocks": {
+          "1537242392871": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "1. Beans",
+              "seed_video_link": "https:\/\/www.youtube.com\/\/embed\/\/ANJKvm0aXo4"
+            }
+          },
+          "1537242402036": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "2. Cucumber",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/ztjyS4Kji80"
+            }
+          },
+          "1537242429107": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "3. Garlic Chives",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/PyAy2Ke3Ngs"
+            }
+          },
+          "1537242443591": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "4. Lettuce",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/bGf9f0tqIVM"
+            }
+          },
+          "1537242466856": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "5. Tomato",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/QgCLSGyM_iM"
+            }
+          },
+          "1556605764066": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "6. Winter Veggies: Bokchoy",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/GHJ0SsSOTuA"
+            }
+          },
+          "1556605881120": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "7. Winter Veggies: Coriander",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/zL5QSc4WC0g"
+            }
+          },
+          "1556606066813": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "8. Winter Veggies: Italian Parsley",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/yAbTkZTwycA"
+            }
+          },
+          "1556606127223": {
+            "type": "pod_seed",
+            "settings": {
+              "title": "8. Winter Veggies: Kale",
+              "seed_video_link": "https:\\\/\\\/www.youtube.com\\\/embed\\\/oBsPx4FDg_o"
+            }
+          }
+        },
+        "block_order": [
+          "1537242392871",
+          "1537242402036",
+          "1537242429107",
+          "1537242443591",
+          "1537242466856",
+          "1556605764066",
+          "1556605881120",
+          "1556606066813",
+          "1556606127223"
+        ],
+        "settings": {
+          "page_bgimg2": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Seed_Video_Icons_2x_a1925184-5854-48c8-9802-f70c38e90ca7.png",
+          "text_heading_one": "Seed Videos <span>– 6 mins watching time<\/span>",
+          "text_heading_two": "",
+          "text_heading_three": "",
+          "text_banner_cta": "can’t find what you’re looking for below? <a href=\"https:\/\/vegepod.com.au\/pages\/contact-us\">contact us<\/a>"
+        }
+      },
+      "meet-the-team": {
+        "type": "meet-the-team",
+        "blocks": {
+          "1540882267044": {
+            "type": "section_title",
+            "settings": {
+              "section_name": "Meet the team, click on the tiles for more info!"
+            }
+          },
+          "1540882444897": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/USA-matt_large_cd21f73b-1ac2-4d5d-8f9a-275eb285059b.png",
+              "team_member_name": "MATT",
+              "team_member_role": "CEO and Founder Vegepod",
+              "team_member_bio": "<p><em>After failing to grow my own veggies, I realised there must be a lot of people out there like me so I worked to solve the problems associated with urban farming and invented the Vegepod!<\/em><\/p>\n<p><\/p>\n<p><em>After successfully growing Vegepod in Australia, I moved to California in 2017 to start up Vegepod USA.<\/em><\/p>\n<p><\/p>\n<p><em>Day to day, I focus on building relationships with customers and distributors and growing our footprint across the United States. I love working in this industry. It&rsquo;s very satisfying to see so many people embracing gardening and growing their own healthy, organic vegetables at home. We make and sell a product that makes people happy and makes them feel good about themselves - how many companies can say that?!<\/em><\/p>"
+            }
+          },
+          "1540882527187": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Paul.png",
+              "team_member_name": "PAUL",
+              "team_member_role": "Managing Director, Vegepod Global",
+              "team_member_bio": "<p><i>At Vegepod I&nbsp;look after the&nbsp;legal, finance, administration, HR,&nbsp; management, and strategy. Overall, I work as a coordinator role to ensure the business runs smoothly and efficiently, and our international expansion is supported.<\/i><\/p>\n<p>&nbsp;<\/p>\n<p><i>I love the Vegepod family because it&rsquo;s exactly that &ndash; family. Everyone we work is close in some way or another and that makes it feel special. And, of course, the Vegepod is a great product as it works so well for both novice and experienced gardener. How nice is it to hear a story of a Vegepod with trolley&nbsp;wheeled into a community room inside a nursing home&nbsp;where residents who are unable to make it outside each day can see and touch their vegetables and herbs, giving them much joy.<\/i><\/p>"
+            }
+          },
+          "1540882587029": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Simon_large_efb17ad8-c2ee-4156-8acf-d851eb52b4e3.png",
+              "team_member_name": "SIMON",
+              "team_member_role": "Sales and Marketing Director, Vegepod Global",
+              "team_member_bio": "<p><em>I&rsquo;ve been with Matt and Paul since the very beginning of Vegepod when we were local to Terrey Hills. Since then it&rsquo;s been fantastic to watch us grow locally and internationally.<\/em><\/p>\n<p><\/p>\n<p><em>It&rsquo;s hard to find a better industry than gardening. It invariably makes people happy and healthy, both in body and mind. That in turn makes me stoked. It&rsquo;s not a slogan, it&rsquo;s just reality that the Vegepod has made edible gardening available to absolutely everyone, in any location, whatever the abode, every single day and without fail.<\/em><\/p>"
+            }
+          },
+          "1540882659091": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Pam_Hughes.jpg",
+              "team_member_name": "PAM",
+              "team_member_role": "Administration Manager, Vegepod Australia",
+              "team_member_bio": "<p><em>I&rsquo;m the link between our sales and merchandising team and the end customer. I process orders online, ship products, answer the 1800 phone, take on special orders, and help with overall support and distribution.<\/em><\/p>\n<p><\/p>\n<p><em>I love being part of the Vegepod family, watching the business grow (pun intended) and hearing stories from all over the country and world about how people are producing their veggies.<\/em><\/p>"
+            }
+          },
+          "1540882715325": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Suzie.png",
+              "team_member_name": "SUZIE",
+              "team_member_role": "Marketing Assistant, Vegepod Global",
+              "team_member_bio": "<p><em>I&rsquo;m the Marketing Assistant for Vegepod Australia. I work part-time, during school hours at &lsquo;ShedQuarters&rsquo; - the home of Vegepod. Day to day I support the team with all things marketing &ndash; managing the busy calendar of events and shows, PR, website and online platforms, social pages, product launches &ndash; the list goes on!<\/em><\/p>\n<p><\/p>\n<p><em>Vegepod resonates with me as I&rsquo;m a gardener myself and I value growing and harvesting organic produce with my kids to cook and share. It is so satisfying! The best thing about working at Vegepod is the many community programs Vegepod has to get kids, the eldery, disabled and other community groups enjoying the therapeutic, physical and social benefits gardening can bring! I am lucky to work with a great bunch.<\/em><\/p>"
+            }
+          },
+          "1540882760282": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Lisa.png",
+              "team_member_name": "LISA",
+              "team_member_role": "Head of Country, Vegepod NZ",
+              "team_member_bio": "<p><em>I started up Vegepod NZ, the first international market for Vegepod outside of Australia in August 2016. I look after everything to do with the NZ business from ordering stock and selling to talking to customers at events and exhibitions.<\/em><\/p>\n<p><\/p>\n<p><em>Prior to joining Vegepod, I didn&rsquo;t have a lot of interest in gardening. But after discovering what a Vegepod was, I instantly knew the potential for it to go well in NZ. And boy do Kiwis love them!<\/em><\/p>\n<p><em>I feel lucky to be involved with such a high-quality, innovative product that people really get enjoyment out of.<\/em><\/p>"
+            }
+          },
+          "1540882814255": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/UK-Neil-Urry_large_9ac24786-8970-4a34-a8a4-9b64a84a9b2d.png",
+              "team_member_name": "NEIL",
+              "team_member_role": "Head of Country, Vegepod UK",
+              "team_member_bio": "<p><em>I&rsquo;m the newest member of the Vegepod team. Together with my fianc&eacute;, Alex, we left our corporate lives behind and are setting up Vegepod UK. I&rsquo;m a jack of all trades (and a master of none) but I love building relationships and delivering high quality customer service. With Alex&rsquo;s experience in marketing and my operational background, we&rsquo;re going to take the UK by storm. Make sure you come and say hooroo to us and our Vegedog at the next event!<\/em><\/p>"
+            }
+          },
+          "1540882850465": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Blake-Harris_large_56856d51-c775-4008-83b7-554b79c93ebb.png",
+              "team_member_name": "BLAKE",
+              "team_member_role": "Head of Country, Vegepod Canada",
+              "team_member_bio": "<p><em>After learning the ropes in the Australian business I have relocated to run the Canadian operation. I am constantly on the road meeting customers, attending trade shows and consumer exhibitions.<\/em><\/p>\n<p><\/p>\n<p><em>I love working in the garden industry as it is a positive, happy and healthy one. It feels so good to sell a product I love and believe-in, versus insurance which is what I used to sell and hated it.<\/em><\/p>\n<p><\/p>\n<p><em>The Vegepod is my dad&rsquo;s invention, so for me, Vegepod means the happiness of building something with my family - as well as happiness for all the customers and people associated with it, I love it.<\/em><\/p>"
+            }
+          },
+          "1540882909183": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Blair-and-Philippa_large_52098350-bccc-456b-945f-97efaf7f932e.png",
+              "team_member_name": "BLAIR & PHILLIPA",
+              "team_member_role": "Head of Country, Vegepod Singapore",
+              "team_member_bio": "<p><em>As owner\/operators of Vegepod Singapore, our role covers all the usual business aspects expect as well as the sales and marketing. We are the ones bringing stock in to Singapore, running the demos, and consulting with the stockists while standing at the booth!<\/em><\/p>\n<p><\/p>\n<p><em>We were both inspired to join Vegepod after we saw what it could do in New Zealand. Singapore has a vibrant gardening scene with a lot of expats needing low maintenance gardening solutions &ndash; we knew it would be a hit!<\/em><\/p>\n<p><\/p>\n<p><em>Aside from sales, as an educator, Philippa works on developing a curriculum, which includes elements and features of the Vegepod. We have been visiting community and school gardens to gather ideas and understand how other educators are integrating urban farming into their programs. The elements of community, sustainability, farm to table, and water efficiency are very exciting.<\/em><\/p>"
+            }
+          },
+          "1540883015361": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Angela_large_6e203074-4c87-4e97-ac09-56c21e06df11.png",
+              "team_member_name": "ANGELA",
+              "team_member_role": "Sales and Merchandising WA, Vegepod Australia",
+              "team_member_bio": "<p><em>I&rsquo;m the sales and merchandising representative for Vegepod in Perth, Western Australia.<\/em><\/p>\n<p><em>I visit the stockists, check on their sales, stock, and perform demos.<\/em><\/p>\n<p><\/p>\n<p><em>I&rsquo;ve always loved gardening and the satisfaction of growing things so it&rsquo;s very exciting to be part of the gardening industry and the Vegepod team. Everyone is so friendly and happy - it&rsquo;s a really great environment to work in.<\/em><\/p>"
+            }
+          },
+          "1540883056571": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/QLD-Sandi-Jeffrey_large_9411052c-eeee-48c5-86c2-783d7a05d3f9.png",
+              "team_member_name": "SANDI",
+              "team_member_role": "Sales and Merchandising QLD, Vegepod Australia",
+              "team_member_bio": "<p><em>I represent Vegepod at gardening shows and events throughout South Eastern Queensland (SEQ) as well as managing the stockists here.<\/em><\/p>\n<p><\/p>\n<p><em>My Vegepod journey is heartfelt! From a very happy customer and positive influencer of my friends and local community, to a dedicated and motivated employee - nothing makes me happier than sharing the benefits of gardening with others and, in particular, talking all things Vegepod!<\/em><\/p>\n<p><\/p>\n<p><em>Everything about Vegepod has helped me grow - I now study Horticulture through TAFE Queensland.<\/em><\/p>"
+            }
+          },
+          "1540883099135": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Pete_Konert.jpeg",
+              "team_member_name": "PETE",
+              "team_member_role": "Sales and Merchandising NSW, Vegepod Australia",
+              "team_member_bio": "<p><em>My role at Vegepod requires me to manage and maintain current relationships with our wholesalers. I love getting out on the road visiting existing stockists and finding new ones to house the amazing Vegepod!<\/em><\/p>\n<p><\/p>\n<p><em>Working in the Garden industry is great experience as people are becoming more educated about what they are putting into their bodies and there is nothing better then eating the fresh veggies that you have grown yourself. Vegepod to me is creating awareness about how easy growing your own fresh veggies can be and it shows people that doesn&rsquo;t matter where you are from, or how old or young you are, it&rsquo;s simple, easy and fun!<\/em><\/p>"
+            }
+          },
+          "1540883147770": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/Connie_large_464100b1-c4f5-45ab-874a-d5bfb9104846.png",
+              "team_member_name": "CONNIE",
+              "team_member_role": "Sales and Merchandising SA, Vegepod Australia",
+              "team_member_bio": "<p><em>I look after Adelaide Stockists, helping them to expand their knowledge on Vegepod and telling as many people as I can about this great product<\/em><\/p>\n<p><\/p>\n<p><em>I feel excited to be associated with such a great Australian product. Growing up with a dad who was and still is, a keen gardener, we always had fresh, home grown produce. Having only a small paved backyard myself, now with Vegepod at home means that I can continue the tradition of home grown<\/em><\/p>"
+            }
+          },
+          "1540883185608": {
+            "type": "team_member_detail",
+            "settings": {
+              "team_member_image": "shopify:\/\/shop_images\/USA_Tim_Harris.jpg",
+              "team_member_name": "TIM",
+              "team_member_role": "Sales and Merchandising, Vegepod USA",
+              "team_member_bio": "<p><em>I work primarily in sales across the US, selling and making connections at our distributor trade shows. Besides that I'm training to be a local horticulturist up here in Grand Rapids, Michigan.<\/em><\/p>\n<p><\/p>\n<p><em>I absolutely love working at Vegepod because there's nothing better than working with family and seeing a company grow with a product that actually works. We had one of the original pods from back in 2010 at our Terrey Hills home (when we lived in Australia). Now we&rsquo;ve moved to the Great North and there&rsquo;s a thriving industry with huge shifts in how health conscious everyone is being.<\/em><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1540882267044",
+          "1540882444897",
+          "1540882527187",
+          "1540882587029",
+          "1540882659091",
+          "1540882715325",
+          "1540882760282",
+          "1540882814255",
+          "1540882850465",
+          "1540882909183",
+          "1540883015361",
+          "1540883056571",
+          "1540883099135",
+          "1540883147770",
+          "1540883185608"
+        ],
+        "settings": {
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Team_Icon_2x_e65236f0-22b4-45cd-82dc-6a0d2309cca5.png"
+        }
+      },
+      "1544400101684": {
+        "type": "our-range",
+        "blocks": {
+          "1544400101684-0": {
+            "type": "range",
+            "settings": {
+              "range-image": "shopify:\/\/shop_images\/range-image1.png",
+              "range-title": "Large Raised Garden Bed",
+              "range-link": "shopify:\/\/products\/raised-garden-bed-large"
+            }
+          },
+          "1544400101684-1": {
+            "type": "range",
+            "settings": {
+              "range-image": "shopify:\/\/shop_images\/range-image2.png",
+              "range-title": "Medium Raised Garden Bed",
+              "range-link": "shopify:\/\/products\/raised-garden-bed-medium"
+            }
+          },
+          "1544400101684-2": {
+            "type": "range",
+            "settings": {
+              "range-image": "shopify:\/\/shop_images\/range-image3.png",
+              "range-title": "Small Raised Garden Bed",
+              "range-link": "shopify:\/\/products\/raised-garden-bed-small"
+            }
+          }
+        },
+        "block_order": [
+          "1544400101684-0",
+          "1544400101684-1",
+          "1544400101684-2"
+        ],
+        "settings": {
+          "title": "Our Range List"
+        }
+      },
+      "1544400547127": {
+        "type": "prod-feature-capabilities",
+        "blocks": {
+          "1544400547127-0": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-container-gardening.png",
+              "title": "Container Gardening",
+              "quote": "<p>An easy to manage contained raised gardening bed is perfect for the home. Control your growth and veggie quality in a separate environment away from the ground and <strong><a href=\"https:\/\/vegepod.com.au\/blogs\/news\/keeping-pests-out-of-your-veggie-patch-the-natural-way\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/keeping-pests-out-of-your-veggie-patch-the-natural-way\">away from the pests<\/a><\/strong>.<\/p>"
+            }
+          },
+          "1544400547127-1": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-self-watering.png",
+              "title": "Self Watering",
+              "quote": "<p>Veggie health is ensured with our <strong><a href=\"https:\/\/vegepod.com.au\/blogs\/news\/vegepod-wicking-system-explained\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/vegepod-wicking-system-explained\">self-watering technology<\/a><\/strong> by using a wicking system and watering the plants from below. Plants can last weeks without watering in our Vegepods.<\/p>"
+            }
+          },
+          "1544400547127-2": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-protective-cover.png",
+              "title": "Protective Cover",
+              "quote": "<p>Create a greenhouse in our backyard by using a <a href=\"https:\/\/vegepod.com.au\/blogs\/news\/all-about-our-vegepod-raised-garden-cover\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/all-about-our-vegepod-raised-garden-cover\"><strong>polyethylene knitted mesh<\/strong><\/a> to protect crops from UV and pests. The cover also helps manage temperature by allowing water and air to penetrate.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1544400547127-0",
+          "1544400547127-1",
+          "1544400547127-2"
+        ],
+        "settings": {
+          "title": "Easy and Effective Garden Growing",
+          "review_button_text": "",
+          "review_button_url": ""
+        }
+      },
+      "prod-feature-capabilities": {
+        "type": "prod-feature-capabilities",
+        "blocks": {
+          "1544429427141": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-container-gardening.png",
+              "title": "Container Gardening",
+              "quote": "<p>An easy to manage contained raised gardening bed is perfect for the home. Control your growth and veggie quality in a separate environment away from the ground and <strong><a href=\"https:\/\/vegepod.com.au\/blogs\/news\/keeping-pests-out-of-your-veggie-patch-the-natural-way\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/keeping-pests-out-of-your-veggie-patch-the-natural-way\">away from the pests.<\/a><\/strong><\/p>"
+            }
+          },
+          "1544429459160": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-self-watering.png",
+              "title": "Self Watering",
+              "quote": "<p>Veggie health is ensured with our <strong><a href=\"https:\/\/vegepod.com.au\/blogs\/news\/vegepod-wicking-system-explained\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/vegepod-wicking-system-explained\">self-watering technology<\/a><\/strong> by using a wicking system and watering the plants from below. Plants can last weeks without watering in our Vegepods.<\/p>"
+            }
+          },
+          "1544429473500": {
+            "type": "product-feat",
+            "settings": {
+              "author_picture": "shopify:\/\/shop_images\/icon-protective-cover.png",
+              "title": "Protective Cover",
+              "quote": "<p>A greenhouse in our backyard by using a polyethylene knitted mesh to protect crops from UV and pests. <strong><a href=\"https:\/\/vegepod.com.au\/blogs\/news\/all-about-our-vegepod-raised-garden-cover\" title=\"https:\/\/vegepod.com.au\/blogs\/news\/all-about-our-vegepod-raised-garden-cover\">The cover<\/a><\/strong> also helps manage temperature by allowing water and air to penetrate.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1544429427141",
+          "1544429459160",
+          "1544429473500"
+        ],
+        "settings": {
+          "title": "",
+          "review_button_text": "",
+          "review_button_url": ""
+        }
+      },
+      "maps": {
+        "type": "maps",
+        "settings": {
+          "api_key": "AIzaSyBPx3S-qV_LqAMhKs8A4FesW_cvcgfJ8hc",
+          "contact_phone": "1800 428 431",
+          "contact_email": "info@vegepod.com.au",
+          "map_address": "Unit 5, 287 Mona Vale Rd, Terrey Hills NSW 2084",
+          "zoom": 15,
+          "map_pin": "shopify:\/\/shop_images\/map-pin.png"
+        }
+      },
+      "contact-form": {
+        "type": "contact-form",
+        "settings": {}
+      },
+      "collection-vegepod-raised": {
+        "type": "collection-vegepod-raised",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/collection-vpod-raised.jpg",
+          "heading": "Vegepod Raised Garden Beds",
+          "sub_heading": "You can easily grow herbs, lettuce and chinese vegetables, carrots, zuccini, beetroot and even tomatoes. Try any vegetable.",
+          "set_collection": "raised-garden-beds"
+        }
+      },
+      "collection-vegecover": {
+        "type": "collection-vegecover",
+        "blocks": {
+          "1544784900635": {
+            "type": "collection_group",
+            "settings": {
+              "set_collection": ""
+            }
+          },
+          "1544784909979": {
+            "type": "collection_group",
+            "settings": {
+              "set_collection": "vegepod-stands"
+            }
+          }
+        },
+        "block_order": [
+          "1544784900635",
+          "1544784909979"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/hp-slide1.jpg",
+          "banner_bg_image": "shopify:\/\/shop_images\/cl-vege-cover-banner-bg.jpg",
+          "heading": "Vegepod Stands, Covers & Trolleys",
+          "sub_heading": "A huge benefit of the Vegepod Container Gardens is that they can be easily raised to waist height. Covers make growing veggies easy, by providing a microclimate that promotes rapid growth and higher yields."
+        }
+      },
+      "collection-other-prod": {
+        "type": "collection-other-prod",
+        "blocks": {
+          "1544785878012": {
+            "type": "collection_group",
+            "settings": {
+              "set_collection": "other-products"
+            }
+          }
+        },
+        "block_order": [
+          "1544785878012"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/collection-others.jpg",
+          "banner_bg_image": "shopify:\/\/shop_images\/col-others-bg.jpg",
+          "heading": "Other Products",
+          "sub_heading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam sed ante sit amet laoreet. Nunc eget malesuada diam, et consectetur leo. Donec ut lobortis justo, vitae tincidunt erat. Quisque sem nibh.",
+          "icon_giftcard": "shopify:\/\/shop_images\/gift-card-image.png",
+          "giftcard_heading": "Vegepod Gift Cards",
+          "giftcard_text": "Shopping for someone else but not sure what to give them? Give them the gift of choice with a Vegepod Australia gift card."
+        }
+      },
+      "users-guide-banner": {
+        "type": "users-guide-banner",
+        "settings": {
+          "page_bgimg2": "shopify:\/\/shop_images\/User_guide.png",
+          "page_bgicon": "shopify:\/\/shop_images\/User_Guide_Icon_2x_dc6690c9-da9f-4744-8937-bac7709ce193.png",
+          "text_heading_one": "Vegepod Users Guide",
+          "text_heading_two": "",
+          "text_banner_cta": "can’t find what you’re looking for below? <a href=\"https:\/\/vegepod.com.au\/pages\/contact-us\">contact us<\/a>"
+        }
+      },
+      "users-guide-manuals": {
+        "type": "users-guide-manuals",
+        "blocks": {
+          "1546485499284": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Small",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-small.pdf?3022366542525183476"
+            }
+          },
+          "1546485534946": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Vegecover Small",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-small.pdf?3022366542525183476"
+            }
+          },
+          "1546485555490": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Stand Small",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_small_NEW_2a372a23-bf03-425b-a6ab-a1b4aeab1c8d.pdf?16265266030423035422"
+            }
+          },
+          "1546485583236": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Trolley Stand Small",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_small_72778455-ccbf-4f5e-8920-6c1ac898f9f3.pdf?16265266030423035422"
+            }
+          },
+          "1546485604971": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Medium",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-medium.pdf?1019377280547435958"
+            }
+          },
+          "1546485626468": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Vegecover Medium",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-medium.pdf?3022366542525183476"
+            }
+          },
+          "1546485647098": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Stand Medium",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_medium_NEW_a2c4c146-673c-4e5d-aad5-ed1cb9364bbe.pdf?16265266030423035422"
+            }
+          },
+          "1546485664036": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Trolley Stand Medium",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_trolley_medium_2b004338-b961-4d97-8535-57e493fe40b1.pdf?16265266030423035422"
+            }
+          },
+          "1546485683554": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Large",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-large.pdf?3022366542525183476"
+            }
+          },
+          "1546485700899": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Vegecover Large",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user-guide-vegecover-large.pdf?3022366542525183476"
+            }
+          },
+          "1546485719229": {
+            "type": "manuals",
+            "settings": {
+              "manual_title": "User Guide Stand Large Joining",
+              "manual_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/2337\/4427\/files\/user_guide_stand_large_joining_NEW.pdf?16265266030423035422"
+            }
+          }
+        },
+        "block_order": [
+          "1546485499284",
+          "1546485534946",
+          "1546485555490",
+          "1546485583236",
+          "1546485604971",
+          "1546485626468",
+          "1546485647098",
+          "1546485664036",
+          "1546485683554",
+          "1546485700899",
+          "1546485719229"
+        ],
+        "settings": {
+          "manuals_title": ""
+        }
+      },
+      "aboutus-banner": {
+        "type": "aboutus-banner",
+        "settings": {
+          "banner_title": "",
+          "banner_background": "shopify:\/\/shop_images\/About_Us.png",
+          "banner_icon": "shopify:\/\/shop_images\/about-us-icon.png",
+          "text_banner_cta": "can’t find what you’re looking for below? <a href=\"https:\/\/vegepod.com.au\/pages\/contact-us\">contact us<\/a>"
+        }
+      },
+      "aboutus-content": {
+        "type": "aboutus-content",
+        "blocks": {
+          "1547104802985": {
+            "type": "capability_list",
+            "settings": {
+              "capability": "Protected Soil"
+            }
+          },
+          "1547104806289": {
+            "type": "capability_list",
+            "settings": {
+              "capability": "Easily Raised"
+            }
+          },
+          "1547104815863": {
+            "type": "capability_list",
+            "settings": {
+              "capability": "Portable"
+            }
+          },
+          "1547104821444": {
+            "type": "capability_list",
+            "settings": {
+              "capability": "Durable"
+            }
+          }
+        },
+        "block_order": [
+          "1547104802985",
+          "1547104806289",
+          "1547104815863",
+          "1547104821444"
+        ],
+        "settings": {
+          "content_image": "shopify:\/\/shop_images\/collection-vpod-raised.jpg",
+          "content_text": "<p>In 2013 we re-designed the product to become more retail friendly. It now packs down into a box that fits in any trunk or back seat of a car.\n<\/p>\n\n<p>Vegepod prides itself on providing the average person with a simple and easy way to grow vegetables at home, work and in the community. Our garden kits are the most efficient and practical on the market today.<\/p>\n \n<p>If you’re not growing chemical free, nutritional veggies for your family – you should be.<\/p>\n \n<p>There was enormous interest in our products due to many factors including – shrinking yards, poor soil quality, watering, and the loss of general growing knowledge.<\/p>\n\n<p>Vegepod prides itself on providing the average person with a simple and easy way to grow vegetables at home. Our garden kits are the most efficient and practical on the market today.<\/p>\n\n<p>If you’re not growing chemical free, nutritional veggies for your family – you should be.<\/p>"
+        }
+      },
+      "call-to-action-text-banner": {
+        "type": "call-to-action-text-banner",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/cta-banner-bg.jpg",
+          "content_text": "To find out more about our programs, or discuss a potential research collaboration, please contact",
+          "email": "info@vegepod.com.au"
+        }
+      },
+      "in-th-media-banner": {
+        "type": "in-th-media-banner",
+        "settings": {
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/In_The_Media_Icon_2x_ed3f61a2-4c82-4d20-b735-15f6316cb7a4.png"
+        }
+      },
+      "stocklist-banner": {
+        "type": "stocklist-banner",
+        "settings": {
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Stockist_Icon_2x_064c5e45-707d-441c-a49b-2bb4cf88d22a.png"
+        }
+      },
+      "gallery-banner": {
+        "type": "gallery-banner",
+        "settings": {
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Gallery_Icon_2x_fab67110-d860-4b4e-992b-8c6674006424.png"
+        }
+      },
+      "contactus-banner": {
+        "type": "contactus-banner",
+        "settings": {
+          "page_bgimg": "",
+          "page_bgicon": "shopify:\/\/shop_images\/Contact_Icon_2x_73440710-7c2c-4b49-aa99-b4fb891c687a.png"
+        }
+      },
+      "installer-banner": {
+        "type": "installer-banner",
+        "settings": {
+          "banner_background": "shopify:\/\/shop_images\/isntallation-banner-bg.jpg",
+          "banner_icon": "",
+          "button_text": "Request Installation",
+          "button_link": "shopify:\/\/pages\/contact-us"
+        }
+      },
+      "installer-content": {
+        "type": "installer-content",
+        "blocks": {
+          "1548131786990": {
+            "type": "steps",
+            "settings": {
+              "steps_icon": "shopify:\/\/shop_images\/installation-step1.png",
+              "steps_title": "Fill Form & Make A Request",
+              "steps_desc": "Tell us the size of vegepod needing to be installed and contact details."
+            }
+          },
+          "1548131817484": {
+            "type": "steps",
+            "settings": {
+              "steps_icon": "shopify:\/\/shop_images\/installation-step2.png",
+              "steps_title": "We’ll Contact You To Arrange A Time",
+              "steps_desc": "Once submitted, we’ll call you within a few days to organise a date & time that suits you."
+            }
+          },
+          "1548131842912": {
+            "type": "steps",
+            "settings": {
+              "steps_icon": "shopify:\/\/shop_images\/installation-step3.png",
+              "steps_title": "Our Vegepod Installer Comes To You",
+              "steps_desc": "All our installers work in horticulture & landscaping to ensure the highest quality end product."
+            }
+          }
+        },
+        "block_order": [
+          "1548131786990",
+          "1548131817484",
+          "1548131842912"
+        ],
+        "settings": {
+          "content_title": "We’ll Come To You!",
+          "content_text": "Lorem ipsum dolor sit amet, ad sea malis impetus repudiare, paulo lucilius ut nam, aeterno quaestio eam ex. Sea viris nonumy consul ex. Ne usu putent tritani vivendum, his eu expetenda mnesarchum deterruisset. His ut ponderum oporteat",
+          "feat_vid": "ltnj_G-FFlY",
+          "fvideo_placeholder": "shopify:\/\/shop_images\/installation-video-placeholder.jpg"
+        }
+      },
+      "community-lower-section": {
+        "type": "community-lower-section",
+        "blocks": {
+          "1548134011034": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/Senior_Grow.png",
+              "page_detail": ""
+            }
+          },
+          "1548134071683": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/D6095-Sprouters-Logo_large_a97a25e1-963e-42b6-8400-139f4a7af339.png",
+              "page_detail": ""
+            }
+          },
+          "1548134112025": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/KindyGarden.png",
+              "page_detail": ""
+            }
+          },
+          "1548134135115": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/Grow_Ability.png",
+              "page_detail": ""
+            }
+          },
+          "1548134157378": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/0-1.png",
+              "page_detail": ""
+            }
+          }
+        },
+        "block_order": [
+          "1548134011034",
+          "1548134071683",
+          "1548134112025",
+          "1548134135115",
+          "1548134157378"
+        ],
+        "settings": {
+          "sidebar_title": "Vegepod's universal design makes gardening accessible and safe for everyone",
+          "popup_icon": "shopify:\/\/shop_images\/icon-popup.png",
+          "sidebar_desc": "",
+          "our_program_title": "Our Programs",
+          "cta_text": "To find out more about our programs, or discuss a potential research collaboration, please contact",
+          "cta_email": "info@vegepod.com.au"
+        }
+      },
+      "awards-section": {
+        "type": "awards-section",
+        "blocks": {
+          "1548650824474": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/file.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/we-won-the-usa-golden-shovel-award-editors-choice"
+            }
+          },
+          "1548972665328": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Screen_Shot_2019-02-01_at_9.12.16_am.png",
+              "awards_link": "https:\/\/www.facebook.com\/Vegepod\/videos\/273370536663800\/"
+            }
+          },
+          "1548976268684": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/completion_845ddf71-5359-4558-87ee-2213b8771d0e.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/vegepod-goes-to-the-chelsea-garden-show"
+            }
+          },
+          "1548972434153": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Untitled_design_1.png",
+              "awards_link": "https:\/\/australianbrandawards.com.au\/2017-winners\/the-vegepod\/"
+            }
+          },
+          "1548975895924": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/completion.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/vegepod-two-years-post-shark-tank"
+            }
+          }
+        },
+        "block_order": [
+          "1548650824474",
+          "1548972665328",
+          "1548976268684",
+          "1548972434153",
+          "1548975895924"
+        ],
+        "settings": {
+          "store_title": "Awards we have won!",
+          "store_subtitle": "",
+          "shop_button_text": "",
+          "shop_button_url": ""
+        }
+      },
+      "1548836358939": {
+        "type": "center-image-content",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/high-res-info-graphics.jpg"
+        }
+      },
+      "1551245853520": {
+        "type": "awards-section",
+        "blocks": {
+          "1551246359249": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/file.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/we-won-the-usa-golden-shovel-award-editors-choice"
+            }
+          },
+          "1551245971663": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Screen_Shot_2019-02-01_at_9.12.16_am.png",
+              "awards_link": "https:\/\/www.facebook.com\/Vegepod\/videos\/273370536663800\/"
+            }
+          },
+          "1551246223845": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/completion_845ddf71-5359-4558-87ee-2213b8771d0e.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/vegepod-goes-to-the-chelsea-garden-show"
+            }
+          },
+          "1551246266870": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/Untitled_design_1.png",
+              "awards_link": "https:\/\/australianbrandawards.com.au\/2017-winners\/the-vegepod\/"
+            }
+          },
+          "1551246301258": {
+            "type": "add-awards",
+            "settings": {
+              "store_logo": "shopify:\/\/shop_images\/completion.png",
+              "awards_link": "https:\/\/vegepod.com.au\/blogs\/news\/vegepod-two-years-post-shark-tank"
+            }
+          }
+        },
+        "block_order": [
+          "1551246359249",
+          "1551245971663",
+          "1551246223845",
+          "1551246266870",
+          "1551246301258"
+        ],
+        "settings": {
+          "store_title": "Awards we have won!",
+          "store_subtitle": "",
+          "shop_button_text": "",
+          "shop_button_url": ""
+        }
+      },
+      "community-popup-section": {
+        "type": "community-popup-section",
+        "settings": {
+          "sidebar_title": "Vegepod's universal design makes gardening accessible and safe for everyone",
+          "popup_icon": "shopify:\/\/shop_images\/icon-popup.png"
+        }
+      },
+      "our-program-section": {
+        "type": "our-program-section",
+        "blocks": {
+          "1556245284774": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/Senior_Grow.png",
+              "page_detail": ""
+            }
+          },
+          "1556245290203": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/0.png",
+              "page_detail": ""
+            }
+          },
+          "1556245460645": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/KindyGarden.png",
+              "page_detail": ""
+            }
+          },
+          "1556245520341": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/Grow_Ability.png",
+              "page_detail": ""
+            }
+          },
+          "1556245707182": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/0-1.png",
+              "page_detail": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556245284774",
+          "1556245290203",
+          "1556245460645",
+          "1556245520341",
+          "1556245707182"
+        ],
+        "settings": {
+          "our_program_title": "Our Programs"
+        }
+      },
+      "our-partners": {
+        "type": "our-partners",
+        "blocks": {
+          "1556245787167": {
+            "type": "community_center",
+            "settings": {
+              "page_featured_img": "shopify:\/\/shop_images\/website_logo.png",
+              "partners_link": "http:\/\/www.bellbirdkidz.com.au\/"
+            }
+          }
+        },
+        "block_order": [
+          "1556245787167"
+        ],
+        "settings": {
+          "our_program_title": "Our Partners"
+        }
+      },
+      "community-cta": {
+        "type": "community-cta",
+        "settings": {
+          "cta_text": "To find out more about our programs, or discuss a potential research collaboration, please contact",
+          "cta_email": "info@vegepod.com.au"
+        }
+      }
+    },
+    "content_for_index": [
+      "slideshow",
+      "1544400547127",
+      "1548836358939",
+      "1544400101684",
+      "testimonials",
+      "1551245853520",
+      "featured-blog",
+      "1505615797129",
+      "1505975496780",
+      "text-with-optional-image",
+      "image-with-text-overlay"
+    ]
+  },
+  "presets": {
+    "Gold": {
+      "heading_color": "#0c0c0d",
+      "text_color": "#66656e",
+      "light_text_color": "#a1a1a6",
+      "accent_color": "#c6a85b",
+      "background": "#ffffff",
+      "secondary_background": "#f0f0f0",
+      "primary_button_color": "#ffffff",
+      "primary_button_background": "#c6a85b",
+      "secondary_button_color": "#ffffff",
+      "secondary_button_background": "#0c0c0d",
+      "top_bar_color": "#ffffff",
+      "top_bar_background": "#0c0c0d",
+      "product_features_color": "#ffffff",
+      "product_features_background": "#141415",
+      "product_on_sale_label_background": "#3f3fd7",
+      "product_unavailable_label_background": "#000000",
+      "heading_font": "Google_Rajdhani",
+      "heading_font_weight": "500",
+      "text_font": "Google_Rajdhani",
+      "font_size": "0",
+      "slideshow_heading_font_weight": "400",
+      "sections": {
+        "slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "heading_color": "#c6a85b"
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+                "heading_color": "#c6a85b"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+            "type": "dual"
+          }
+        },
+        "text-with-optional-image": {
+          "type": "text-with-optional-image",
+          "settings": {}
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {}
+        },
+        "image-with-text-overlay": {
+          "type": "image-with-text-overlay",
+          "settings": {}
+        },
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "testimonials": {
+          "type": "testimonials",
+          "blocks": {
+            "testimonial-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-0",
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {}
+        },
+        "featured-blog": {
+          "type": "featured-article",
+          "blocks": {
+            "blog": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "text-with-optional-image",
+        "collection-list",
+        "image-with-text-overlay",
+        "featured-collection",
+        "testimonials",
+        "featured-blog"
+      ]
+    },
+    "Rose": {
+      "heading_color": "#0c0c0d",
+      "text_color": "#75737e",
+      "light_text_color": "#918ea0",
+      "accent_color": "#e11687",
+      "background": "#ffffff",
+      "secondary_background": "#f5f4ff",
+      "primary_button_color": "#ffffff",
+      "primary_button_background": "#e11687",
+      "secondary_button_color": "#ffffff",
+      "secondary_button_background": "#0c0c0d",
+      "top_bar_color": "#ffffff",
+      "top_bar_background": "#0c0c0d",
+      "product_features_color": "#ffffff",
+      "product_features_background": "#141415",
+      "product_on_sale_label_background": "#3f3fd7",
+      "product_unavailable_label_background": "#000000",
+      "heading_font": "Google_Amiri",
+      "heading_font_weight": "700",
+      "text_font": "Google_Source+Sans+Pro",
+      "slideshow_heading_font_weight": "700",
+      "font_size": "1",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_tall_header": true
+          }
+        },
+        "slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "heading_color": "#ffffff"
+              }
+            },
+            "slideshow-1": {
+              "type": "image",
+              "settings": {
+                "heading_color": "#ffffff"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "slideshow-1"
+          ],
+          "settings": {
+            "type": "full_width"
+          }
+        },
+        "text-with-optional-image": {
+          "type": "text-with-optional-image",
+          "settings": {}
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2"
+          ],
+          "settings": {}
+        },
+        "image-with-text-overlay": {
+          "type": "image-with-text-overlay",
+          "settings": {
+            "overlay_color": "#81b0e1"
+          }
+        },
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "testimonials": {
+          "type": "testimonials",
+          "blocks": {
+            "testimonial-0": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-0",
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {}
+        },
+        "featured-blog": {
+          "type": "featured-article",
+          "blocks": {
+            "blog": {
+              "type": "blog",
+              "settings": {
+                "blog": "news"
+              }
+            }
+          },
+          "block_order": [
+            "blog"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "slideshow",
+        "text-with-optional-image",
+        "collection-list",
+        "image-with-text-overlay",
+        "featured-collection",
+        "testimonials",
+        "featured-blog"
+      ]
+    }
+  }
+}

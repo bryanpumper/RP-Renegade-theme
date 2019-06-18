@@ -1,0 +1,129 @@
+(function($) {
+  function newhomepageSlick(){
+    $('.ri-txt-slide-slick').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      draggable: false,
+      asNavFor: '.ri-img-slide-slick',
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            dots: true
+          }
+        }
+      ]
+    });
+    $('.ri-img-slide-slick').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      fade: true,
+      lazyLoad: 'ondemand',
+      asNavFor: '.ri-txt-slide-slick',
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            dots: false
+          }
+        }
+      ]
+    });
+  }
+
+  function paddingSlideText(){
+    var containerWidth = $('.header .container').width(),
+        windoWidth = $(window).width(),
+        leftPadding = windoWidth - containerWidth,
+        tagetSection = $('.ris-text-content');
+        tagetSection.each(function(){
+          if($(this).hasClass("right-side")){
+            $(this).css('padding-right', leftPadding/2);
+          }else {
+            $(this).css('padding-left', leftPadding/2);
+          }
+        });
+        
+    
+  }
+  $(window).resize(paddingSlideText);
+
+
+  function benefitsListSlick(){
+    if($(window).width() < 768 ){
+      $('.benefits-list-slick').each(function(){
+        $('.benefits-list-slick').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow: '<div class="benefits-slick-arrow ben-slick-prev fa fa-angle-left">',
+          nextArrow: '<div class="benefits-slick-arrow ben-slick-next fa fa-angle-right">',
+          dots: true,
+        });
+        
+      });
+      $('.prod-features.grid').each(function(){
+        $(this).slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
+        });
+      });
+      $('.section-testimonials .testimonials.grid').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+      });
+    }else{
+      $('.benefits-list-slick').each(function(){
+        $('.benefits-list-slick').slick('unslick');
+      });
+    }
+  }
+  $(window).resize(benefitsListSlick);
+
+
+  function faqNavSticky(){
+    var totalElementHeight = $(".faq-page-nav").outerHeight(true) - 46,
+        elementVdistance = $(".faq-page-nav").offset().top - totalElementHeight,
+        contentWrapHeight = $(".faq-content-wrapper").outerHeight(true) - (totalElementHeight * 2);
+
+    $(document).on("scroll", function(){
+        if($(document).scrollTop() > elementVdistance){
+            $(".faq-page-nav").addClass("sticky");
+            if($(document).scrollTop() > contentWrapHeight + elementVdistance){
+              $(".faq-page-nav").addClass("stop");
+              $(".faq-page-nav").css("top", contentWrapHeight + elementVdistance + totalElementHeight);
+            }else{
+              $(".faq-page-nav").removeClass("stop");
+              $(".faq-page-nav").css("top", '100px');
+            }
+        }
+        else
+        {
+          $(".faq-page-nav").removeClass("sticky");
+        }
+      }); 
+  }
+
+  $(document).ready(function() {
+    if($('.productpage-capabilities-section').length > 0 ){
+      $('#shopify-section-prod-feature-capabilities').prependTo('.productpage-capabilities-section');
+    }
+    newhomepageSlick();
+    paddingSlideText();
+    benefitsListSlick();
+    if ($(".faq-page-nav").length > 0 ){
+      faqNavSticky();
+    }
+    
+  });
+})(jQuery);

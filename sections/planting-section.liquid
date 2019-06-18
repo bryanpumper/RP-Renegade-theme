@@ -1,0 +1,75 @@
+<div class="planting hide-data" style="display:none;">
+  <div class="feature-tabs-desc planting-content">
+  <div class="container">
+    <div class="grid grid--large">
+    <div class="grid__cell">
+    	<h3>{{ section.settings.planting_title_1 }}</h3>
+      </div>
+    </div>
+      <div class="grid grid--large bottom15">
+    <div class="grid__cell 7/10--handheld-and-up">
+      <div class="content"><p>{{ section.settings.planting_desc_1 }}</p></div>
+        </div>
+      {% if section.settings.planting_image_1 != blank %}
+        <div class="grid__cell 3/10--handheld-and-up">
+      <img src="{{ section.settings.planting_image_1  | img_url: 'large' }}" />
+        </div>
+      {% endif %}
+    </div>
+    <div class="grid grid--large bottom15">
+    <div class="grid__cell">
+      <div class="special-content">
+        {% if section.settings.planting_image_2 != blank %}
+      <img src="{{ section.settings.planting_image_2  | img_url: 'large' }}" />
+      {% endif %}
+        <div class="content"><p>{{ section.settings.planting_desc_2 }}</p></div>
+    </div>
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Planting Section",
+    "class": "vagepod--features",
+    "settings": [
+     {
+        "type": "header",
+        "content": "Planting Section"
+     },
+     {
+         "type": "text",
+         "id": "planting_title_1",
+         "label": "Title 1"
+     }, 
+     {
+         "type": "textarea",
+         "id": "planting_desc_1",
+         "label": "Description 1"
+     },
+     {
+         "type": "image_picker",
+         "id": "planting_image_1",
+         "label": "Image 1"
+     },
+     {
+         "type": "textarea",
+         "id": "planting_desc_2",
+         "label": "Description 2"
+     },
+     {
+         "type": "image_picker",
+         "id": "planting_image_2",
+         "label": "Image 2"
+     }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

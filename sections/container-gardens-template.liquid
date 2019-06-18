@@ -1,0 +1,261 @@
+
+<div id="{{ section.id }}" class="container-gardens hide">
+  <div class="product_feat_heading">
+    <div class="prod_feat_icon"><img src="{{ section.settings.prod_feat_heading_icon | img_url: 'large' }}" /></div>
+    <h4 class="por_feat_tile">{{ section.settings.prod_feat_heading_name }}</h4>
+  </div>
+  <div class="feature-tabs-desc">
+  <div class="container">
+  <div class="grid grid--large section-gap">
+   	 <div class="grid__cell 1/2--handheld-and-up">
+        <h3>{{ section.settings.tab_heading_1 }}</h3>
+        {% if section.settings.tab_desc_1 != blank %}
+            {{ section.settings.tab_desc_1 }}
+            
+        {% endif %}
+            
+        {% if section.settings.item_button_url != blank %} 
+              {% assign button_url = section.settings.item_button_url %}
+        {% else %}
+              {% assign button_url = 'javascript:;' %}
+        {% endif %}
+        {% if section.settings.item_button_text != blank %}
+            <a href="{{ button_url }}" class="button button-green view-btn">{{ section.settings.item_button_text }}</a>
+        {% endif %}
+      </div>
+      <div class="grid__cell 1/2--handheld-and-up">
+        <div class="cg-content-image"><img src="{{ section.settings.tab_desc_image | img_url: '600x' }}"" alt="image"></div>
+      </div>
+  </div>
+  <div class="container-gardens-feat-list">
+  <div class="grid grid--large">
+      <div class="grid__cell 1/2--handheld-and-up">
+        <div class="cg-feat-list-image">
+          <img src="{{ section.settings.benefits_image | img_url: '600x' }}" alt="image">
+        </div>
+      </div>
+      <div class="grid__cell 1/2--handheld-and-up">
+        <ul class="ul-list clearfix">
+        {% for block in section.blocks %}        
+            {% if block.settings.benifits_link != blank %} 
+              {% assign benifits_link = block.settings.benifits_link %}
+            {% else %}
+              {% assign benifits_link = 'javascript:;' %}
+            {% endif %}
+            {% if block.settings.benifits_Name != blank %}
+              <li><a href="{{ benifits_link }}">{{ block.settings.benifits_Name }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+  </div>
+  </div>
+  
+  
+  <div class="grid grid--large grid--center benefits-list-slick">
+    <div class="grid__cell 2/5--handheld-and-up">
+      <div class="feature-custom-box">
+        <div class="feat-benefits-box">
+            {% if section.settings.icon_1 != blank %}
+              <img src="{{ section.settings.icon_1 | img_url: 'small' }}" />
+            {% endif %}
+            {% if section.settings.maintenance_title_1 != blank %}
+              <h4>{{ section.settings.maintenance_title_1 }}</h4>
+            {% endif %}
+            {% if section.settings.maintenance_desc_1 != blank %}
+              <p>{{ section.settings.maintenance_desc_1 }}</p>
+            {% endif %}
+        </div>
+      </div>
+     </div>
+      <div class="grid__cell 2/5--handheld-and-up">
+        <div class="feature-custom-box">
+          <div class="feat-benefits-box">
+            {% if section.settings.icon_2 != blank %}
+              <img src="{{ section.settings.icon_2 | img_url: 'small' }}" />
+            {% endif %}
+            {% if section.settings.maintenance_title_2 != blank %}
+              <h4>{{ section.settings.maintenance_title_2 }}</h4>
+            {% endif %}
+            {% if section.settings.maintenance_desc_2 != blank %}
+              <p>{{ section.settings.maintenance_desc_2 }}</p>
+            {% endif %}
+        </div>
+        </div>
+        </div>
+     <div class="grid__cell 2/5--handheld-and-up">
+        <div class="feature-custom-box">
+           <div class="feat-benefits-box">
+            {% if section.settings.icon_3 != blank %}
+              <img src="{{ section.settings.icon_3 | img_url: 'small' }}" />
+            {% endif %}
+            {% if section.settings.maintenance_title_3 != blank %}
+              <h4>{{ section.settings.maintenance_title_3 }}</h4>
+            {% endif %}
+            {% if section.settings.maintenance_desc_3 != blank %}
+              <p>{{ section.settings.maintenance_desc_3 }}</p>
+            {% endif %}
+        </div>
+     </div>
+     </div>
+       <div class="grid__cell 2/5--handheld-and-up">
+        <div class="feature-custom-box">
+           <div class="feat-benefits-box">
+            {% if section.settings.icon_4 != blank %}
+              <img src="{{ section.settings.icon_4 | img_url: 'small' }}" />
+            {% endif %}
+            {% if section.settings.maintenance_title_4 != blank %}
+              <h4>{{ section.settings.maintenance_title_4 }}</h4>
+            {% endif %}
+            {% if section.settings.maintenance_desc_4 != blank %}
+              <p>{{ section.settings.maintenance_desc_4 }}</p>
+            {% endif %}
+        </div>
+         </div>
+       </div>
+    
+   </div>
+</div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Container Gardens",
+    "class": "garden--features",
+    "settings": [
+      {
+      "type": "header",
+      "content": "Gardens Detail"
+      },
+      {
+        "id": "prod_feat_heading_icon",
+        "type": "image_picker",
+        "label": "Product Features Icon"
+      },
+      {
+      "id": "prod_feat_heading_name",
+      "type": "text",
+      "label": "Product Features Title"
+      },
+      {
+      "id": "tab_heading_1",
+      "type": "text",
+      "label": "Heading"
+      },
+      {
+      "id": "tab_desc_1",
+      "type": "textarea",
+      "label": "Description"
+      },
+      {
+      "id": "tab_desc_image",
+      "type": "image_picker",
+      "label": "Description Image"
+      },
+      {
+      "id": "item_button_text",
+      "type": "text",
+      "label": "Button Text"
+      },
+      {
+      "id": "item_button_url",
+      "type": "text",
+      "label": "Button URL"
+      },
+      {
+      "type": "header",
+      "content": "Maintenance Detail"
+      },
+      {
+      "id": "icon_1",
+      "type": "image_picker",
+      "label": "Icon 1"
+      },
+      {
+      "id": "maintenance_title_1",
+      "type": "text",
+      "label": "Title"
+      },
+      {
+      "id": "maintenance_desc_1",
+      "type": "textarea",
+      "label": "Description"
+      },
+      {
+      "id": "icon_2",
+      "type": "image_picker",
+      "label": "Icon 2"
+      },
+      {
+      "id": "maintenance_title_2",
+      "type": "text",
+      "label": "Title 2"
+      },
+      {
+      "id": "maintenance_desc_2",
+      "type": "textarea",
+      "label": "Description 2"
+      },
+      {
+      "id": "icon_3",
+      "type": "image_picker",
+      "label": "Icon 3"
+      },
+      {
+      "id": "maintenance_title_3",
+      "type": "text",
+      "label": "Title 3"
+      },
+      {
+      "id": "maintenance_desc_3",
+      "type": "textarea",
+      "label": "Description 3"
+      },
+      {
+      "id": "icon_4",
+      "type": "image_picker",
+      "label": "Icon 4"
+      },
+      {
+      "id": "maintenance_title_4",
+      "type": "text",
+      "label": "Title 4"
+      },
+      {
+      "id": "maintenance_desc_4",
+      "type": "textarea",
+      "label": "Description 4"
+      },
+      {
+      "id": "benefits_image",
+      "type": "image_picker",
+      "label": "Benefits Image"
+      }
+	],
+    "blocks": [
+        {
+          "type": "benifits",
+          "name": "Benifits",
+          "settings": [
+            {
+              "id": "benifits_Name",
+              "type": "text",
+              "label": "Name"
+            },
+            {
+              "id": "benifits_link",
+              "type": "text",
+              "label": "link"
+            }
+          ]
+        }
+	 ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
