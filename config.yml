@@ -1,8 +1,12 @@
 production:
-  password: 712f7a7de0d5b4c04f83313e84ee41b2
-  theme_id: "36362747959"
-  store: renegade-branding-concepts.myshopify.com
+  password: 924411ab7bc026d243e58386c95d68c6
+  theme_id: "77498679341"
+  store: bryans-test-shop.myshopify.com
+staging:
+  password: 924411ab7bc026d243e58386c95d68c6
+  theme_id: "77498646573"
+  store: bryans-test-shop.myshopify.com
 develop:
-  password: 712f7a7de0d5b4c04f83313e84ee41b2
-  theme_id: "37399461943"
-  store: renegade-branding-concepts.myshopify.com
+  password: 924411ab7bc026d243e58386c95d68c6
+  theme_id: "77498351661"
+  store: bryans-test-shop.myshopify.com
